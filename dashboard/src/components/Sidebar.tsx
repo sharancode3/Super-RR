@@ -191,14 +191,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 );
               })}
 
-              {/* External Portraits Sheet */}
+              {/* In-App Media Section */}
               <li className="sidebar-nav-item">
                 <a
-                  href="/portraits/contact_sheet.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="sidebar-nav-link nav-link-external"
-                  title="View all 19 official player cutouts contact sheet"
+                  href="#media"
+                  className="sidebar-nav-link"
+                  title="View all 19 official player cutouts and cards"
                   onClick={handleLinkClick}
                 >
                   <span className="sidebar-icon" aria-hidden="true">
@@ -206,8 +204,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   </span>
                   {!isCollapsed && (
                     <>
-                      <span className="sidebar-link-text">Portraits Sheet</span>
-                      <span className="sidebar-badge badge-external">19 cutouts ↗</span>
+                      <span className="sidebar-link-text">Media Section</span>
+                      <span className="sidebar-badge">19 cards</span>
                     </>
                   )}
                 </a>

@@ -21,6 +21,7 @@ import {
   ChartIcon,
   FilterIcon,
   ShieldCheckIcon,
+  ExternalLinkIcon,
 } from "./Icons";
 
 interface MethodologySectionProps {
@@ -241,7 +242,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
                   rel="noreferrer"
                   className="external-audit-link"
                 >
-                  Unstop Challenge Portal · Rajasthan Royals SupeRR Selector S2 ↗
+                  Unstop Challenge Portal · Rajasthan Royals SupeRR Selector S2 <ExternalLinkIcon size={12} className="inline-icon" />
                 </a>
               </p>
             </div>
@@ -579,7 +580,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
                     rel="noreferrer"
                     style={{ fontSize: "11px", color: "var(--color-navy)", fontWeight: "bold", textDecoration: "underline" }}
                   >
-                    Official BCCI Match 54 Report ↗
+                    Official BCCI Match 54 Report <ExternalLinkIcon size={11} className="inline-icon" />
                   </a>
                   <span className="we-context">{WORKED_CHASE_EXAMPLE.context}</span>
                 </div>

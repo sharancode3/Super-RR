@@ -5,6 +5,7 @@ import { HeroSection } from "./components/HeroSection";
 import { RankedBoards } from "./components/RankedBoards";
 import { ModelRankingsSection } from "./components/ModelRankingsSection";
 import { MethodologySection } from "./components/MethodologySection";
+import { MediaSection } from "./components/MediaSection";
 import { PlayerPreviewModal } from "./components/PlayerPreviewModal";
 import { Footer } from "./components/Footer";
 import { evidence } from "./data";
@@ -37,6 +38,7 @@ export const App: React.FC = () => {
         />
         <ModelRankingsSection />
         <MethodologySection evidence={evidence} />
+        <MediaSection onPreviewPlayer={setPreviewPlayer} />
       </main>
       <Footer />
       {previewPlayer && (

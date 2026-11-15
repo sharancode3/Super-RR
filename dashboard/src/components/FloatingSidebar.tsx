@@ -31,12 +31,15 @@ export const FloatingSidebar: React.FC = () => {
         document.documentElement.style.setProperty("--floating-sidebar-top", "185px");
       }
 
+      const media = document.getElementById("media");
       const methodology = document.getElementById("methodology");
       const modelRankings = document.getElementById("model-rankings");
       const bowlers = document.getElementById("bowlers");
       const batters = document.getElementById("batters");
 
-      if (methodology && scrollY >= methodology.offsetTop - 220) {
+      if (media && scrollY >= media.offsetTop - 220) {
+        setActiveSection("media");
+      } else if (methodology && scrollY >= methodology.offsetTop - 220) {
         setActiveSection("methodology");
       } else if (modelRankings && scrollY >= modelRankings.offsetTop - 220) {
         setActiveSection("model-rankings");
@@ -131,21 +134,19 @@ export const FloatingSidebar: React.FC = () => {
 
             <div className="sidebar-divider" aria-hidden="true" />
 
-            {/* Portraits Contact Sheet */}
+            {/* Media & Portraits Section */}
             <li className="floating-nav-item">
               <a
-                href="/portraits/contact_sheet.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="floating-nav-link external-sheet-link"
-                aria-label="Portraits Contact Sheet · 19 Cutouts (Opens in new tab)"
-                title="Portraits Contact Sheet · 19 Cutouts ↗"
+                href="#media"
+                className={`floating-nav-link ${activeSection === "media" ? "is-active" : ""}`}
+                aria-label="Media Section · Official Player Cards & IPL Stats"
+                title="Media Section · 19 Official Cards"
               >
                 <span className="floating-nav-icon" aria-hidden="true">
                   <PhotoIcon size={20} />
                 </span>
                 <span className="floating-tooltip" role="tooltip">
-                  Portraits Contact Sheet ↗
+                  Media Section (19 Cards)
                 </span>
               </a>
             </li>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import type { RankingRecord } from "../data/types";
 import iplStatsData from "../data/player_ipl_stats.json";
 import portraitsManifest from "../data/portraits_manifest.json";
+import { ExternalLinkIcon } from "./Icons";
 
 interface PlayerPreviewModalProps {
   player: RankingRecord | null;
@@ -266,7 +267,7 @@ export const PlayerPreviewModal: React.FC<PlayerPreviewModalProps> = ({
                 className="react-modal-action-link"
               >
                 <span>View 640w HD</span>
-                <span aria-hidden="true">↗</span>
+                <ExternalLinkIcon size={12} className="inline-icon" />
               </a>
               <a
                 href={`/portraits/${pid}_320w.png`}

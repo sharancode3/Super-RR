@@ -9,6 +9,7 @@ import {
   CheckIcon,
   CrossIcon,
   SlidersIcon,
+  ExternalLinkIcon,
 } from "./Icons";
 
 type TabType = "batting" | "bowling" | "filters";
@@ -378,7 +379,7 @@ export const ModelRankingsSection: React.FC = () => {
                               style={{ textDecoration: "none", cursor: "pointer" }}
                             >
                               <span className="target-num">Model #{idx + 1} → RR #{p.rr_shortlist_rank}</span>
-                              <span className="target-label">{isRRRetained ? "In-Squad" : "Target"} ↗</span>
+                              <span className="target-label">{isRRRetained ? "In-Squad" : "Target"} <ExternalLinkIcon size={10} className="inline-icon" /></span>
                             </a>
                           ) : (
                             <span className="rr-filtered-badge">

@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
                 <li><a href="#batters">Batters Board</a></li>
                 <li><a href="#bowlers">Bowlers Board</a></li>
                 <li><a href="#methodology">Audit & Methodology</a></li>
-                <li><a href="/portraits/contact_sheet.html" target="_blank" rel="noopener noreferrer">Portraits Library</a></li>
+                <li><a href="#media">Media &amp; Portraits Section</a></li>
               </ul>
             </div>
 
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
 
         <div className="footer-bottom">
           <p className="footer-copy">
-            &copy; 2026 Rajasthan Royals SupeRR Selector Season 2. Evaluator-facing decision dashboard.
+            Copyright 2026 Rajasthan Royals SupeRR Selector Season 2. Evaluator-facing decision dashboard.
             All player photographs sourced from official BCCI/IPL 2026 tournament media day assets.
           </p>
           <div className="footer-audit-tag">

@@ -59,14 +59,12 @@ export const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/portraits/contact_sheet.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#media"
                   className="nav-link nav-sheet"
-                  title="View all 19 official player cutouts contact sheet"
+                  title="View all 19 official player cutouts, cards and verified IPL stats"
                 >
                   <span className="nav-icon" aria-hidden="true"><PhotoIcon size={14} /></span>
-                  Portraits Sheet ↗
+                  Media Section
                 </a>
               </li>
             </ul>
