@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import type { EvidenceBundle } from "../data/types";
 import bowlingBacktestData from "../data/bowling_backtest_results.json";
 import { MathFormula } from "./MathFormula";
+import { PlayerThumbnail } from "./PlayerThumbnail";
 import {
   TIMELINE_MILESTONES,
   WORKED_CHASE_EXAMPLE,
@@ -1626,8 +1627,13 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
                               <span className="machine-rank-badge">#{idx + 1}</span>
                             </td>
                             <td className="td-player">
-                              <strong className="raw-player-name">{p.name}</strong>
-                              <span className="raw-deployment-tag">{p.deployment}</span>
+                              <div className="raw-player-cell">
+                                <PlayerThumbnail playerId={p.id} name={p.name} size={42} />
+                                <div className="raw-player-meta">
+                                  <strong className="raw-player-name">{p.name}</strong>
+                                  <span className="raw-deployment-tag">{p.deployment}</span>
+                                </div>
+                              </div>
                             </td>
                             <td className="td-priority tabular-nums">
                               <span className={`priority-val ${p.priorityScore >= 0 ? "val-pos" : "val-neg"}`}>

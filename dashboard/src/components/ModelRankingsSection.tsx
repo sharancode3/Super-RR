@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 import modelRankingsData from "../data/model_rankings_data.json";
 import { getAnchorId } from "../data/formatters";
 import type { RoleType } from "../data/types";
+import { PlayerThumbnail } from "./PlayerThumbnail";
 import {
   ChartIcon,
   FilterIcon,
@@ -323,8 +324,13 @@ export const ModelRankingsSection: React.FC = () => {
                           </span>
                         </td>
                         <td className="td-player">
-                          <strong className="raw-player-name">{p.player_name}</strong>
-                          <span className="raw-deployment-tag">{p.deployment}</span>
+                          <div className="raw-player-cell">
+                            <PlayerThumbnail playerId={p.player_id} name={p.player_name} size={42} />
+                            <div className="raw-player-meta">
+                              <strong className="raw-player-name">{p.player_name}</strong>
+                              <span className="raw-deployment-tag">{p.deployment}</span>
+                            </div>
+                          </div>
                         </td>
                         <td className="td-priority tabular-nums">
                           <span className={`priority-val ${p.priority_score >= 0 ? "val-pos" : "val-neg"}`}>
