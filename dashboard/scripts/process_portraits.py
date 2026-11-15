@@ -146,7 +146,7 @@ PLAYERS_METADATA = [
         "player_id": 152,
         "name": "Ravindra Jadeja",
         "role": "DUAL_ROLE",
-        "rank": 9, # Batters #9 and Bowlers #10
+        "rank": 9, # Batters #9 and Bowlers #9
         "is_leader": False,
         "squad_2026": "Rajasthan Royals",
         "cdn_asset": "player/8903/1558/13143.png",
@@ -157,7 +157,7 @@ PLAYERS_METADATA = [
         "access_date": "2026-11-15",
         "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
         "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
-        "crop_notes": "Single canonical portrait family shared across Batters #9 and Bowlers #10 role cards"
+        "crop_notes": "Single canonical portrait family shared across Batters #9 and Bowlers #9 role cards"
     },
     {
         "player_id": 7544,
@@ -279,27 +279,10 @@ PLAYERS_METADATA = [
         "crop_notes": "Direct head-and-torso studio shot, authentic RCB 2026 kit"
     },
     {
-        "player_id": 2320,
-        "name": "Trent Boult",
-        "role": "BOWLER",
-        "rank": 7,
-        "is_leader": False,
-        "squad_2026": "Mumbai Indians",
-        "cdn_asset": "player/8903/1854/14330.png",
-        "page_url": "https://www.iplt20.com/teams/mumbai-indians",
-        "publisher": "BCCI / IPL Official Digital Platform & Mumbai Indians",
-        "credit": "BCCI / IPL / Mumbai Indians",
-        "photo_context": "2026 IPL Official Media Day Studio Portrait",
-        "access_date": "2026-11-15",
-        "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
-        "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
-        "crop_notes": "Upper-torso studio portrait, authentic MI 2026 blue and gold kit"
-    },
-    {
         "player_id": 1566,
         "name": "Mohammed Shami",
         "role": "BOWLER",
-        "rank": 8,
+        "rank": 7,
         "is_leader": False,
         "squad_2026": "Lucknow Super Giants",
         "cdn_asset": "player/8903/2880/11458.png",
@@ -316,7 +299,7 @@ PLAYERS_METADATA = [
         "player_id": 27964,
         "name": "Anshul Kamboj",
         "role": "BOWLER",
-        "rank": 9,
+        "rank": 8,
         "is_leader": False,
         "squad_2026": "Chennai Super Kings",
         "cdn_asset": "player/8903/1622/70442.png",
@@ -328,6 +311,23 @@ PLAYERS_METADATA = [
         "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
         "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
         "crop_notes": "Upper-torso studio portrait, authentic CSK 2026 yellow kit"
+    },
+    {
+        "player_id": 3298,
+        "name": "Jofra Archer",
+        "role": "BOWLER",
+        "rank": 10,
+        "is_leader": False,
+        "squad_2026": "Rajasthan Royals",
+        "cdn_asset": "https://www.rajasthanroyals.com/static-assets/images/players/64254.png?v=7.95",
+        "page_url": "https://www.rajasthanroyals.com/rr-players/jofra-archer-ipl-profile-64254",
+        "publisher": "Rajasthan Royals",
+        "credit": "Rajasthan Royals",
+        "photo_context": "Official Rajasthan Royals player profile portrait",
+        "access_date": "2026-11-15",
+        "rights_basis": "Official Rajasthan Royals player profile photo, credited in the competition dashboard",
+        "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+        "crop_notes": "Transparent upper-body portrait in RR kit, centered on a square canvas"
     }
 ]
 

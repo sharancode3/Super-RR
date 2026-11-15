@@ -13,6 +13,7 @@ import {
   TIER_AGGREGATE_COMPARISON,
   STEPPED_SELECTION_PIPELINE,
   WORKED_PLAYER_TRANSFORMATIONS,
+  ARCHER_BOULT_TRADE_OFF_CASE,
   type ScenarioContingency,
 } from "../data/methodologyData";
 import {
@@ -1289,14 +1290,64 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
               </div>
             </div>
 
+            {/* Dedicated Audited Decision: Archer vs Boult */}
+            <div
+              style={{
+                margin: "20px 0",
+                padding: "16px",
+                background: "#FFFDF9",
+                border: "1.5px solid #20172F",
+                borderRadius: "10px",
+              }}
+            >
+              <h4 style={{ fontSize: "14px", fontWeight: "bold", color: "#20172F", margin: "0 0 4px 0" }}>
+                {ARCHER_BOULT_TRADE_OFF_CASE.title}
+              </h4>
+              <p style={{ fontSize: "11.5px", color: "#64748B", margin: "0 0 12px 0" }}>
+                {ARCHER_BOULT_TRADE_OFF_CASE.subtitle}
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "10px" }}>
+                {ARCHER_BOULT_TRADE_OFF_CASE.facts.map((f, fIdx) => (
+                  <div
+                    key={fIdx}
+                    style={{
+                      background: "#FFFFFF",
+                      border: "1px solid #E2E8F0",
+                      borderRadius: "6px",
+                      padding: "10px 12px",
+                    }}
+                  >
+                    <div style={{ fontSize: "11px", fontWeight: 700, color: "#D81465", marginBottom: "6px" }}>
+                      Fact 0{fIdx + 1}: {f.label}
+                    </div>
+                    <div style={{ fontSize: "11.5px", marginBottom: "4px" }}>
+                      <strong>Jofra Archer:</strong> {f.archer}
+                    </div>
+                    <div style={{ fontSize: "11.5px", marginBottom: "6px" }}>
+                      <strong>Trent Boult:</strong> {f.boult}
+                    </div>
+                    <div style={{ fontSize: "10.5px", color: "#475569", lineHeight: 1.4, borderTop: "1px solid #F1F5F9", paddingTop: "5px" }}>
+                      {f.analysis}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div className="prose-content">
               <h4>Audited Close Calls:</h4>
               <ul>
                 <li>
-                  <strong>Trent Boult (#7) vs Mitchell Starc:</strong> Boult recorded
-                  negative 2026 pressure impact (-6.06 runs/12). Starc performed better
-                  in 2026, but Boult led Starc in powerplay impact and ball volume
-                  across 2024–25 and retained the lead in the full model. Starc remains
+                  <strong>Jofra Archer (#10) vs Trent Boult (Baseline #7):</strong> Archer
+                  replaces Boult as RR's primary new-ball pace leader under an internal franchise squad decision.
+                  Archer recorded −1.98 runs/12 across 106 balls in 13 matches (25 wickets in 16 matches for RR),
+                  whereas Boult recorded −6.06 runs/12 across 20 balls in 4 matches for Mumbai Indians. While Boult
+                  held a higher multi-season point forecast (+1.40 vs +0.64), Archer provides verified franchise
+                  continuity and avoids consuming an overseas auction slot.
+                </li>
+                <li>
+                  <strong>Trent Boult (Baseline) vs Mitchell Starc:</strong> In the baseline external pool, Starc performed better
+                  in 2026, but Boult led Starc in powerplay impact and ball volume across 2024–25 and retained the lead in the full model. Starc remains
                   the direct backup for overseas left-arm pace.
                 </li>
                 <li>
@@ -1572,7 +1623,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
                   </p>
                   <ul className="pillar-specs-list">
                     <li><strong>Batting Coverage:</strong> At least 2 Finishers (Donovan Ferreira, Ravindra Jadeja), 2 Middle-Order anchors (Sameer Rizvi, Cooper Connolly, Riyan Parag, Venkatesh Iyer), and explosive Powerplay cover (Vaibhav Sooryavanshi, Josh Inglis, Abishek Porel, Prabhsimran Singh).</li>
-                    <li><strong>Bowling Arsenal:</strong> At least 3 Death-over specialists (Kartik Tyagi, Lungi Ngidi, Rasikh Salam), 2 Spin containers (Krunal Pandya, Ravindra Jadeja), and New-Ball seam pressure (Mohammed Siraj, Jason Holder, Trent Boult, Mohammed Shami, Anshul Kamboj).</li>
+                    <li><strong>Bowling Arsenal:</strong> At least 3 Death-over specialists (Kartik Tyagi, Lungi Ngidi, Rasikh Salam), 2 Spin containers (Krunal Pandya #5, Ravindra Jadeja #9), and New-Ball seam pressure (Mohammed Siraj, Jason Holder, Mohammed Shami, Anshul Kamboj, Jofra Archer #10).</li>
                   </ul>
                 </div>
 

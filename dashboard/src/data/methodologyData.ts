@@ -213,16 +213,59 @@ export const WORKED_PLAYER_TRANSFORMATIONS: PlayerTransformationExample[] = [
   {
     playerName: "Ravindra Jadeja",
     role: "Bowling",
-    rawModelRank: "#23 Broad Priority (#15 within eligible pool, priority -0.3076, +1.2807 predicted impact)",
+    rawModelRank: "#23 Broad Priority (#11 within eligible pool, priority -0.3076, +1.2807 predicted impact)",
     rawPriority: "-0.31 runs/12",
-    finalRROutcome: "Promoted to RR #10 Bowler (RR squad decision)",
-    actionableRank: "RR #10 Bowler (Spin Container)",
+    finalRROutcome: "Promoted to RR #9 Bowler (RR squad decision)",
+    actionableRank: "RR #9 Bowler (Spin Container)",
     selectionPathExplanation:
-      "Under pure score-only unconstrained selection within the eligible pool, Deepak Chahar is #10 (priority -0.290) and Jadeja is #11 (priority -0.308). However, pure score produces 4 powerplay seamers and only 1 spinner (Krunal Pandya). RR's standard role policy requires 2 spinners for Jaipur pitch defense. Enforcing the two-spinner quota promotes Jadeja over Chahar at an imperceptible cost of 0.018 priority points, providing essential tactical spin balance as an internal RR squad decision.",
+      "Under pure score-only unconstrained selection within the eligible pool, Deepak Chahar is #10 (priority -0.290) and Jadeja is #11 (priority -0.308). However, pure score produces 4 powerplay seamers and only 1 spinner (Krunal Pandya). RR's standard role policy requires 2 spinners for Jaipur pitch defense. Enforcing the two-spinner quota promotes Jadeja over Chahar at an imperceptible cost of 0.018 priority points, providing essential tactical spin balance as an internal RR squad decision (partnering Krunal Pandya #5).",
     evidenceContrast:
-      "Model Rank #15 in eligible pool -> Promoted to RR #10 via Two-Spinner Tactical Quota (Rule RULE_ROLE_QUOTA_BALANCE). Recent 2026: +0.30 r/12 pressure vs +0.79 r/12 ordinary, +1.28 r/12 overall predicted impact.",
+      "Model Rank #11 in eligible pool -> Promoted to RR #9 via Two-Spinner Tactical Quota (Rule RULE_ROLE_QUOTA_BALANCE). Recent 2026: +0.30 r/12 pressure vs +0.79 r/12 ordinary, +1.28 r/12 overall predicted impact.",
+  },
+  {
+    playerName: "Jofra Archer (vs Trent Boult)",
+    role: "Bowling",
+    rawModelRank: "#25 Broad Priority (#13 in screened pool, priority -0.4274, +0.6438 forecast)",
+    rawPriority: "-0.43 runs/12",
+    finalRROutcome: "Selected as RR #10 Bowler (RR squad decision)",
+    actionableRank: "RR #10 Bowler (New-Ball Pace Leader)",
+    selectionPathExplanation:
+      "Jofra Archer replaces Trent Boult as Rajasthan Royals' new-ball pace leader under an internal franchise squad decision. While Boult held a higher multi-season forecast (+1.40 vs +0.64), Archer demonstrated verified 2026 IPL pressure sample support (-1.98 r/12 across 106 balls in 13 matches vs Boult's -6.06 across 20 balls in 4 matches), took 25 wickets in 16 matches for RR, and avoids consuming a fresh overseas auction slot.",
+    evidenceContrast:
+      "Model Rank #13 in screened pool -> Selected as RR #10 (Rule RULE_RR_SQUAD_DECISION). Backs internal franchise continuity while trading away Boult's left-arm angle.",
   },
 ];
+
+export const ARCHER_BOULT_TRADE_OFF_CASE = {
+  title: "Audited RR Selection Decision: Jofra Archer over Trent Boult (No. 10 Bowling Slot)",
+  subtitle: "Comparison of four verified empirical and contractual dimensions",
+  facts: [
+    {
+      label: "IPL 2026 Pressure Impact per 12 Legal Balls",
+      archer: "-1.98 runs/12 across 106 balls in 13 matches",
+      boult: "-6.06 runs/12 across 20 balls in 4 matches",
+      analysis: "Archer provides over 5x the recent pressure volume (106 vs 20 balls) and demonstrated significantly better run containment under high pressure."
+    },
+    {
+      label: "Multi-Season Composite Forecast",
+      archer: "+0.64 runs/12 predicted impact",
+      boult: "+1.40 runs/12 predicted impact",
+      analysis: "Boult led on multi-season point forecast due to historical career powerplay swing, but his recent IPL sample was narrow and negative across every match omission."
+    },
+    {
+      label: "Official Season Context & Eliminator Audit",
+      archer: "25 wickets in 16 matches for RR in IPL 2026",
+      boult: "6 wickets in 8 matches for MI in IPL 2026",
+      analysis: "In the 2026 Eliminator (SRH vs RR on 27 May 2026, Match 50943), RR won by 47 runs; peak second-innings leverage was 0.01595, remaining below the Q80 cutoff (0.025114) and explaining 0 HP balls."
+    },
+    {
+      label: "Franchise & Roster Status",
+      archer: "Internal RR squad asset; consumes no new overseas auction slot",
+      boult: "Played IPL 2026 for Mumbai Indians; conditional on MI auction release",
+      analysis: "Archer preserves franchise continuity and new-ball pace leadership for RR; selecting Archer trades away Boult's left-arm angle while preserving crucial auction budget."
+    }
+  ]
+};
 
 export const WORKED_CHASE_EXAMPLE = {
   fixture: "RCB vs MI · Match 54 (IPL 2026)",
@@ -946,20 +989,8 @@ export const RAW_MODEL_BOWLERS: RawModelPlayer[] = [
     baseEligible: true,
     status: "conditional_auction_target",
     statusLabel: "Conditional auction target",
-    franchiseOrMarketContext: "DC 2026 skiddy death seamer (+6.07 observed impact; Match 54 final ball execution). Actionable target.",
+    franchiseOrMarketContext: "RCB 2026 skiddy death seamer (+3.25 observed impact; Match 23 4-wkt spell & Match 74 Final execution). Actionable target.",
     actionableRank: 6,
-  },
-  {
-    id: "2320",
-    name: "Trent Boult",
-    deployment: "POWERPLAY",
-    role: "bowling",
-    priorityScore: 0.02,
-    baseEligible: true,
-    status: "rr_squad_decision",
-    statusLabel: "RR squad decision",
-    franchiseOrMarketContext: "RR in-squad elite left-arm swing exponent (306 balls volume). In-squad retention.",
-    actionableRank: 7,
   },
   {
     id: "1566",
@@ -971,7 +1002,7 @@ export const RAW_MODEL_BOWLERS: RawModelPlayer[] = [
     status: "conditional_auction_target",
     statusLabel: "Conditional auction target",
     franchiseOrMarketContext: "SRH 2026 veteran new-ball master. Actionable auction pick.",
-    actionableRank: 8,
+    actionableRank: 7,
   },
   {
     id: "27964",
@@ -982,8 +1013,8 @@ export const RAW_MODEL_BOWLERS: RawModelPlayer[] = [
     baseEligible: true,
     status: "conditional_auction_target",
     statusLabel: "Conditional auction target",
-    franchiseOrMarketContext: "CSK 2026 emerging domestic quick. Promoted over unverified injury candidate Harshit Rana.",
-    actionableRank: 9,
+    franchiseOrMarketContext: "CSK 2026 emerging domestic quick. Promoted over unverified injury candidate Harshit Rana (42/57 recent HP balls at death).",
+    actionableRank: 8,
   },
   {
     id: "152",
@@ -994,7 +1025,31 @@ export const RAW_MODEL_BOWLERS: RawModelPlayer[] = [
     baseEligible: true,
     status: "rr_squad_decision",
     statusLabel: "RR squad decision",
-    franchiseOrMarketContext: "RR in-squad defensive spin control (134 balls, +1.28 impact). Promoted via 2-spinner quota.",
+    franchiseOrMarketContext: "RR in-squad defensive spin control (134 balls, +1.28 impact). Promoted to Slot #9 via 2-spinner quota.",
+    actionableRank: 9,
+  },
+  {
+    id: "3298",
+    name: "Jofra Archer",
+    deployment: "POWERPLAY",
+    role: "bowling",
+    priorityScore: -0.43,
+    baseEligible: true,
+    status: "rr_squad_decision",
+    statusLabel: "RR squad decision",
+    franchiseOrMarketContext: "RR in-squad right-arm new-ball pace leader (106 recent pressure balls, 25 wkts in 16 matches). Selected under RR squad decision; trades away Boult's left-arm angle without consuming new overseas auction slot.",
     actionableRank: 10,
+  },
+  {
+    id: "2320",
+    name: "Trent Boult",
+    deployment: "POWERPLAY",
+    role: "bowling",
+    priorityScore: 0.02,
+    baseEligible: true,
+    status: "availability_unconfirmed",
+    statusLabel: "Availability unconfirmed",
+    franchiseOrMarketContext: "MI 2026 asset (traded 2025). External left-arm swing target conditional on MI official release.",
+    actionableRank: undefined,
   }
 ];

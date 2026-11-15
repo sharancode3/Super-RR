@@ -623,45 +623,6 @@
       "hp_economy": 8.32
     }
   },
-  "2320": {
-    "id": 2320,
-    "name": "Trent Boult",
-    "role": "BOWLER",
-    "matches": 62,
-    "is_batter": false,
-    "is_bowler": true,
-    "batting": {
-      "innings": 19,
-      "runs": 80,
-      "balls": 66,
-      "fours": 5,
-      "sixes": 3,
-      "strike_rate": 121.21,
-      "average": 13.33,
-      "highest_score": 17,
-      "fifties": 0,
-      "hundreds": 0,
-      "hp_balls": 8,
-      "hp_runs": 9,
-      "hp_strike_rate": 112.5
-    },
-    "bowling": {
-      "innings": 62,
-      "overs": 227.2,
-      "balls": 1363,
-      "runs": 1952,
-      "wickets": 69,
-      "economy": 8.59,
-      "average": 28.29,
-      "strike_rate": 19.75,
-      "best_bowling": "4/26",
-      "four_w": 1,
-      "five_w": 0,
-      "hp_balls": 306,
-      "hp_wickets": 17,
-      "hp_economy": 7.41
-    }
-  },
   "1566": {
     "id": 1566,
     "name": "Mohammed Shami",
@@ -738,6 +699,45 @@
       "hp_balls": 90,
       "hp_wickets": 8,
       "hp_economy": 9.13
+    }
+  },
+  "3298": {
+    "id": 3298,
+    "name": "Jofra Archer",
+    "role": "BOWLER",
+    "matches": 33,
+    "is_batter": false,
+    "is_bowler": true,
+    "batting": {
+      "innings": 19,
+      "runs": 131,
+      "balls": 100,
+      "fours": 7,
+      "sixes": 8,
+      "strike_rate": 131.0,
+      "average": 11.91,
+      "highest_score": 32,
+      "fifties": 0,
+      "hundreds": 0,
+      "hp_balls": 34,
+      "hp_runs": 64,
+      "hp_strike_rate": 188.24
+    },
+    "bowling": {
+      "innings": 33,
+      "overs": 125.5,
+      "balls": 753,
+      "runs": 1180,
+      "wickets": 38,
+      "economy": 9.4,
+      "average": 31.05,
+      "strike_rate": 19.82,
+      "best_bowling": "3/17",
+      "four_w": 0,
+      "five_w": 0,
+      "hp_balls": 166,
+      "hp_wickets": 7,
+      "hp_economy": 8.67
     }
   }
 }

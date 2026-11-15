@@ -206,6 +206,7 @@ def validate_and_project_data(source_register: Dict[str, Dict[str, Any]]) -> Dic
         2320: ["T Boult"],
         1566: ["M Shami", "Mohammed Shami Ahmed"],
         27964: ["A Kamboj"],
+        3298: ["J Archer", "Jofra Chioke Archer"],
     }
 
     identities: Dict[int, Dict[str, Any]] = {}

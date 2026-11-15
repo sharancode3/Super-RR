@@ -37,28 +37,28 @@ The final 20 selections were derived from a multi-stage filtering funnel: empiri
 | **#1** | **Vaibhav Sooryavanshi** | Rajasthan Royals | Powerplay Opener | +4.94 | +11.02 (63b) | 95.8% | RR squad decision | Retained incumbent opener; led RR in high-pressure balls in 2026. |
 | **#2** | **Josh Inglis** | Lucknow Super Giants | Keeper-Batter | +4.70 | +13.49 (24b) | 87.5% | Conditional auction target | Dynamic powerplay wicketkeeper-batter; primary overseas target. |
 | **#3** | **Sameer Rizvi** | Delhi Capitals | Middle-Order | +3.84 | +18.81 (6b) | 63.0% | Conditional auction target | High-ceiling spin enforcer for middle overs (overs 7–15). |
-| **#4** | **Oliver Davies Connolly** | Rajasthan Royals | Pace-Hitter | +3.70 | +2.88 (48b) | 68.8% | RR squad decision | Retained middle-order stabilizer against 140kph+ seam bowling. |
-| **#5** | **Donovan Ferreira** | Delhi Capitals | Finisher / Keeper | +3.54 | +24.47 (6b) | 54.1% | Conditional auction target | Boundary-per-ball outlier at death (overs 16–20). |
-| **#6** | **Abishek Porel** | Delhi Capitals | Keeper-Batter | +3.48 | +4.03 (15b) | 67.2% | Conditional auction target | Left-hand powerplay counter-attacker; wicketkeeping cover. |
+| **#4** | **Cooper Connolly** | Punjab Kings | Pace-Hitter | +3.70 | +2.88 (48b) | 62.7% | Conditional auction target | Dynamic middle-order stabilizer against 140kph+ seam bowling. |
+| **#5** | **Donovan Ferreira** | Rajasthan Royals | Finisher / Keeper | +3.54 | +24.47 (6b) | 46.5% | RR squad decision | Boundary-per-ball outlier at death (overs 16–20). |
+| **#6** | **Abishek Porel** | Delhi Capitals | Keeper-Batter | +3.48 | +4.03 (15b) | 40.9% | Conditional auction target | Left-hand powerplay counter-attacker; wicketkeeping cover. |
 | **#7** | **Riyan Parag** | Rajasthan Royals | Middle Spine | +3.41 | +7.13 (12b) | 42.5% | RR squad decision | Core domestic middle-order spine; tested across 1,000 resamples. |
-| **#8** | **Shashank Singh** | Punjab Kings | Finisher | +3.03 | +3.61 (41b) | 59.3% | Conditional auction target | Proven domestic death-over executor with verified calm under fire. |
-| **#9** | **Ravindra Jadeja** | Chennai Super Kings | Dual Finisher | +2.79 | +3.68 (18b) | 56.4% | Conditional auction target | Premier dual-role finisher; also ranked #10 in Bowlers. |
-| **#10** | **Venkatesh Iyer** | Kolkata Knight Riders | Pace-Allrounder | +2.61 | +1.74 (42b) | 58.7% | Conditional auction target | Tactical left-hand pace option with big-match playoff pedigree. |
+| **#8** | **Prabhsimran Singh** | Punjab Kings | Powerplay Opener | +3.03 | +3.61 (41b) | 31.7% | Conditional auction target | Proven domestic powerplay opener with verified calm under fire. |
+| **#9** | **Ravindra Jadeja** | Rajasthan Royals | Dual Finisher | +2.79 | +3.68 (18b) | 35.0% | RR squad decision | Premier dual-role finisher; also ranked #9 in Bowlers. |
+| **#10** | **Venkatesh Iyer** | Royal Challengers Bengaluru | Pace-Allrounder | +2.61 | +1.74 (42b) | 48.1% | Conditional auction target | Tactical left-hand pace option with big-match playoff pedigree. |
 
 ### Discipline 02: Bowling Shortlist (10 Targets)
 
 | RR Rank | Player | 2026 Reference | Role / Phase | Forecast Impact (r/12) | HP Observed (r/12) | Top-10 Stability | Franchise / Auction Status | Tactical Reason |
 | :---: | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| **#1** | **Mohammed Siraj** | Gujarat Titans | New-Ball Seam | +3.21 | +11.39 (43b) | 78.4% | Conditional auction target | Leading pace target; elite powerplay swing and early wickets. |
-| **#2** | **Jason Holder** | Gujarat Titans | Pace All-Rounder | +2.95 | +12.33 (26b) | 72.8% | Conditional auction target | Versatile overseas pace-allrounder; provides death-over cover. |
+| **#1** | **Mohammed Siraj** | Gujarat Titans | New-Ball Seam | +2.48 | +5.74 (130b) | 89.4% | Conditional auction target | Leading pace target; elite powerplay swing and early wickets. |
+| **#2** | **Jason Holder** | Gujarat Titans | Pace All-Rounder | +2.74 | +7.67 (28b) | 63.8% | Conditional auction target | Versatile overseas pace-allrounder; provides death-over cover. |
 | **#3** | **Kartik Tyagi** | Kolkata Knight Riders | Indian Death Pace | +2.71 | +7.32 (51b) | 69.7% | Conditional auction target | Domestic high-pace specialist with 8 recorded pressure matches. |
 | **#4** | **Lungi Ngidi** | Delhi Capitals | Death Specialist | +2.31 | +4.21 (64b) | 76.0% | Conditional auction target | Proven overseas death option; heavy boundary suppression. |
 | **#5** | **Krunal Pandya** | Royal Challengers Bengaluru | Spin Container | +2.37 | +6.37 (18b) | 67.7% | Conditional auction target | Left-arm orthodox; controls middle overs with tight economy. |
-| **#6** | **Rasikh Salam** | Royal Challengers Bengaluru | Domestic Seamer | +2.05 | +9.24 (28b) | 59.8% | Conditional auction target | Domestic death-overs enforcer; demonstrated in Match 54 final ball. |
-| **#7** | **Trent Boult** | Mumbai Indians | Left-Arm Swing | +1.89 | +5.12 (35b) | 58.2% | Conditional auction target | Elite new-ball wicket-taker; established RR legacy fit. |
-| **#8** | **Mohammed Shami** | Sunrisers Hyderabad | Veteran Seam | +1.74 | +4.89 (30b) | 53.6% | Conditional auction target | Master seam presentation; controls run-rate across phases. |
-| **#9** | **Anshul Kamboj** | Chennai Super Kings | Emerging Domestic | +1.62 | +3.78 (22b) | 51.4% | Conditional auction target | High-upside domestic seamer with recorded death-over composure. |
-| **#10** | **Ravindra Jadeja** | Chennai Super Kings | Spin Container | +1.48 | +2.95 (45b) | 48.9% | Conditional auction target | Satisfies RR two-spinner rule; dual-discipline asset. |
+| **#6** | **Rasikh Salam** | Royal Challengers Bengaluru | Domestic Seamer | +1.87 | +3.25 (37b) | 46.8% | Conditional auction target | Domestic death-overs enforcer; demonstrated in Match 23 4-wkt spell & Match 74 Final. |
+| **#7** | **Mohammed Shami** | Sunrisers Hyderabad | Veteran Seam | +1.16 | +4.06 (65b) | 40.7% | Conditional auction target | Master seam presentation; controls run-rate across phases. |
+| **#8** | **Anshul Kamboj** | Chennai Super Kings | Emerging Domestic | +1.22 | +2.95 (57b) | 30.8% | Conditional auction target | High-upside domestic seamer with recorded death-over composure (42/57 recent HP balls at death). |
+| **#9** | **Ravindra Jadeja** | Rajasthan Royals | Spin Container | +1.28 | +0.30 (34b) | 42.8% | RR squad decision | Satisfies RR two-spinner rule; dual-discipline asset. |
+| **#10** | **Jofra Archer** | Rajasthan Royals | Right-Arm Fast | +0.64 | -1.98 (106b) | 25.8% | RR squad decision | RR right-arm new-ball pace leader; backed under franchise decision (trades away Boult's left-arm angle). |
 
 *Benchmark Note*: **Jasprit Bumrah** ranked #1 overall in the machine bowling model (+3.58 r/12 priority score). He is classified as *Outside Current Shortlist Assumptions* because franchise retention economics reliably prevent his availability at open auction.
 

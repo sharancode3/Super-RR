@@ -12,24 +12,24 @@
       "evaluator_title": "Retrain Audit Recommended Rankings (2026-11-15)",
       "date": "2026-11-15",
       "approved_use": "Canonical player_id, spelling, role, rank, deployment, 2026 pressure/ordinary exposure and impact, uplift, predicted composite impact",
-      "sha256": "742eaa6a18f28afe34beb4b884b93ee8dcb34a1a526f2055682e1566f32b1f54",
-      "size_bytes": 3565
+      "sha256": "632fba31caa1b971dc79cb05d57c96387bf27d9762bd1b4bfb0f53cf690d144b",
+      "size_bytes": 3552
     },
     "player_evidence": {
       "rel_path": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
       "evaluator_title": "Player Evidence & RR Scouting Context (2026-11-15)",
       "date": "2026-11-15",
       "approved_use": "Pressure-exposed fixtures, one-match omission range (LOO), route, RR fit and risk caveat",
-      "sha256": "b0021c096e7e3bb873d8ca6699bc11be982c1a91ed048f43dd1dd0e464cc0cc1",
-      "size_bytes": 4879
+      "sha256": "d8e4748302a64ddbb3a818a7ea17e0551669a1aebe5cf66057a2db554cf0b309",
+      "size_bytes": 4863
     },
     "scenario_stability_rankings": {
       "rel_path": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
       "evaluator_title": "Scenario Review Rankings with Stability (2026-11-15)",
       "date": "2026-11-15",
       "approved_use": "Authoritative match-resample selection frequency by player_id, role, and rank",
-      "sha256": "b8cc82597e1885a03f0b650200ab76fe79cc2139246e8c4bf8163915d56e035d",
-      "size_bytes": 2303
+      "sha256": "6a97e8e9a5528dbc1b5b95448b1eda85d714bce7694872ff39538f1740d7ad4e",
+      "size_bytes": 2300
     },
     "updated_stability": {
       "rel_path": "artifacts_rr_scenario_review_20261115/updated_stability.json",
@@ -44,8 +44,8 @@
       "evaluator_title": "Unstop Verified Rankings Cross-Check (2026-11-15)",
       "date": "2026-11-15",
       "approved_use": "Exact Unstop option-label check and portal name verification",
-      "sha256": "f502686ebb6b3f4e41e2a725051af8a5a7c204a6e96bb4dda84e02bbc744978b",
-      "size_bytes": 2171
+      "sha256": "c0a88f46ab322ff5388db6b1482968134b41381c2cfa33688266ddb53aab4e87",
+      "size_bytes": 2167
     },
     "retraining_comparison": {
       "rel_path": "artifacts_rr_retrain_audit_20261115/retraining_comparison.csv",
@@ -226,20 +226,6 @@
       "portrait_key": "player_1566",
       "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
     },
-    "2320": {
-      "player_id": 2320,
-      "canonical_name": "Trent Boult",
-      "display_name": "Trent Boult",
-      "known_aliases": [
-        "T Boult"
-      ],
-      "roles_appeared": [
-        "bowling"
-      ],
-      "is_dual_role": false,
-      "portrait_key": "player_2320",
-      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
-    },
     "2633": {
       "player_id": 2633,
       "canonical_name": "Jason Holder",
@@ -252,6 +238,21 @@
       ],
       "is_dual_role": false,
       "portrait_key": "player_2633",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "3298": {
+      "player_id": 3298,
+      "canonical_name": "Jofra Archer",
+      "display_name": "Jofra Archer",
+      "known_aliases": [
+        "J Archer",
+        "Jofra Chioke Archer"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_3298",
       "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
     },
     "4219": {
@@ -1054,42 +1055,6 @@
     {
       "role": "bowling",
       "rank": 7,
-      "player_id": 2320,
-      "player_name": "Trent Boult",
-      "verified_unstop_label": "Trent Boult",
-      "deployment": "POWERPLAY",
-      "route": "If available at auction",
-      "route_category": "AUCTION_CONDITIONAL",
-      "rr_fit_and_risk": "Left-arm new-ball option. 2026 pressure impact is negative even after removing any one match. Earlier powerplay evidence supports the forecast. Starc is the closest role alternative.",
-      "metrics": {
-        "unit": "runs per 12 legal balls",
-        "observed_pressure_runs_per_12": -6.0637,
-        "observed_ordinary_runs_per_12": -4.1813,
-        "signed_uplift_runs_per_12": -1.8825,
-        "predicted_composite_impact": 1.3985,
-        "model_ranking_priority": 0.0206,
-        "hp_balls": 20,
-        "ordinary_balls": 71,
-        "pressure_fixtures_count": 4,
-        "loo_omission_min": -7.2525,
-        "loo_omission_max": -3.4346,
-        "loo_available": true
-      },
-      "stability": {
-        "selection_frequency": 0.346,
-        "resamples_total": 1000,
-        "frequency_display": "346/1,000 draws (34.6%)"
-      },
-      "citations": {
-        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
-        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
-        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
-        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
-      }
-    },
-    {
-      "role": "bowling",
-      "rank": 8,
       "player_id": 1566,
       "player_name": "Mohammed Shami",
       "verified_unstop_label": "Mohammed Shami",
@@ -1125,7 +1090,7 @@
     },
     {
       "role": "bowling",
-      "rank": 9,
+      "rank": 8,
       "player_id": 27964,
       "player_name": "Anshul Kamboj",
       "verified_unstop_label": "Anshul Kamboj",
@@ -1161,7 +1126,7 @@
     },
     {
       "role": "bowling",
-      "rank": 10,
+      "rank": 9,
       "player_id": 152,
       "player_name": "Ravindra Jadeja",
       "verified_unstop_label": "Ravindra Jadeja",
@@ -1187,6 +1152,42 @@
         "selection_frequency": 0.428,
         "resamples_total": 1000,
         "frequency_display": "428/1,000 draws (42.8%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 10,
+      "player_id": 3298,
+      "player_name": "Jofra Archer",
+      "verified_unstop_label": "Jofra Archer",
+      "deployment": "POWERPLAY",
+      "route": "RR squad decision",
+      "route_category": "RR_SQUAD_DECISION",
+      "rr_fit_and_risk": "RR right-arm new-ball pace. 106 recent pressure balls (-1.98 r/12). Backed under internal franchise squad decision to partner Siraj; trades away Boult's left-arm angle.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": -1.9833,
+        "observed_ordinary_runs_per_12": 3.0318,
+        "signed_uplift_runs_per_12": -5.0151,
+        "predicted_composite_impact": 0.6438,
+        "model_ranking_priority": -0.4274,
+        "hp_balls": 106,
+        "ordinary_balls": 242,
+        "pressure_fixtures_count": 13,
+        "loo_omission_min": -3.7534,
+        "loo_omission_max": -0.6926,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.258,
+        "resamples_total": 1000,
+        "frequency_display": "258/1,000 draws (25.8%)"
       },
       "citations": {
         "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",

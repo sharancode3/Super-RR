@@ -768,55 +768,10 @@
     }
   },
   {
-    "player_id": 2320,
-    "name": "Trent Boult",
-    "role": "BOWLER",
-    "rank": 7,
-    "is_leader": false,
-    "squad_2026": "Mumbai Indians",
-    "cdn_asset": "player/8903/1854/14330.png",
-    "page_url": "https://www.iplt20.com/teams/mumbai-indians",
-    "publisher": "BCCI / IPL Official Digital Platform & Mumbai Indians",
-    "credit": "BCCI / IPL / Mumbai Indians",
-    "photo_context": "2026 IPL Official Media Day Studio Portrait",
-    "access_date": "2026-11-15",
-    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
-    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
-    "crop_notes": "Upper-torso studio portrait, authentic MI 2026 blue and gold kit",
-    "display_name": "Trent Boult",
-    "master_dimensions": [
-      1024,
-      1024
-    ],
-    "eye_line_pct": 32.5,
-    "silhouette_stroke_token": "#FFF8ED",
-    "silhouette_stroke_css_px": 3.5,
-    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
-    "review_status": "VERIFIED_OFFICIAL_MEDIA",
-    "variants": {
-      "320w": {
-        "width": 320,
-        "height": 320,
-        "webp": "/portraits/2320_320w.webp",
-        "webp_bytes": 21062,
-        "png": "/portraits/2320_320w.png",
-        "png_bytes": 110568
-      },
-      "640w": {
-        "width": 640,
-        "height": 640,
-        "webp": "/portraits/2320_640w.webp",
-        "webp_bytes": 64156,
-        "png": "/portraits/2320_640w.png",
-        "png_bytes": 418977
-      }
-    }
-  },
-  {
     "player_id": 1566,
     "name": "Mohammed Shami",
     "role": "BOWLER",
-    "rank": 8,
+    "rank": 7,
     "is_leader": false,
     "squad_2026": "Lucknow Super Giants",
     "cdn_asset": "player/8903/2880/11458.png",
@@ -861,7 +816,7 @@
     "player_id": 27964,
     "name": "Anshul Kamboj",
     "role": "BOWLER",
-    "rank": 9,
+    "rank": 8,
     "is_leader": false,
     "squad_2026": "Chennai Super Kings",
     "cdn_asset": "player/8903/1622/70442.png",
@@ -899,6 +854,51 @@
         "webp_bytes": 64492,
         "png": "/portraits/27964_640w.png",
         "png_bytes": 412529
+      }
+    }
+  },
+  {
+    "player_id": 3298,
+    "name": "Jofra Archer",
+    "role": "BOWLER",
+    "rank": 10,
+    "is_leader": false,
+    "squad_2026": "Rajasthan Royals",
+    "cdn_asset": "https://www.rajasthanroyals.com/static-assets/images/players/64254.png?v=7.95",
+    "page_url": "https://www.rajasthanroyals.com/rr-players/jofra-archer-ipl-profile-64254",
+    "publisher": "Rajasthan Royals",
+    "credit": "Rajasthan Royals",
+    "photo_context": "Official Rajasthan Royals player profile portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Rajasthan Royals player profile photo, credited in the competition dashboard",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Transparent upper-body portrait in RR kit, centered on a square canvas",
+    "display_name": "Jofra Archer",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/3298_320w.webp",
+        "webp_bytes": 25132,
+        "png": "/portraits/3298_320w.png",
+        "png_bytes": 128615
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/3298_640w.webp",
+        "webp_bytes": 68138,
+        "png": "/portraits/3298_640w.png",
+        "png_bytes": 455388
       }
     }
   }

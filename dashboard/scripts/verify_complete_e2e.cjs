@@ -124,7 +124,7 @@ const assert = require('assert');
 
     // Switch to Bowling tab and verify 15 thumbnails
     await page.evaluate(() => {
-      const btn = Array.from(document.querySelectorAll('button')).find(b => b.textContent && b.textContent.includes('Bowling Model'));
+      const btn = Array.from(document.querySelectorAll('button')).find(b => b.textContent && (b.textContent.includes('Bowlers') || b.textContent.includes('Bowling Model')));
       if (btn) btn.click();
     });
     await new Promise(r => setTimeout(r, 400));
