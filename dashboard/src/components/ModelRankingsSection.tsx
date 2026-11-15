@@ -293,16 +293,14 @@ export const ModelRankingsSection: React.FC = () => {
               <table className="raw-comparison-table" aria-label="Model rankings before RR decisions">
                 <thead>
                   <tr>
-                    <th scope="col" className="th-machine-rank">
-                      {sortMode === "priority" ? "Machine Rank" : "Forecast Rank"}
-                    </th>
+                    <th scope="col" className="th-machine-rank">Rank</th>
                     <th scope="col" className="th-player">Player &amp; Role</th>
                     <th scope="col" className="th-priority">
-                      {sortMode === "priority" ? "Priority Score" : "Forecast Impact"}
+                      {sortMode === "priority" ? "Score" : "Forecast"}
                     </th>
-                    <th scope="col" className="th-market-status">Observed Rates</th>
-                    <th scope="col" className="th-market-status">Franchise Availability</th>
-                    <th scope="col" className="th-rr-outcome">RR 2027 Outcome</th>
+                    <th scope="col" className="th-rates">Observed Rates</th>
+                    <th scope="col" className="th-status">Availability</th>
+                    <th scope="col" className="th-outcome">RR Outcome</th>
                     <th scope="col" className="th-scout-rationale">Tactical Rationale</th>
                   </tr>
                 </thead>
@@ -326,7 +324,7 @@ export const ModelRankingsSection: React.FC = () => {
                         </td>
                         <td className="td-player">
                           <div className="raw-player-cell">
-                            <PlayerThumbnail playerId={p.player_id} name={p.player_name} size={42} />
+                            <PlayerThumbnail playerId={p.player_id} name={p.player_name} size={38} />
                             <div className="raw-player-meta">
                               <strong className="raw-player-name">{p.player_name}</strong>
                               <span className="raw-deployment-tag">{p.deployment}</span>
@@ -343,7 +341,7 @@ export const ModelRankingsSection: React.FC = () => {
                             {sortMode === "priority" ? "score" : "runs/12"}
                           </span>
                         </td>
-                        <td className="td-market-status" style={{ fontSize: "0.80rem" }}>
+                        <td className="td-rates">
                           {p.observed_pressure_runs_per_12 !== null ? (
                             <div>
                               <div><strong>HP:</strong> {p.observed_pressure_runs_per_12 >= 0 ? `+${p.observed_pressure_runs_per_12.toFixed(1)}` : p.observed_pressure_runs_per_12.toFixed(1)} r/12 ({p.hp_balls}b)</div>
@@ -353,7 +351,7 @@ export const ModelRankingsSection: React.FC = () => {
                             <span style={{ color: "#94A3B8" }}>No 2026 IPL data</span>
                           )}
                         </td>
-                        <td className="td-market-status">
+                        <td className="td-status">
                           <span
                             className={`market-status-pill ${
                               isOutside
@@ -370,7 +368,7 @@ export const ModelRankingsSection: React.FC = () => {
                             {p.status_label}
                           </span>
                         </td>
-                        <td className="td-rr-outcome">
+                        <td className="td-outcome">
                           {isRRShortlisted ? (
                             <a
                               href={`#${cardAnchor}`}

@@ -3976,10 +3976,10 @@ html {
 .raw-comparison-table th {
   background: #FAF5EB;
   border-bottom: 2px solid var(--color-ui-edge);
-  padding: 10px 14px;
+  padding: 10px 10px;
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 11.5px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--color-ink);
@@ -3987,9 +3987,60 @@ html {
 }
 
 .raw-comparison-table td {
-  padding: 10px 14px;
+  padding: 10px 10px;
   border-bottom: 1px solid var(--color-border-subtle);
   vertical-align: middle;
+}
+
+/* Explicit, balanced column constraints */
+.th-machine-rank,
+.td-machine-rank {
+  width: 55px;
+  min-width: 50px;
+  max-width: 65px;
+  text-align: center;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+.th-player,
+.td-player {
+  width: 175px;
+  min-width: 160px;
+}
+
+.th-priority,
+.td-priority {
+  width: 90px;
+  min-width: 80px;
+  white-space: nowrap;
+}
+
+.th-rates,
+.td-rates {
+  width: 125px;
+  min-width: 115px;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.th-status,
+.td-status {
+  width: 165px;
+  min-width: 155px;
+}
+
+.th-outcome,
+.td-outcome {
+  width: 160px;
+  min-width: 145px;
+}
+
+.th-scout-rationale,
+.td-scout-rationale {
+  min-width: 250px;
+  max-width: 360px;
+  padding-right: 18px !important;
 }
 
 .raw-table-row:nth-child(even) {
@@ -4111,11 +4162,13 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 3px 8px;
+  padding: 3px 7px;
   border-radius: var(--radius-pill);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
-  white-space: nowrap;
+  line-height: 1.25;
+  white-space: normal;
+  max-width: 175px;
 }
 
 .status-auction {
@@ -4152,13 +4205,15 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 3px 8px;
+  padding: 3px 7px;
   border-radius: 4px;
   background: var(--color-ink);
   color: #FFF8ED;
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 800;
-  white-space: nowrap;
+  line-height: 1.25;
+  white-space: normal;
+  max-width: 165px;
 }
 
 .rr-filtered-badge {
@@ -4172,11 +4227,13 @@ html {
 }
 
 .rationale-text {
-  font-size: 12px;
+  font-size: 11.5px;
   line-height: 1.4;
-  color: var(--color-secondary-text);
+  color: var(--color-ink);
   margin: 0;
-  max-width: 380px;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .raw-table-legend-footer {
