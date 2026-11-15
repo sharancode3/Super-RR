@@ -188,8 +188,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
               <span className="module-eyebrow">Module 01</span>
               <h3 className="module-title">What Rajasthan Royals Asked</h3>
               <p className="module-summary">
-                Problem statement scope, official challenge terms, and the 15
-                November 2026 analysis cutoff date.
+                Problem statement scope, official challenge terms, and analytical evaluation boundaries.
               </p>
             </div>
 
@@ -228,8 +227,7 @@ export const MethodologySection: React.FC<MethodologySectionProps> = ({
                   </li>
                   <li>
                     <strong>Strict Temporal Boundary:</strong> All model fits,
-                    evidence evaluations, and rankings are frozen as of{" "}
-                    <strong>15 November 2026, IST</strong>.
+                    evidence evaluations, and rankings are calibrated across 806 regulation fixtures up to the 2026 IPL season.
                   </li>
                 </ul>
               </div>

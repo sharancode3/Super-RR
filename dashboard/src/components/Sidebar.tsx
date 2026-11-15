@@ -220,7 +220,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <div className="status-dot-pulse" aria-hidden="true" />
                 <div className="status-text">
                   <span className="status-title">Decision Snapshot</span>
-                  <span className="status-desc">15 Nov 2026 IST · 160 Fits</span>
+                  <span className="status-desc">IPL 2027 Strategy · 160 Fits</span>
                 </div>
               </div>
             </div>

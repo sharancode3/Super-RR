@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
             <div className="link-group">
               <span className="link-group-title">Governance</span>
               <ul>
-                <li><span>Decision Cutoff: 15 Nov 2026 IST</span></li>
+                <li><span>Target Season: IPL 2027</span></li>
                 <li><span>Evaluator Seed: 2027</span></li>
                 <li><span>Tests Passed: 219 of 219</span></li>
                 <li><span>WCAG Conformance: 2.2 AA</span></li>

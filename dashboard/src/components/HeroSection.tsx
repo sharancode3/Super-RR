@@ -9,7 +9,7 @@ export const HeroSection: React.FC = () => {
             Rajasthan Royals Scouting Board
           </span>
           <span className="hero-pill-scope">
-            15 November 2026 IST · 160 Model Fits · 1,000 Resamples · 19 Unique Identities
+            160 Model Fits · 1,000 Resamples · 19 Shortlisted Targets
           </span>
         </div>
 
