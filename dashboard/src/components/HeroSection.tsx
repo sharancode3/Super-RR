@@ -1,6 +1,11 @@
 import React from "react";
+import { YouTubeIcon } from "./Icons";
 
-export const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onOpenVideo?: () => void;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenVideo }) => {
   return (
     <section className="hero-section" aria-labelledby="hero-title">
       <div className="hero-container">
@@ -11,6 +16,18 @@ export const HeroSection: React.FC = () => {
           <span className="hero-pill-scope">
             160 Model Fits · 1,000 Resamples · 19 Shortlisted Targets
           </span>
+          {onOpenVideo && (
+            <button
+              type="button"
+              onClick={onOpenVideo}
+              className="hero-pill-video"
+              title="Watch 60-second video walkthrough on YouTube (Popup)"
+              aria-label="Watch 60-second video walkthrough on YouTube"
+            >
+              <YouTubeIcon size={16} className="hero-yt-icon" />
+              <span>Watch Walkthrough (60s)</span>
+            </button>
+          )}
         </div>
 
         <h1 id="hero-title" className="hero-headline">

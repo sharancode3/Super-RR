@@ -46,7 +46,7 @@
 
 .header-container {
   width: 100%;
-  max-width: var(--max-width-content);
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 12px;
   display: flex;
@@ -57,14 +57,14 @@
 
 @media (min-width: 768px) {
   .header-container {
-    padding: 0 24px;
+    padding: 0 16px;
     gap: 16px;
   }
 }
 
 @media (min-width: 1100px) {
   .header-container {
-    padding: 0 32px;
+    padding: 0 20px;
   }
 }
 
@@ -161,11 +161,17 @@
   gap: 4px;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 4px;
   flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
+  .nav-list {
+    gap: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
   .nav-list {
     gap: 8px;
   }
@@ -5506,5 +5512,272 @@ html {
 .btn-media-view-png:hover {
   transform: translateY(-1px);
   background: #F8FAFC;
+}
+
+/* ==========================================================================
+   YOUTUBE VIDEO WALKTHROUGH MODAL & TRIGGER BUTTONS
+   ========================================================================== */
+
+/* Nav Trigger Button */
+.nav-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1.5px solid rgba(255, 0, 0, 0.35);
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-video-link:hover {
+  background: rgba(255, 0, 0, 0.16);
+  border-color: #FF0000;
+  color: #B30000;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+}
+
+.nav-yt-icon {
+  color: #FF0000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.nav-video-link:hover .nav-yt-icon {
+  transform: scale(1.15);
+}
+
+/* Hero Pill Video Button */
+.hero-pill-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #20172F;
+  border: 1.5px solid rgba(216, 20, 101, 0.6);
+  color: #FFF8ED;
+  padding: 5px 14px;
+  border-radius: 9999px;
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(32, 23, 47, 0.15);
+}
+
+.hero-pill-video:hover {
+  background: #2D1F42;
+  border-color: #D81465;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(216, 20, 101, 0.3);
+}
+
+.hero-yt-icon {
+  color: #FF0000;
+  filter: drop-shadow(0 1px 3px rgba(255, 0, 0, 0.5));
+  transition: transform 0.2s ease;
+}
+
+.hero-pill-video:hover .hero-yt-icon {
+  transform: scale(1.12);
+}
+
+/* Floating Sidebar YouTube Trigger */
+.floating-yt-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+}
+
+.floating-yt-icon {
+  color: #FF0000;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.floating-yt-btn:hover .floating-yt-icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 2px 8px rgba(255, 0, 0, 0.5));
+}
+
+/* Video Modal Backdrop */
+.video-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(14, 9, 24, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+/* Video Modal Dialog Container */
+.video-modal-container {
+  background: #181126;
+  border: 1.5px solid rgba(216, 20, 101, 0.4);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 980px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 40px rgba(216, 20, 101, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: modalSlideUp 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Video Modal Header */
+.video-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: rgba(32, 23, 47, 0.8);
+  border-bottom: 1px solid rgba(255, 248, 237, 0.1);
+}
+
+.video-modal-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.video-modal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #FF6666;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.video-modal-yt-icon {
+  color: #FF0000;
+}
+
+.video-modal-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFF8ED;
+  letter-spacing: -0.3px;
+}
+
+.video-modal-close-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 248, 237, 0.15);
+  color: #FFF8ED;
+  font-size: 24px;
+  line-height: 1;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.video-modal-close-btn:hover {
+  background: rgba(216, 20, 101, 0.3);
+  border-color: #D81465;
+  color: #FFFFFF;
+  transform: scale(1.08);
+}
+
+/* 16:9 Video Player Wrapper */
+.video-modal-player-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #000000;
+}
+
+.video-modal-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Video Modal Footer */
+.video-modal-footer {
+  padding: 16px 24px;
+  background: #140D20;
+  border-top: 1px solid rgba(255, 248, 237, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.video-modal-summary {
+  font-size: 13.5px;
+  color: #DDD2C7;
+  line-height: 1.45;
+  max-width: 680px;
+}
+
+.video-modal-yt-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 0, 0, 0.12);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #FF9999;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.video-modal-yt-link:hover {
+  background: rgba(255, 0, 0, 0.25);
+  border-color: #FF0000;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .video-modal-container {
+    border-radius: 14px;
+  }
+  .video-modal-header {
+    padding: 14px 18px;
+  }
+  .video-modal-title {
+    font-size: 17px;
+  }
+  .video-modal-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 18px;
+  }
 }
 

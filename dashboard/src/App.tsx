@@ -7,6 +7,7 @@ import { ModelRankingsSection } from "./components/ModelRankingsSection";
 import { MethodologySection } from "./components/MethodologySection";
 import { MediaSection } from "./components/MediaSection";
 import { PlayerPreviewModal } from "./components/PlayerPreviewModal";
+import { VideoModal } from "./components/VideoModal";
 import { Footer } from "./components/Footer";
 import { evidence } from "./data";
 import type { RankingRecord } from "./data/types";
@@ -16,6 +17,7 @@ import "./App.css";
 export const App: React.FC = () => {
   useRevealObserver();
   const [previewPlayer, setPreviewPlayer] = useState<RankingRecord | null>(null);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   const batters = evidence.rankings
     .filter((r) => r.role === "batting")
@@ -27,10 +29,10 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      <FloatingSidebar />
-      <Header />
+      <FloatingSidebar onOpenVideo={() => setIsVideoModalOpen(true)} />
+      <Header onOpenVideo={() => setIsVideoModalOpen(true)} />
       <main id="main-content" className="main-content">
-        <HeroSection />
+        <HeroSection onOpenVideo={() => setIsVideoModalOpen(true)} />
         <RankedBoards
           batters={batters}
           bowlers={bowlers}
@@ -45,6 +47,12 @@ export const App: React.FC = () => {
         <PlayerPreviewModal
           player={previewPlayer}
           onClose={() => setPreviewPlayer(null)}
+        />
+      )}
+      {isVideoModalOpen && (
+        <VideoModal
+          videoId="FmjD06lF-wo"
+          onClose={() => setIsVideoModalOpen(false)}
         />
       )}
     </div>

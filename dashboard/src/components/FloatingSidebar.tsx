@@ -6,9 +6,14 @@ import {
   SlidersIcon,
   MethodologyIcon,
   PhotoIcon,
+  YouTubeIcon,
 } from "./Icons";
 
-export const FloatingSidebar: React.FC = () => {
+interface FloatingSidebarProps {
+  onOpenVideo?: () => void;
+}
+
+export const FloatingSidebar: React.FC<FloatingSidebarProps> = ({ onOpenVideo }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("batters");
 
@@ -150,6 +155,29 @@ export const FloatingSidebar: React.FC = () => {
                 </span>
               </a>
             </li>
+
+            {onOpenVideo && (
+              <>
+                <div className="sidebar-divider" aria-hidden="true" />
+                {/* Video Walkthrough Modal Trigger */}
+                <li className="floating-nav-item">
+                  <button
+                    type="button"
+                    onClick={onOpenVideo}
+                    className="floating-nav-link floating-yt-btn"
+                    aria-label="Watch Walkthrough Video (Popup)"
+                    title="Watch Walkthrough Video (Popup)"
+                  >
+                    <span className="floating-nav-icon floating-yt-icon" aria-hidden="true">
+                      <YouTubeIcon size={20} />
+                    </span>
+                    <span className="floating-tooltip" role="tooltip">
+                      Watch Video (60s)
+                    </span>
+                  </button>
+                </li>
+              </>
+            )}
           </ul>
         </nav>
       </div>

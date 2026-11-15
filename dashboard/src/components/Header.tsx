@@ -6,9 +6,14 @@ import {
   SlidersIcon,
   MethodologyIcon,
   PhotoIcon,
+  YouTubeIcon,
 } from "./Icons";
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onOpenVideo?: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onOpenVideo }) => {
   return (
     <>
       <a href="#main-content" className="skip-link">
@@ -67,6 +72,22 @@ export const Header: React.FC = () => {
                   Media Section
                 </a>
               </li>
+              {onOpenVideo && (
+                <li>
+                  <button
+                    type="button"
+                    onClick={onOpenVideo}
+                    className="nav-link nav-video-link"
+                    title="Watch 60-second video walkthrough on YouTube (Popup)"
+                    aria-label="Watch 60-second video walkthrough on YouTube"
+                  >
+                    <span className="nav-icon nav-yt-icon" aria-hidden="true">
+                      <YouTubeIcon size={16} />
+                    </span>
+                    <span>Video (60s)</span>
+                  </button>
+                </li>
+              )}
             </ul>
           </nav>
         </div>
