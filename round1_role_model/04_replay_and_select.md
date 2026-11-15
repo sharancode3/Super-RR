@@ -1,0 +1,21 @@
+# Stage 04 · Backtest the complete shortlist rule
+
+Use Stage 01's frozen decision protocol, Stage 02's as-of data, and Stage 03's predictions. This stage decides which model and ranking policy earn a place in the current run.
+
+## Replay what would have been picked
+
+1. Put the selection rule behind a single function used by both replay and the current export. Inputs are as-of player role evidence, model forecasts, a role/reference scenario, and a dated candidate-pool snapshot. Outputs include the performance order, role or market decisions, the ten, and reasons for movement. Reproduce the locked B0/C-IPL combination as a control, including its post-processing. Keep performance filtering and market evidence in explicit fields so a poor recent score cannot silently become an auction eligibility flag.
+2. At each cutoff, generate the lists **before** reading that window's observed impacts. Run the same role assignment, screening rule, ranking score, tie handling, and fallback logic intended for production. Preserve the fold's pre-window roster or candidate-pool evidence. Use dated release, retention, and registration data in historical feasibility replay when it is available. Where records are incomplete, replay the cricket ranking on its documented as-of universe and identify the portion of feasibility that could be tested. Verify full market logic with dated examples and current scenarios. Keep the current 2027 statuses out of historical folds.
+3. Compare identical player-match opportunities for forecast metrics. Measure Q25 pinball loss, observed lower-quantile coverage, mean error, and signed bias. Break out role, direct IPL exposure, and short workload. For the replayed ten, report player-weighted realized impact, eligible and assessable counts, reasons for missing outcomes, and performance relative to ordinary or same-role peers where comparable. Report coverage with the impact number because different models can pick different players. Use paired match-block intervals on common forecast observations. For slate comparisons, keep the pick sets and unobserved outcomes explicit when resampling the same matches.
+4. Test rank stability under alternative pressure cutoffs, IPL-only evidence, older-season removal, and leaving out an influential match. Use a compact boundary review for candidates near #10 and for large moves. Recheck Aniket vs Porel, Salt in the powerplay, Shahrukh's recency, Coetzee's evidence age, and Tyagi vs Vyshak in a death role. Use them to explain model behavior. Keep real validation errors visible even if a player is an appealing scouting option.
+
+## Decide from the evidence
+
+- Use the frozen decision criteria for promotion. Explain uncertainty and whether any gain holds across roles and windows. Quantile loss measures the downside forecast. Coverage and realized impact address how useful the resulting shortlist is. [Quantile forecast evaluation](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-032921-020240)
+- If the new model earns adoption, identify which discipline changed, the exact model and score, and which part of the final decision comes from the policy. If the comparison favors an existing model or is too weak, keep the best supported control and label the available pressure evidence and gaps. Show disagreements as evidence for entrant review. Maintain one recorded decision for the production scorer. Report the 2026 result as retrospective. Refit the selected design to the latest eligible cutoff only after the selection decision is fixed.
+
+## Loop and exit
+
+Replay → compare → stress-test → decide. If row counts or rank parity fail, fix the scorer or shared policy and replay the affected folds. If a change alters the target, feature view, or evaluation assumptions, return to the relevant earlier stage and record the reason. Finish within the predeclared experiment budget. Record the model, policy, fold scores, and rationale in `review_progress.md`.
+
+**Pass when** the actual ranking and shortlist rule has a chronological replay on the supported scope, forecast and selection metrics are reported with uncertainty and coverage, and there is an explicit selection or fallback for each discipline. **Next → [Stage 05](05_rr_shortlist.md).**

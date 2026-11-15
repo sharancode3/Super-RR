@@ -1,0 +1,28 @@
+# Stage 04 · Refine the existing visual system
+
+## Agent prompt
+
+Build on the current dashboard layout and the work already completed from the preceding prompt. Preserve the campaign art direction and the existing responsive fixes. Make the three evidence destinations easy to find. Refine the existing icon, portrait and motion systems as cohesive components.
+
+### Navigation and visual hierarchy
+
+- Give **RR shortlist**, **Model rankings** and **Methodology** persistent visible links or buttons with stable anchors. Within the shortlist, keep Batters and Bowlers easy to reach, retain approved rank order, and preserve scroll and focus when switching discipline. Use the existing navigation and a compact mobile treatment. Make the model table and methodology accessible from a direct URL. Keep top-level links concise and clear.
+- Keep the short scouting explanation prominent on a card. Show rank, role and a compact impact summary. Put detailed numbers, accounting and omission ranges in the evidence panel. Label any prominently displayed percentage “Top-10 stability” and surface the match-resample count. Keep a visible sample for sensitive numbers. Forecast units, observed rates and scenario labels should remain consistent across views.
+- Keep Bricolage Grotesque and Inter if the current app uses them, with a consistent paper background, ink outlines, pink batting accents and blue bowling accents. Preserve 44×44 CSS px minimum targets, clear focus rings, high-contrast supporting copy and a distinct first heading for each destination. Keep prose measure near 65–75 characters and methodology text responsive. Reduce repeated badges, unneeded rank duplication and layout clutter before adding new elements.
+
+### Replace any remaining emoji with intentional SVG
+
+1. Inventory visible glyphs in app source, rendered states, scenario labels, generated contact sheets, icons, tooltips and metadata. Remove emojis. Where the symbol communicates a useful action or concept, author a simple SVG and centralize it in the existing `dashboard/src/components/Icons.tsx` system or matching reusable path. Use consistent `viewBox`, strokes, sizes and `currentColor`. Reuse a minimal set of documentary, chart, chevron and link icons. Choose decorative shapes and labels only when they help.
+2. Text beside an icon carries its meaning. Set decorative SVGs to `aria-hidden` and keep them out of focus order. Give standalone icon buttons an accessible name and visible focus. Avoid duplicate announced titles. Use inline SVG for diagram lines or explainers only as needed. Provide equivalent text and source for anything which conveys data. See [W3C SVG icon patterns](https://design-system.w3.org/styles/svg-icons.html).
+3. Remove duplicated emoji occurrences from generated content at its source. Reuse selectors and style variants. Include a source scan and a rendered-text scan for emoji sequences and any emoji presentation selectors. Review the matches so legitimate mathematical symbols and text punctuation remain intact.
+
+### Make the 19 portraits feel like one set
+
+- Audit the existing 19-image contact sheet, compact cards, leaders and any stationary or scroll states. Infer a common eye line, upper-body proportion and silhouette padding. Use image dimensions and nontransparent alpha bounds or validated crop metadata. Normalize the media well and anchor first. Apply per-ID focal offset or scale only where necessary, with a short documented exception list. Aim for a shared eye-line band of roughly 30–36% of the composed image and visually comparable head size. Verify at actual display sizes rather than stretching to one theoretical crop.
+- Use a shared frame geometry and the same normalized anchor point for a role-card size. Keep original faces, kit, attribution, image variants and paper outline. Use identical crop metadata for both of Jadeja's roles. Avoid clipping hair, hats and the warm-white stroke. Distinguish intentional leader size from inconsistent accidental scaling. On mobile confirm the background and stats cannot cover the face. If a promoted pick requires a new image, verify identity and credit before marking it complete.
+- Reserve geometry before image load and animate the portrait with its stroke on one layer. Reuse the single shared reveal observer if sound. An editorial entrance can rise 8–12px, tint or fade in and settle within about 360–440ms. Preserve the name, rank and evidence through animation. Keep starts consistent, avoid overshoot into the card label, respect deep links, use a short bounded stagger and resume gracefully after fast scrolling. Keep SVG motion functional, for example illuminating a pipeline stage in response to a choice or gently revealing evidence as it enters view. Do not require motion to read labels or explain the sequence. [W3C reduced motion technique](https://www.w3.org/WAI/WCAG22/Techniques/css/C39.html)
+- Serve sized local images, preserve lazy loading and avoid reintroducing portrait layout shifts. Verify empty states and confirmed sources. On narrow touch screens preserve the focal face and support normal vertical scroll. Use the current portrait optimization assets before considering new image tooling.
+
+### Loop and handoff
+
+Capture desktop and mobile comparisons, review every portrait at rest and during reveal, test keyboard and reduced-motion states, verify the full emoji scan and retest navigation. Repair at the shared component before adding individual overrides. **Pass** when there are no visible emoji, the media is consistently composed, all three evidence views are reachable and useful, and both animated and static states present the same evidence. Open [Stage 05](05_verify_and_handoff.md).

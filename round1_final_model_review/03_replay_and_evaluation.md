@@ -1,0 +1,22 @@
+# Stage 03 — Repair the replay and evaluation
+
+## As-of isolation
+
+1. Locate the half-year blend bug in rr_pressure/compare.py and the year-level role snapshot in ingest.py. Build a reusable as-of role and feature materialization using the exact cutoff date of each replay origin. Build data for pre-July 2023, pre-2024, pre-2025 and pre-2026 from strictly earlier rows, including role inference, player histories, peer rates and competition weights. Future matches may provide evaluation labels after the origin. Match and player lookups available at the origin require dated proof. Check unknown player forecasts and missing role fallbacks.
+2. Reproduce the 155 six-plus-ball 2023 H2 T20I rows as a named domain-transfer diagnostic. Use earlier IPL rows for primary tuning of an IPL weight. If the IPL tuning sample is small, reduce the number of candidates and give the tuning result its uncertainty. Use expanding-window match-grouped OOF calibration. Test by appending or perturbing later rows and comparing earlier features, eligibility, predictions and ranks.
+3. Keep auction-time ex-ante predictions as the primary forecast. Role and phase mixes, opposition features and other factors must be known or declared at the cutoff. An opportunity evaluation conditioned on the realized phase mix is a secondary diagnostic. Report the exact prediction grain, score unit, exposure definition, match/date range, and source for each chart and table.
+
+## Model, policy and validation
+
+4. Build one comparison runner that accepts model and shortlist policy as explicit parameters. Evaluate saved Candidate B, B0, RPP, C-IPL and D as applicable, plus the saved blend control, on the same as-of role and candidate inputs. Reuse fitted estimates across alternative selection policies. Compare the two existing evidence screens on every finalist and replay any proposed new screen. Include retain-inclusive and bid-only where historical evidence allows. Use only historical roster information as a historical feasibility proxy where actual pre-auction status is missing. Record that proxy limitation and compare skill and policy metrics independently.
+5. Use common rows for paired Q25 loss, coverage, mean error and bias. The quantile loss is max(q times (y − prediction), (q − 1) times (y − prediction)). Report the fraction at or below Q25 against its 25% target, sample counts and uncertainty. Show 1–5-ball, 6-plus, all positive exposure, and IPL and transfer slices. Separate known opportunities from realized selection and count censoring from missing opportunities, ends of innings or thin stints. Preserve the target's estimand when comparing with a legacy approach. Refit scores and labels across a cutoff if Stage 02 altered their definitions.
+6. For shortlist utility, use the same held-out matches, preserve player IDs, and report the actual selected list. Include player-weighted and ball-weighted adjusted impact, ordinary performance, role coverage, assessable count out of ten, and zero or thin exposure reasons. Averages conditional on observed exposure need that label. Use matched block draws to quantify differences. Report a common-assessable comparison with its sample caveat, alongside each slate's assessable subset. An unplayed player is a missing outcome, with their selection and exposure status visible.
+7. Make promotion flags and reasons data-driven. Replace any hard-coded promotion verdict as needed. Ensure the chosen model and policy and both rows of a comparison match exactly across metric JSON, rank exports and terminal prose. Preserve the older +2.852 B0 result as a policy control and the +5.392 result as a retrospective policy result with 9/10 assessable. Document that the positive sign screen followed earlier result inspection. 2026 stays a robustness check for a frozen rule.
+
+## Loop
+
+Run a small replay fixture that mutates future roles, then regenerate each historical window. On a parity failure identify whether the fit, market snapshot, policy configuration, ordering or evidence definition diverged. Fix the shared dependency. On a coverage or uncertainty failure record the corresponding slice and carry that failure into Stage 04.
+
+## Exit and redirect
+
+Pass cutoff invariance, prediction row parity and common-pool replay checks. Export an executable model-by-policy score table with uncertainty and reproduction commands. Continue to [Stage 04](04_fit_and_calibrate.md).

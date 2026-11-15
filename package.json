@@ -1,0 +1,24 @@
+{
+  "name": "super-rr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SupeRR Selector Season 2 - Rajasthan Royals IPL 2027 Auction Strategy Dashboard",
+  "workspaces": [
+    "dashboard"
+  ],
+  "scripts": {
+    "build": "npm --prefix dashboard run build",
+    "preview": "npm --prefix dashboard run preview",
+    "dev": "npm --prefix dashboard run dev",
+    "test": "node dashboard/scripts/verify_in_app_modal_and_zero_emojis.cjs"
+  },
+  "keywords": [
+    "rajasthan-royals",
+    "ipl-2027",
+    "cricket-analytics",
+    "win-probability-leverage",
+    "bayesian-shrinkage"
+  ],
+  "author": "SupeRR Selector Season 2 Team",
+  "license": "UNLICENSED"
+}

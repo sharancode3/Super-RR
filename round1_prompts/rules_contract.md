@@ -1,0 +1,41 @@
+# Round 1 rules and scoring contract
+
+## Organizer requirements
+
+Rechecked on 11 November 2026 against the two-page Round 1 brief in the local data pack, the supplied Unstop form screenshots, and the public listing. The brief and form require both role lists and a report. The public summary uses broader wording for the number of picks and report format. No uncapped-only restriction was verified in the brief or the retrieved public rules. Use live role-specific options and dated organizer clarification for player eligibility. The screenshots establish the fields and accepted file types, while live options and any submission limits still need verification. [Unstop listing and rules](https://api.unstop.com/hackathons/crp-superr-selector-season-2-help-shape-rajasthan-royals-ipl-2027-auction-strategy-rajasthan-royals-1792758)
+
+| Requirement | How to verify it |
+| --- | --- |
+| Individual entry, one submission | Keep one entrant-owned submission. Check the form deadline and upload limit before packaging. Registration and Round 1 submission are separate deadlines. |
+| AI assistance | AI can support research, analysis, and building the case. The entrant reviews and owns the final insights, picks, and recommendations. Save evidence for that review and leave the final reasoning and submission to the entrant. |
+| Competition-only proprietary data | Keep the raw pack and internal data extracts local. Keep submission evidence within the approved competition submission. A future public dashboard uses public data or specifically approved material. |
+| Two ordered lists | Ten batters and ten bowlers, highest-rated first, with unique names within each list. Check each label in its own role dropdown. The two lists in the report must match the form. |
+| Report and optional links | The form marks PDF or PPTX upload required. The dashboard link and journey field are optional. The brief says the journey does not affect evaluation. |
+| Methodology and evidence | Cover why the pressure definition distinguishes hard moments, batting and bowling scoring against usual levels, sample size and eligibility, fair contexts and IPL/T20I treatment, the evidence and order of both lists, consistency across matches, limitations, and reproducibility. Connect the evidence to RR squad roles and label unverified auction availability. |
+
+## Keep three outputs separate
+
+| Output | What the evidence must establish |
+| --- | --- |
+| **Performance rankings** | Rank the statistically eligible pool by the predeclared batting or bowling pressure rating. Show the player's usual level, pressure level, comparable change, lower-tail prediction, and actual fitted support. Keep ranks even for known RR incumbents. |
+| **Unstop form-entry checklist** | Join dated, verified role-specific dropdown labels to the same player IDs and keep the order from the performance ranking. Publish both performance rank and form rank if the verified pool changes who is selected. Log the reason for every skipped player. Mark incomplete mappings provisional. Keep names unique within each list. |
+| **RR auction decision notes** | Use a dated official RR/IPL roster source and separate official 2027 pool, retention, or other availability evidence. For each pick, state a cricket role the evidence supports, a named RR comparison or conditional squad need, the reason to retain, benchmark or scout, and a condition that would change the recommendation. An auction target requires affirmative availability evidence. A player can be strong enough for a contest ranking while being a retention benchmark or having unknown auction availability. |
+
+For the auction notes, store the source season, publication/effective date and evidence reference alongside each status. A previous-season squad or retention announcement supports that season only. The competition dropdown and the actual auction player pool are independently sourced. Use neutral `UNKNOWN` when 2027 availability cannot be verified. Add budget, overseas slots, trades or Impact Player constraints only where the relevant dated official rules and roster inputs support them. [RR's IPL 2026 retention announcement](https://www.rajasthanroyals.com/latest-news/ipl-2026-rr-players-retention-list) · [IPL 2025–27 player regulations](https://www.iplt20.com/news/article/ipl-governing-council-announces-tata-ipl-player-regulations-2025-27)
+
+Before describing a player as a finisher, new-ball bowler, death bowler or keeper, verify the designation against measured role usage and a dated source where needed. Keep hypothetical squad scenarios explicit. The entrant owns the final picks and recommendations.
+
+## Cricket scoring rules
+
+Use the competition playing conditions applicable on the match date, with the official result and scorecard for recorded outcomes. IPL playing conditions and ICC T20I conditions can vary by edition and event. Use core scoring rules for v1. Exclude unusual cases where the applied rules or chronology cannot be verified. [IPL playing conditions](https://www.iplt20.com/playing-conditions) · [IPL 2025 match conditions](https://documents.iplt20.com/bcci/documents/1744793798426_1742708035368_Match_Playing_Conditions.pdf) · [ICC playing conditions](https://www.icc-cricket.com/about/cricket/rules-and-regulations/playing-conditions) · [MCC laws and editions](https://www.lords.org/mcc/about-the-laws-of-cricket)
+
+| Event or state | Ledger and model treatment |
+| --- | --- |
+| Legal balls and overs | Keep the chronological event index, legal balls delivered, and official over position separate. Parse cricket over notation as over and ball fields. Wides and no-balls do not consume legal balls. A short final over can be valid. For a verified umpire miscount, preserve the official over and count. Exclude from v1 if remaining resources cannot be reconstructed safely. |
+| Team runs versus bowler charges | Team runs include bat runs and credited extras. Bowler charges include off-bat runs, wides, and no-ball extras. Exclude byes, leg-byes, and separate penalty awards from bowler charges. No-ball extras can coexist with bat runs or byes/leg-byes. Parse innings-level pre/post penalties separately from delivery extras and apply them at the recorded boundary. |
+| Dismissals | Keep team wicket, dismissed player, and bowler credit distinct. Credit bowled, caught, LBW, stumped, and hit wicket when supported by the recorded event and conditions. A stumping can occur on an ordinary wide. A run-out can occur on a wide or no-ball. Preserve run-outs on the team ledger without crediting the bowler. Attribute run-out responsibility only with supporting evidence and an explicit modeling rule. Retired hurt and retired out have different treatment. |
+| Free hits | When verified, track free-hit status before the ball. A free hit carries through a wide or no-ball. Remove impossible bowler-credited dismissals from hypothetical free-hit transitions. If the status is uncertain, exclude the affected transitions from leverage estimation or use a validated rule-based pressure fallback. |
+| Innings end and results | In an ordinary chase use the verified first-innings total plus one as the target, cross-check any recorded target, and stop on a winning hit or extra. Distinguish equal scores at completion from a chase loss. Exclude tied, rain-revised, abandoned, no-result, and Super Over cases from the v1 training and ranking cohort. Confirm from revision fields, structured source and result text. Exclude unverified shortened formats and preserve separate audit counts. |
+| Opportunity denominators | Publish deliveries, legal-ball workload, and match counts with clear labels. A per-12 legal-ball equivalent is a model unit. Use scorecard-defined denominators if reporting conventional strike rate or economy. Keep the numerator and included event population consistent within each model and comparison. |
+
+Public records can document `target`, `penalty_runs`, `miscounted_overs`, `powerplays`, and `super_over` at the innings level. They can also record multiple extras and wicket events on one delivery. Require the accepted scorer ledger to preserve these distinctions. [Cricsheet JSON format](https://cricsheet.org/format/json/)

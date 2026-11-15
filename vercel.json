@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm --prefix dashboard run build",
+  "outputDirectory": "dashboard/dist",
+  "framework": "vite"
+}

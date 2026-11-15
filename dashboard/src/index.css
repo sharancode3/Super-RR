@@ -1,0 +1,161 @@
+@import "./fonts.css";
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES / TOKENS (Stage 02 Contract)
+   ========================================================================== */
+:root {
+  /* Official Rajasthan Royals Brand Palette */
+  --color-navy: #0B1426;
+  --color-navy-light: #14213d;
+  --color-rr-pink: #EB0072;
+  --color-rr-pink-light: #FFF0F6;
+  --color-rr-gold: #E5A823;
+  --color-rr-gold-light: #FFF9E6;
+
+  /* Surfaces */
+  --color-page-paper: #FFF8ED;
+  --color-card-surface: #FFFCF6;
+  --color-card-hover: #FFFFFF;
+
+  /* Ink & Typography */
+  --color-ink: #20172F;
+  --color-secondary-text: #534A60;
+  --color-muted-text: #71677E;
+
+  /* Batters Group */
+  --color-batters-light: #F4CADA;
+  --color-batters-accent: #D81465;
+  --color-batters-text: #8F0A48;
+  --color-batters-surface: #FFF5F8;
+
+  /* Bowlers Group */
+  --color-bowlers-light: #CFDAFF;
+  --color-bowlers-accent: #3045A5;
+  --color-bowlers-text: #25367C;
+  --color-bowlers-surface: #F5F7FF;
+
+  /* Shared Accents */
+  --color-gold-accent: #F5C24E;
+  --color-gold-text: #825A00;
+  --color-ui-edge: #20172F;
+  --color-portrait-edge: #FFF8ED;
+  --color-focus-ring: #3045A5;
+  --color-border-subtle: rgba(32, 23, 47, 0.12);
+  --color-border-strong: #20172F;
+
+  /* Typography */
+  --font-heading: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Radii */
+  --radius-card: 16px;
+  --radius-card-sm: 12px;
+  --radius-button: 10px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-paper-sm: 2px 3px 0px rgba(32, 23, 47, 0.12);
+  --shadow-paper: 3px 4px 0px rgba(32, 23, 47, 0.16);
+  --shadow-paper-lg: 4px 6px 0px rgba(32, 23, 47, 0.20);
+  --shadow-hover: 4px 6px 0px rgba(32, 23, 47, 0.24);
+
+  /* Layout sizing */
+  --max-width-content: 1160px;
+  --header-height: 64px;
+}
+
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-page-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography baseline */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-ink);
+  margin-top: 0;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: var(--color-ink);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-batters-accent);
+}
+
+/* Tabular numerals for stats */
+.tabular-nums, .stat-value, .metric-value, .rank-badge {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Focus styles for keyboard accessibility (WCAG AA) */
+:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  background: var(--color-ink);
+  color: var(--color-page-paper);
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: var(--radius-button);
+  z-index: 10000;
+  transition: top 0.2s ease;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Root container */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

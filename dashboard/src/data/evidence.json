@@ -1,0 +1,1199 @@
+{
+  "metadata": {
+    "schema_version": "1.0.0",
+    "generated_at": "2026-11-15T13:42:00+05:30",
+    "generator": "dashboard/scripts/export_evidence_contract.py",
+    "evaluator_cutoff": "2026-11-15",
+    "recommendation_scope": "Rajasthan Royals SupeRR Selector Season 2, Round 1"
+  },
+  "sources": {
+    "recommended_rankings": {
+      "rel_path": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+      "evaluator_title": "Retrain Audit Recommended Rankings (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Canonical player_id, spelling, role, rank, deployment, 2026 pressure/ordinary exposure and impact, uplift, predicted composite impact",
+      "sha256": "742eaa6a18f28afe34beb4b884b93ee8dcb34a1a526f2055682e1566f32b1f54",
+      "size_bytes": 3565
+    },
+    "player_evidence": {
+      "rel_path": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+      "evaluator_title": "Player Evidence & RR Scouting Context (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Pressure-exposed fixtures, one-match omission range (LOO), route, RR fit and risk caveat",
+      "sha256": "b0021c096e7e3bb873d8ca6699bc11be982c1a91ed048f43dd1dd0e464cc0cc1",
+      "size_bytes": 4879
+    },
+    "scenario_stability_rankings": {
+      "rel_path": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+      "evaluator_title": "Scenario Review Rankings with Stability (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Authoritative match-resample selection frequency by player_id, role, and rank",
+      "sha256": "b8cc82597e1885a03f0b650200ab76fe79cc2139246e8c4bf8163915d56e035d",
+      "size_bytes": 2303
+    },
+    "updated_stability": {
+      "rel_path": "artifacts_rr_scenario_review_20261115/updated_stability.json",
+      "evaluator_title": "Updated Cluster Bootstrap Stability Report (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "1,000 fixture resamples, median stability, whole-list 0/1000 result, pool size",
+      "sha256": "9d8efcb9c5ce099cf720929e82700a4bd387875b5632d46f9e6b833bf1b04193",
+      "size_bytes": 457
+    },
+    "verified_rankings": {
+      "rel_path": "artifacts_rr_scenario_review_20261115/verified_rankings.csv",
+      "evaluator_title": "Unstop Verified Rankings Cross-Check (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Exact Unstop option-label check and portal name verification",
+      "sha256": "f502686ebb6b3f4e41e2a725051af8a5a7c204a6e96bb4dda84e02bbc744978b",
+      "size_bytes": 2171
+    },
+    "retraining_comparison": {
+      "rel_path": "artifacts_rr_retrain_audit_20261115/retraining_comparison.csv",
+      "evaluator_title": "Retraining Comparison Matrix across 160 Evaluations (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "2 rebuilds, 5 recipes, 2 roles, 8 evaluation windows, 160 comparison rows",
+      "sha256": "424d41520b4108b14e0fff86f83137340c63553b8c951ea7ed7741c5d08ff817",
+      "size_bytes": 20031
+    },
+    "retraining_audit_json": {
+      "rel_path": "artifacts_rr_retrain_audit_20261115/retraining_audit.json",
+      "evaluator_title": "Retraining Audit Technical Manifest (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Selected model recipes, raw delivery counts (200,999), eligible delivery counts (168,632)",
+      "sha256": "d6cfe0b001bcc2dd5a0cad95aba6931ba72ecc0aa2abbd8620fd22c1984ccca2",
+      "size_bytes": 555
+    },
+    "coverage_report": {
+      "rel_path": "scratch/rr_rebuild_recorded_20261115/coverage_report.json",
+      "evaluator_title": "Rebuild Coverage & Data Quality Report (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Cohort counts: 883 fixtures (806 eligible, 77 excluded), 200,999 deliveries",
+      "sha256": "06c09698390d006bcebabc35869488e6a18e6048688c6e964076d9f38cd21431",
+      "size_bytes": 3844
+    },
+    "evaluation_split_manifest": {
+      "rel_path": "scratch/rr_rebuild_recorded_20261115/evaluation_split_manifest.json",
+      "evaluator_title": "Chronological Evaluation Split Manifest (2026-11-15)",
+      "date": "2026-11-15",
+      "approved_use": "Dated folds: Train 2022-2024 (482 matches), Val 2025 (191 matches), Retrospective Test 2026 (133 matches)",
+      "sha256": "d26df84fa7cfbb92a5faef27e02b0568504fbcc10986899c433e7bdc2f70d2a7",
+      "size_bytes": 938
+    }
+  },
+  "modelling_overview": {
+    "title": "SupeRR Selector Season 2 Modelling & Audit Overview",
+    "as_of_date": "2026-11-15",
+    "evaluation_origin": "15 November 2026 IST",
+    "verified_quantities": {
+      "rebuild_sources_count": 2,
+      "rebuild_sources": [
+        "attached",
+        "recorded_extras"
+      ],
+      "recipes_count": 5,
+      "recipes": [
+        "incumbent",
+        "pressure_only",
+        "split_targets",
+        "split_targets_blend",
+        "ipl_only"
+      ],
+      "roles_count": 2,
+      "roles": [
+        "batting",
+        "bowling"
+      ],
+      "windows_per_role_per_source": 8,
+      "windows_breakdown": {
+        "forward_2024_2025": 4,
+        "retrospective_2026": 2,
+        "auction_replays": 2,
+        "windows_list": [
+          "2024-01-01 (Forward 2024 H1)",
+          "2024-04-21 (Forward 2024 H2)",
+          "2024-11-24 (2025 Auction Replay)",
+          "2025-01-01 (Forward 2025 H1)",
+          "2025-04-21 (Forward 2025 H2)",
+          "2025-12-16 (2026 Auction Replay)",
+          "2026-01-01 (Retrospective 2026 H1)",
+          "2026-04-28 (Retrospective 2026 H2)"
+        ]
+      },
+      "comparison_rows_total": 160,
+      "fixture_resamples_draws": 1000,
+      "whole_list_concordance_draws": {
+        "batting": "0 of 1,000",
+        "bowling": "0 of 1,000",
+        "interpretation": "Full 10-player slate selection frequency is 0/1,000 for each discipline, reflecting realistic rank uncertainty while preserving stable core candidates."
+      },
+      "eligible_player_pools": {
+        "batting": 82,
+        "bowling": 96
+      },
+      "median_stability": {
+        "batting": 0.473,
+        "bowling": 0.553
+      }
+    },
+    "data_funnel": {
+      "raw_deliveries": 200999,
+      "cohort_eligible_deliveries": 192279,
+      "ranking_eligible_deliveries": 168632,
+      "total_fixtures": 883,
+      "excluded_fixtures": 77,
+      "eligible_fixtures": 806,
+      "ranking_eligible_fixtures": 708,
+      "chronological_folds": {
+        "TEST_HOLDOUT_2026": {
+          "match_count": 133,
+          "date_range": [
+            "2026-01-07",
+            "2026-11-01"
+          ],
+          "tier_breakdown": {
+            "IPL": 70,
+            "T20I": 63
+          }
+        },
+        "TRAIN_2022_2024": {
+          "match_count": 482,
+          "date_range": [
+            "2022-01-22",
+            "2024-12-30"
+          ],
+          "tier_breakdown": {
+            "T20I": 251,
+            "IPL": 216,
+            "EMERGING": 15
+          }
+        },
+        "VAL_2025": {
+          "match_count": 191,
+          "date_range": [
+            "2025-01-02",
+            "2025-12-19"
+          ],
+          "tier_breakdown": {
+            "T20I": 110,
+            "IPL": 68,
+            "EMERGING": 13
+          }
+        }
+      }
+    },
+    "project_story": {
+      "calendar_span": "10\u201315 November 2026 IST",
+      "earliest_verifiable_record": "2026-11-10 (Artifacts & data pack ingest)",
+      "final_audit_signoff": "2026-11-15 IST",
+      "verification_milestone": {
+        "full_suite_tests": 232,
+        "targeted_post_repair_tests": 33,
+        "test_note": "Test runs represent automated contract and regression assertions, distinct from model training fits."
+      },
+      "training_duration_status": "UNVERIFIED_EXCLUDED_FROM_KPIS",
+      "independent_fit_count_status": "EXPLICIT_RUN_COUNTS_ONLY"
+    }
+  },
+  "identities": {
+    "152": {
+      "player_id": 152,
+      "canonical_name": "Ravindra Jadeja",
+      "display_name": "Ravindra Jadeja",
+      "known_aliases": [
+        "R Jadeja",
+        "Ravindrasinh Jadeja"
+      ],
+      "roles_appeared": [
+        "batting",
+        "bowling"
+      ],
+      "is_dual_role": true,
+      "portrait_key": "player_152",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "1566": {
+      "player_id": 1566,
+      "canonical_name": "Mohammed Shami",
+      "display_name": "Mohammed Shami",
+      "known_aliases": [
+        "M Shami",
+        "Mohammed Shami Ahmed"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_1566",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "2320": {
+      "player_id": 2320,
+      "canonical_name": "Trent Boult",
+      "display_name": "Trent Boult",
+      "known_aliases": [
+        "T Boult"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_2320",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "2633": {
+      "player_id": 2633,
+      "canonical_name": "Jason Holder",
+      "display_name": "Jason Holder",
+      "known_aliases": [
+        "J Holder"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_2633",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "4219": {
+      "player_id": 4219,
+      "canonical_name": "Krunal Pandya",
+      "display_name": "Krunal Pandya",
+      "known_aliases": [
+        "K Pandya"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_4219",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "4641": {
+      "player_id": 4641,
+      "canonical_name": "Lungi Ngidi",
+      "display_name": "Lungi Ngidi",
+      "known_aliases": [
+        "L Ngidi"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_4641",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "4736": {
+      "player_id": 4736,
+      "canonical_name": "Josh Inglis",
+      "display_name": "Josh Inglis",
+      "known_aliases": [
+        "J Inglis",
+        "Josh Inglis (wk)"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_4736",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "5944": {
+      "player_id": 5944,
+      "canonical_name": "Mohammed Siraj",
+      "display_name": "Mohammed Siraj",
+      "known_aliases": [
+        "M Siraj"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_5944",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "6423": {
+      "player_id": 6423,
+      "canonical_name": "Riyan Parag",
+      "display_name": "Riyan Parag",
+      "known_aliases": [
+        "R Parag"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_6423",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "7216": {
+      "player_id": 7216,
+      "canonical_name": "Prabhsimran Singh",
+      "display_name": "Prabhsimran Singh",
+      "known_aliases": [
+        "P Singh",
+        "Prabhsimran Singh (wk)"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_7216",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "7327": {
+      "player_id": 7327,
+      "canonical_name": "Rasikh Salam",
+      "display_name": "Rasikh Salam",
+      "known_aliases": [
+        "R Salam",
+        "Rasikh Dar",
+        "Rasikh Salam Dar"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_7327",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "7544": {
+      "player_id": 7544,
+      "canonical_name": "Venkatesh Iyer",
+      "display_name": "Venkatesh Iyer",
+      "known_aliases": [
+        "V Iyer",
+        "Venkatesh R Iyer"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_7544",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "8182": {
+      "player_id": 8182,
+      "canonical_name": "Donovan Ferreira",
+      "display_name": "Donovan Ferreira",
+      "known_aliases": [
+        "D Ferreira",
+        "Donovan Ferreira (wk)"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_8182",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "8238": {
+      "player_id": 8238,
+      "canonical_name": "Sameer Rizvi",
+      "display_name": "Sameer Rizvi",
+      "known_aliases": [
+        "S Rizvi"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_8238",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "8530": {
+      "player_id": 8530,
+      "canonical_name": "Kartik Tyagi",
+      "display_name": "Kartik Tyagi",
+      "known_aliases": [
+        "K Tyagi"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_8530",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "8654": {
+      "player_id": 8654,
+      "canonical_name": "Cooper Connolly",
+      "display_name": "Cooper Connolly",
+      "known_aliases": [
+        "C Connolly"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_8654",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "19714": {
+      "player_id": 19714,
+      "canonical_name": "Abishek Porel",
+      "display_name": "Abishek Porel",
+      "known_aliases": [
+        "A Porel",
+        "Abhishek Porel",
+        "Abishek Porel (wk)"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_19714",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "27964": {
+      "player_id": 27964,
+      "canonical_name": "Anshul Kamboj",
+      "display_name": "Anshul Kamboj",
+      "known_aliases": [
+        "A Kamboj"
+      ],
+      "roles_appeared": [
+        "bowling"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_27964",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    },
+    "50284": {
+      "player_id": 50284,
+      "canonical_name": "Vaibhav Sooryavanshi",
+      "display_name": "Vaibhav Sooryavanshi",
+      "known_aliases": [
+        "V Sooryavanshi",
+        "Vaibhav Suryavanshi"
+      ],
+      "roles_appeared": [
+        "batting"
+      ],
+      "is_dual_role": false,
+      "portrait_key": "player_50284",
+      "verified_spelling_notes": "Official competition pack and Retrain Audit spelling; preserved across all views."
+    }
+  },
+  "rankings": [
+    {
+      "role": "batting",
+      "rank": 1,
+      "player_id": 50284,
+      "player_name": "Vaibhav Sooryavanshi",
+      "verified_unstop_label": "Vaibhav Sooryavanshi",
+      "deployment": "POWERPLAY",
+      "route": "RR squad decision",
+      "route_category": "RR_SQUAD_DECISION",
+      "rr_fit_and_risk": "RR opener. Led RR in IPL 2026 runs and had 63 recent pressure balls across 11 matches.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 11.0172,
+        "observed_ordinary_runs_per_12": 10.0593,
+        "signed_uplift_runs_per_12": 0.9578,
+        "predicted_composite_impact": 4.9401,
+        "model_ranking_priority": 3.5069,
+        "hp_balls": 63,
+        "ordinary_balls": 249,
+        "pressure_fixtures_count": 11,
+        "loo_omission_min": 8.2898,
+        "loo_omission_max": 12.9793,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.958,
+        "resamples_total": 1000,
+        "frequency_display": "958/1,000 draws (95.8%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 2,
+      "player_id": 4736,
+      "player_name": "Josh Inglis",
+      "verified_unstop_label": "Josh Inglis",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Powerplay keeper-batter cover. Check release and overseas availability.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 13.4868,
+        "observed_ordinary_runs_per_12": 4.9194,
+        "signed_uplift_runs_per_12": 8.5674,
+        "predicted_composite_impact": 4.7039,
+        "model_ranking_priority": 2.8001,
+        "hp_balls": 24,
+        "ordinary_balls": 118,
+        "pressure_fixtures_count": 5,
+        "loo_omission_min": 9.6351,
+        "loo_omission_max": 18.0956,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.875,
+        "resamples_total": 1000,
+        "frequency_display": "875/1,000 draws (87.5%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 3,
+      "player_id": 8238,
+      "player_name": "Sameer Rizvi",
+      "verified_unstop_label": "Sameer Rizvi",
+      "deployment": "MIDDLE",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian middle-order acceleration. Eight recent pressure balls make the size of the uplift uncertain.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 18.8104,
+        "observed_ordinary_runs_per_12": -0.5825,
+        "signed_uplift_runs_per_12": 19.3929,
+        "predicted_composite_impact": 3.8438,
+        "model_ranking_priority": 1.5026,
+        "hp_balls": 8,
+        "ordinary_balls": 163,
+        "pressure_fixtures_count": 4,
+        "loo_omission_min": 10.7279,
+        "loo_omission_max": 30.2026,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.63,
+        "resamples_total": 1000,
+        "frequency_display": "630/1,000 draws (63.0%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 4,
+      "player_id": 8654,
+      "player_name": "Cooper Connolly",
+      "verified_unstop_label": "Cooper Connolly",
+      "deployment": "MIDDLE",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Left-handed middle-order option with 41 pressure balls across six IPL 2026 matches.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 3.9152,
+        "observed_ordinary_runs_per_12": 5.9155,
+        "signed_uplift_runs_per_12": -2.0004,
+        "predicted_composite_impact": 3.0716,
+        "model_ranking_priority": 1.2628,
+        "hp_balls": 41,
+        "ordinary_balls": 258,
+        "pressure_fixtures_count": 6,
+        "loo_omission_min": -1.8079,
+        "loo_omission_max": 7.5075,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.627,
+        "resamples_total": 1000,
+        "frequency_display": "627/1,000 draws (62.7%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 5,
+      "player_id": 8182,
+      "player_name": "Donovan Ferreira",
+      "verified_unstop_label": "Donovan Ferreira",
+      "deployment": "FINISHER",
+      "route": "RR squad decision",
+      "route_category": "RR_SQUAD_DECISION",
+      "rr_fit_and_risk": "RR late-innings power. Recent pressure evidence includes four different fixtures.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 4.6689,
+        "observed_ordinary_runs_per_12": 5.3825,
+        "signed_uplift_runs_per_12": -0.7136,
+        "predicted_composite_impact": 2.7532,
+        "model_ranking_priority": 1.0206,
+        "hp_balls": 43,
+        "ordinary_balls": 134,
+        "pressure_fixtures_count": 4,
+        "loo_omission_min": 1.1978,
+        "loo_omission_max": 7.3915,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.465,
+        "resamples_total": 1000,
+        "frequency_display": "465/1,000 draws (46.5%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 6,
+      "player_id": 19714,
+      "player_name": "Abishek Porel",
+      "verified_unstop_label": "Abishek Porel",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian opening and keeper depth. Latest pressure evidence comes from two matches.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 3.9881,
+        "observed_ordinary_runs_per_12": -2.6375,
+        "signed_uplift_runs_per_12": 6.6256,
+        "predicted_composite_impact": 2.5352,
+        "model_ranking_priority": 0.5688,
+        "hp_balls": 15,
+        "ordinary_balls": 73,
+        "pressure_fixtures_count": 2,
+        "loo_omission_min": 0.7762,
+        "loo_omission_max": 7.6587,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.409,
+        "resamples_total": 1000,
+        "frequency_display": "409/1,000 draws (40.9%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 7,
+      "player_id": 6423,
+      "player_name": "Riyan Parag",
+      "verified_unstop_label": "Riyan Parag",
+      "deployment": "MIDDLE",
+      "route": "RR squad decision",
+      "route_category": "RR_SQUAD_DECISION",
+      "rr_fit_and_risk": "RR middle-order option. Verify recovery. One 2026 pressure match limits certainty.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 7.0674,
+        "observed_ordinary_runs_per_12": 1.1733,
+        "signed_uplift_runs_per_12": 5.8942,
+        "predicted_composite_impact": 2.369,
+        "model_ranking_priority": 0.4839,
+        "hp_balls": 12,
+        "ordinary_balls": 173,
+        "pressure_fixtures_count": 1,
+        "loo_omission_min": null,
+        "loo_omission_max": null,
+        "loo_available": false
+      },
+      "stability": {
+        "selection_frequency": 0.425,
+        "resamples_total": 1000,
+        "frequency_display": "425/1,000 draws (42.5%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 8,
+      "player_id": 7216,
+      "player_name": "Prabhsimran Singh",
+      "verified_unstop_label": "Prabhsimran Singh",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian opening and keeper cover. Observed impact stays positive after removing any one pressure match.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 3.5707,
+        "observed_ordinary_runs_per_12": 3.233,
+        "signed_uplift_runs_per_12": 0.3377,
+        "predicted_composite_impact": 1.8449,
+        "model_ranking_priority": 0.4692,
+        "hp_balls": 41,
+        "ordinary_balls": 259,
+        "pressure_fixtures_count": 9,
+        "loo_omission_min": 0.7723,
+        "loo_omission_max": 6.762,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.317,
+        "resamples_total": 1000,
+        "frequency_display": "317/1,000 draws (31.7%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 9,
+      "player_id": 152,
+      "player_name": "Ravindra Jadeja",
+      "verified_unstop_label": "Ravindra Jadeja",
+      "deployment": "FINISHER",
+      "route": "RR squad decision",
+      "route_category": "RR_SQUAD_DECISION",
+      "rr_fit_and_risk": "Left-handed finishing option. Evaluate the separately supported bowling role on its own evidence.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 3.3466,
+        "observed_ordinary_runs_per_12": 2.2028,
+        "signed_uplift_runs_per_12": 1.1438,
+        "predicted_composite_impact": 1.4143,
+        "model_ranking_priority": 0.03,
+        "hp_balls": 38,
+        "ordinary_balls": 158,
+        "pressure_fixtures_count": 4,
+        "loo_omission_min": -0.3976,
+        "loo_omission_max": 9.058,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.35,
+        "resamples_total": 1000,
+        "frequency_display": "350/1,000 draws (35.0%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "batting",
+      "rank": 10,
+      "player_id": 7544,
+      "player_name": "Venkatesh Iyer",
+      "verified_unstop_label": "Venkatesh Iyer",
+      "deployment": "MIDDLE",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Left-handed batting flexibility. Recent contribution was driven most clearly by the powerplay sample.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 3.47,
+        "observed_ordinary_runs_per_12": 5.8965,
+        "signed_uplift_runs_per_12": -2.4265,
+        "predicted_composite_impact": 1.4965,
+        "model_ranking_priority": -0.0253,
+        "hp_balls": 41,
+        "ordinary_balls": 71,
+        "pressure_fixtures_count": 4,
+        "loo_omission_min": -0.4509,
+        "loo_omission_max": 10.3094,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.481,
+        "resamples_total": 1000,
+        "frequency_display": "481/1,000 draws (48.1%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 1,
+      "player_id": 5944,
+      "player_name": "Mohammed Siraj",
+      "verified_unstop_label": "Mohammed Siraj",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian new-ball target if released. Largest recent IPL pressure sample in this bowling list.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 5.7374,
+        "observed_ordinary_runs_per_12": -1.9074,
+        "signed_uplift_runs_per_12": 7.6448,
+        "predicted_composite_impact": 2.4767,
+        "model_ranking_priority": 1.5286,
+        "hp_balls": 130,
+        "ordinary_balls": 242,
+        "pressure_fixtures_count": 15,
+        "loo_omission_min": 4.0714,
+        "loo_omission_max": 7.0781,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.894,
+        "resamples_total": 1000,
+        "frequency_display": "894/1,000 draws (89.4%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 2,
+      "player_id": 2633,
+      "player_name": "Jason Holder",
+      "verified_unstop_label": "Jason Holder",
+      "deployment": "MIDDLE",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Pace all-rounder and middle-to-late overs cover. Strong recent impact with only three pressure matches. Career IPL pressure impact below peers.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 7.6713,
+        "observed_ordinary_runs_per_12": 5.4104,
+        "signed_uplift_runs_per_12": 2.2609,
+        "predicted_composite_impact": 2.7435,
+        "model_ranking_priority": 1.1405,
+        "hp_balls": 28,
+        "ordinary_balls": 202,
+        "pressure_fixtures_count": 3,
+        "loo_omission_min": 3.7968,
+        "loo_omission_max": 14.7083,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.638,
+        "resamples_total": 1000,
+        "frequency_display": "638/1,000 draws (63.8%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 3,
+      "player_id": 8530,
+      "player_name": "Kartik Tyagi",
+      "verified_unstop_label": "Kartik Tyagi",
+      "deployment": "DEATH",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian death-over pace. Strong 2026 result includes eight pressure matches.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 7.3191,
+        "observed_ordinary_runs_per_12": -1.4317,
+        "signed_uplift_runs_per_12": 8.7508,
+        "predicted_composite_impact": 2.7099,
+        "model_ranking_priority": 1.0417,
+        "hp_balls": 51,
+        "ordinary_balls": 231,
+        "pressure_fixtures_count": 8,
+        "loo_omission_min": 5.592,
+        "loo_omission_max": 9.2383,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.697,
+        "resamples_total": 1000,
+        "frequency_display": "697/1,000 draws (69.7%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 4,
+      "player_id": 4641,
+      "player_name": "Lungi Ngidi",
+      "verified_unstop_label": "Lungi Ngidi",
+      "deployment": "DEATH",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Death-over option. Latest official injury report leaves return to match workload uncertain.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 4.2108,
+        "observed_ordinary_runs_per_12": 3.7473,
+        "signed_uplift_runs_per_12": 0.4635,
+        "predicted_composite_impact": 2.3055,
+        "model_ranking_priority": 0.8773,
+        "hp_balls": 64,
+        "ordinary_balls": 184,
+        "pressure_fixtures_count": 6,
+        "loo_omission_min": 2.2007,
+        "loo_omission_max": 5.5222,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.76,
+        "resamples_total": 1000,
+        "frequency_display": "760/1,000 draws (76.0%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 5,
+      "player_id": 4219,
+      "player_name": "Krunal Pandya",
+      "verified_unstop_label": "Krunal Pandya",
+      "deployment": "SPIN",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Left-arm spin and batting depth. 2026 pressure evidence rests on one match.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 6.3748,
+        "observed_ordinary_runs_per_12": -0.5847,
+        "signed_uplift_runs_per_12": 6.9595,
+        "predicted_composite_impact": 2.3672,
+        "model_ranking_priority": 0.5887,
+        "hp_balls": 18,
+        "ordinary_balls": 261,
+        "pressure_fixtures_count": 1,
+        "loo_omission_min": null,
+        "loo_omission_max": null,
+        "loo_available": false
+      },
+      "stability": {
+        "selection_frequency": 0.677,
+        "resamples_total": 1000,
+        "frequency_display": "677/1,000 draws (67.7%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 6,
+      "player_id": 7327,
+      "player_name": "Rasikh Salam",
+      "verified_unstop_label": "Rasikh Salam",
+      "deployment": "DEATH",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian pace for the late overs. Four matches support the recent pressure estimate.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 3.246,
+        "observed_ordinary_runs_per_12": 2.1782,
+        "signed_uplift_runs_per_12": 1.0678,
+        "predicted_composite_impact": 1.8739,
+        "model_ranking_priority": 0.0381,
+        "hp_balls": 37,
+        "ordinary_balls": 196,
+        "pressure_fixtures_count": 4,
+        "loo_omission_min": -2.2706,
+        "loo_omission_max": 7.2668,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.468,
+        "resamples_total": 1000,
+        "frequency_display": "468/1,000 draws (46.8%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 7,
+      "player_id": 2320,
+      "player_name": "Trent Boult",
+      "verified_unstop_label": "Trent Boult",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Left-arm new-ball option. 2026 pressure impact is negative even after removing any one match. Earlier powerplay evidence supports the forecast. Starc is the closest role alternative.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": -6.0637,
+        "observed_ordinary_runs_per_12": -4.1813,
+        "signed_uplift_runs_per_12": -1.8825,
+        "predicted_composite_impact": 1.3985,
+        "model_ranking_priority": 0.0206,
+        "hp_balls": 20,
+        "ordinary_balls": 71,
+        "pressure_fixtures_count": 4,
+        "loo_omission_min": -7.2525,
+        "loo_omission_max": -3.4346,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.346,
+        "resamples_total": 1000,
+        "frequency_display": "346/1,000 draws (34.6%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 8,
+      "player_id": 1566,
+      "player_name": "Mohammed Shami",
+      "verified_unstop_label": "Mohammed Shami",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian new-ball wicket option. Positive 2026 pressure impact is spread across ten matches.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 4.0582,
+        "observed_ordinary_runs_per_12": -0.6898,
+        "signed_uplift_runs_per_12": 4.748,
+        "predicted_composite_impact": 1.1595,
+        "model_ranking_priority": -0.1029,
+        "hp_balls": 65,
+        "ordinary_balls": 193,
+        "pressure_fixtures_count": 10,
+        "loo_omission_min": 1.3385,
+        "loo_omission_max": 7.5699,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.407,
+        "resamples_total": 1000,
+        "frequency_display": "407/1,000 draws (40.7%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 9,
+      "player_id": 27964,
+      "player_name": "Anshul Kamboj",
+      "verified_unstop_label": "Anshul Kamboj",
+      "deployment": "POWERPLAY",
+      "route": "If available at auction",
+      "route_category": "AUCTION_CONDITIONAL",
+      "rr_fit_and_risk": "Indian seam depth with 42 recent pressure balls at the death. Preferred to Rana on current IPL evidence.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 2.9483,
+        "observed_ordinary_runs_per_12": -1.9852,
+        "signed_uplift_runs_per_12": 4.9335,
+        "predicted_composite_impact": 1.2217,
+        "model_ranking_priority": -0.2433,
+        "hp_balls": 57,
+        "ordinary_balls": 245,
+        "pressure_fixtures_count": 8,
+        "loo_omission_min": -0.1376,
+        "loo_omission_max": 4.8506,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.308,
+        "resamples_total": 1000,
+        "frequency_display": "308/1,000 draws (30.8%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    },
+    {
+      "role": "bowling",
+      "rank": 10,
+      "player_id": 152,
+      "player_name": "Ravindra Jadeja",
+      "verified_unstop_label": "Ravindra Jadeja",
+      "deployment": "SPIN",
+      "route": "RR squad decision",
+      "route_category": "RR_SQUAD_DECISION",
+      "rr_fit_and_risk": "RR left-arm spin. Thin recent edge over peers makes this a role-coverage decision.",
+      "metrics": {
+        "unit": "runs per 12 legal balls",
+        "observed_pressure_runs_per_12": 0.3011,
+        "observed_ordinary_runs_per_12": 0.7905,
+        "signed_uplift_runs_per_12": -0.4895,
+        "predicted_composite_impact": 1.2807,
+        "model_ranking_priority": -0.3076,
+        "hp_balls": 34,
+        "ordinary_balls": 164,
+        "pressure_fixtures_count": 5,
+        "loo_omission_min": -4.417,
+        "loo_omission_max": 6.645,
+        "loo_available": true
+      },
+      "stability": {
+        "selection_frequency": 0.428,
+        "resamples_total": 1000,
+        "frequency_display": "428/1,000 draws (42.8%)"
+      },
+      "citations": {
+        "canonical_rank_source": "artifacts_rr_retrain_audit_20261115/recommended_rankings.csv",
+        "evidence_context_source": "artifacts_rr_retrain_audit_20261115/player_evidence.csv",
+        "stability_source": "artifacts_rr_scenario_review_20261115/scenario_review_rankings_with_stability.csv",
+        "unstop_label_source": "artifacts_rr_scenario_review_20261115/verified_rankings.csv"
+      }
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+[
+  {
+    "player_id": 50284,
+    "name": "Vaibhav Sooryavanshi",
+    "role": "BATTER",
+    "rank": 1,
+    "is_leader": true,
+    "squad_2026": "Rajasthan Royals",
+    "cdn_asset": "player/8903/1558/83313.png",
+    "page_url": "https://www.iplt20.com/teams/rajasthan-royals",
+    "publisher": "BCCI / IPL Official Digital Platform & Rajasthan Royals",
+    "credit": "BCCI / IPL / Rajasthan Royals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Sharp, unobstructed face, arms crossed confident media day pose, authentic RR 2026 kit",
+    "display_name": "Vaibhav Sooryavanshi",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 6,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/50284_320w.webp",
+        "webp_bytes": 22228,
+        "png": "/portraits/50284_320w.png",
+        "png_bytes": 109562
+      },
+      "480w": {
+        "width": 480,
+        "height": 480,
+        "webp": "/portraits/50284_480w.webp",
+        "webp_bytes": 41182,
+        "png": "/portraits/50284_480w.png",
+        "png_bytes": 230297
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/50284_640w.webp",
+        "webp_bytes": 69476,
+        "png": "/portraits/50284_640w.png",
+        "png_bytes": 400362
+      },
+      "800w": {
+        "width": 800,
+        "height": 800,
+        "webp": "/portraits/50284_800w.webp",
+        "webp_bytes": 107474,
+        "png": "/portraits/50284_800w.png",
+        "png_bytes": 622496
+      },
+      "1200w": {
+        "width": 1200,
+        "height": 1200,
+        "webp": "/portraits/50284_1200w.webp",
+        "webp_bytes": 223780,
+        "png": "/portraits/50284_1200w.png",
+        "png_bytes": 1352988
+      }
+    }
+  },
+  {
+    "player_id": 4736,
+    "name": "Josh Inglis",
+    "role": "BATTER",
+    "rank": 2,
+    "is_leader": false,
+    "squad_2026": "Lucknow Super Giants",
+    "cdn_asset": "player/8903/2880/37709.png",
+    "page_url": "https://www.iplt20.com/teams/lucknow-super-giants",
+    "publisher": "BCCI / IPL Official Digital Platform & Lucknow Super Giants",
+    "credit": "BCCI / IPL / Lucknow Super Giants",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Direct head-and-torso studio portrait, authentic LSG 2026 kit, unobstructed view",
+    "display_name": "Josh Inglis",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/4736_320w.webp",
+        "webp_bytes": 23258,
+        "png": "/portraits/4736_320w.png",
+        "png_bytes": 119462
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/4736_640w.webp",
+        "webp_bytes": 62010,
+        "png": "/portraits/4736_640w.png",
+        "png_bytes": 430321
+      }
+    }
+  },
+  {
+    "player_id": 8238,
+    "name": "Sameer Rizvi",
+    "role": "BATTER",
+    "rank": 3,
+    "is_leader": false,
+    "squad_2026": "Delhi Capitals",
+    "cdn_asset": "player/8903/1396/71449.png",
+    "page_url": "https://www.iplt20.com/teams/delhi-capitals",
+    "publisher": "BCCI / IPL Official Digital Platform & Delhi Capitals",
+    "credit": "BCCI / IPL / Delhi Capitals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Centered upper-body portrait, authentic DC 2026 kit, clean silhouette",
+    "display_name": "Sameer Rizvi",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/8238_320w.webp",
+        "webp_bytes": 23868,
+        "png": "/portraits/8238_320w.png",
+        "png_bytes": 119857
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/8238_640w.webp",
+        "webp_bytes": 69874,
+        "png": "/portraits/8238_640w.png",
+        "png_bytes": 438779
+      }
+    }
+  },
+  {
+    "player_id": 8654,
+    "name": "Cooper Connolly",
+    "role": "BATTER",
+    "rank": 4,
+    "is_leader": false,
+    "squad_2026": "Punjab Kings",
+    "cdn_asset": "player/8903/2040/73472.png",
+    "page_url": "https://www.iplt20.com/teams/punjab-kings",
+    "publisher": "BCCI / IPL Official Digital Platform & Punjab Kings",
+    "credit": "BCCI / IPL / Punjab Kings",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Centered studio headshot, authentic PBKS 2026 kit, unobstructed face",
+    "display_name": "Cooper Connolly",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/8654_320w.webp",
+        "webp_bytes": 24998,
+        "png": "/portraits/8654_320w.png",
+        "png_bytes": 123318
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/8654_640w.webp",
+        "webp_bytes": 83794,
+        "png": "/portraits/8654_640w.png",
+        "png_bytes": 475136
+      }
+    }
+  },
+  {
+    "player_id": 8182,
+    "name": "Donovan Ferreira",
+    "role": "BATTER",
+    "rank": 5,
+    "is_leader": false,
+    "squad_2026": "Rajasthan Royals",
+    "cdn_asset": "player/8903/1558/68473.png",
+    "page_url": "https://www.iplt20.com/teams/rajasthan-royals",
+    "publisher": "BCCI / IPL Official Digital Platform & Rajasthan Royals",
+    "credit": "BCCI / IPL / Rajasthan Royals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Upper-torso studio shot, authentic RR 2026 kit, smiling media pose",
+    "display_name": "Donovan Ferreira",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/8182_320w.webp",
+        "webp_bytes": 23376,
+        "png": "/portraits/8182_320w.png",
+        "png_bytes": 113420
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/8182_640w.webp",
+        "webp_bytes": 71256,
+        "png": "/portraits/8182_640w.png",
+        "png_bytes": 418532
+      }
+    }
+  },
+  {
+    "player_id": 19714,
+    "name": "Abishek Porel",
+    "role": "BATTER",
+    "rank": 6,
+    "is_leader": false,
+    "squad_2026": "Delhi Capitals",
+    "cdn_asset": "player/8903/1396/76558.png",
+    "page_url": "https://www.iplt20.com/teams/delhi-capitals",
+    "publisher": "BCCI / IPL Official Digital Platform & Delhi Capitals",
+    "credit": "BCCI / IPL / Delhi Capitals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Direct head-and-torso studio portrait, authentic DC 2026 kit",
+    "display_name": "Abishek Porel",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/19714_320w.webp",
+        "webp_bytes": 23710,
+        "png": "/portraits/19714_320w.png",
+        "png_bytes": 121977
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/19714_640w.webp",
+        "webp_bytes": 66776,
+        "png": "/portraits/19714_640w.png",
+        "png_bytes": 445246
+      }
+    }
+  },
+  {
+    "player_id": 6423,
+    "name": "Riyan Parag",
+    "role": "BATTER",
+    "rank": 7,
+    "is_leader": false,
+    "squad_2026": "Rajasthan Royals",
+    "cdn_asset": "player/8903/1558/65476.png",
+    "page_url": "https://www.iplt20.com/teams/rajasthan-royals",
+    "publisher": "BCCI / IPL Official Digital Platform & Rajasthan Royals",
+    "credit": "BCCI / IPL / Rajasthan Royals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Upper-torso studio portrait, authentic RR 2026 kit, clean eyes and posture",
+    "display_name": "Riyan Parag",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/6423_320w.webp",
+        "webp_bytes": 23704,
+        "png": "/portraits/6423_320w.png",
+        "png_bytes": 113988
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/6423_640w.webp",
+        "webp_bytes": 74778,
+        "png": "/portraits/6423_640w.png",
+        "png_bytes": 422970
+      }
+    }
+  },
+  {
+    "player_id": 7216,
+    "name": "Prabhsimran Singh",
+    "role": "BATTER",
+    "rank": 8,
+    "is_leader": false,
+    "squad_2026": "Punjab Kings",
+    "cdn_asset": "player/8903/2040/68831.png",
+    "page_url": "https://www.iplt20.com/teams/punjab-kings",
+    "publisher": "BCCI / IPL Official Digital Platform & Punjab Kings",
+    "credit": "BCCI / IPL / Punjab Kings",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Direct studio shot, authentic PBKS 2026 kit, centered upper torso",
+    "display_name": "Prabhsimran Singh",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/7216_320w.webp",
+        "webp_bytes": 22218,
+        "png": "/portraits/7216_320w.png",
+        "png_bytes": 110541
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/7216_640w.webp",
+        "webp_bytes": 69960,
+        "png": "/portraits/7216_640w.png",
+        "png_bytes": 416625
+      }
+    }
+  },
+  {
+    "player_id": 152,
+    "name": "Ravindra Jadeja",
+    "role": "DUAL_ROLE",
+    "rank": 9,
+    "is_leader": false,
+    "squad_2026": "Rajasthan Royals",
+    "cdn_asset": "player/8903/1558/13143.png",
+    "page_url": "https://www.iplt20.com/teams/rajasthan-royals",
+    "publisher": "BCCI / IPL Official Digital Platform & Rajasthan Royals",
+    "credit": "BCCI / IPL / Rajasthan Royals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Single canonical portrait family shared across Batters #9 and Bowlers #10 role cards",
+    "display_name": "Ravindra Jadeja",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/152_320w.webp",
+        "webp_bytes": 23516,
+        "png": "/portraits/152_320w.png",
+        "png_bytes": 108520
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/152_640w.webp",
+        "webp_bytes": 75112,
+        "png": "/portraits/152_640w.png",
+        "png_bytes": 402807
+      }
+    }
+  },
+  {
+    "player_id": 7544,
+    "name": "Venkatesh Iyer",
+    "role": "BATTER",
+    "rank": 10,
+    "is_leader": false,
+    "squad_2026": "Royal Challengers Bengaluru",
+    "cdn_asset": "player/8903/2138/34170.png",
+    "page_url": "https://www.iplt20.com/teams/royal-challengers-bengaluru",
+    "publisher": "BCCI / IPL Official Digital Platform & Royal Challengers Bengaluru",
+    "credit": "BCCI / IPL / Royal Challengers Bengaluru",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Studio upper-torso portrait, authentic RCB 2026 kit, clean lighting",
+    "display_name": "Venkatesh Iyer",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/7544_320w.webp",
+        "webp_bytes": 22060,
+        "png": "/portraits/7544_320w.png",
+        "png_bytes": 122238
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/7544_640w.webp",
+        "webp_bytes": 61162,
+        "png": "/portraits/7544_640w.png",
+        "png_bytes": 443886
+      }
+    }
+  },
+  {
+    "player_id": 5944,
+    "name": "Mohammed Siraj",
+    "role": "BOWLER",
+    "rank": 1,
+    "is_leader": true,
+    "squad_2026": "Gujarat Titans",
+    "cdn_asset": "player/8903/2879/44904.png",
+    "page_url": "https://www.iplt20.com/teams/gujarat-titans",
+    "publisher": "BCCI / IPL Official Digital Platform & Gujarat Titans",
+    "credit": "BCCI / IPL / Gujarat Titans",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Featured leader portrait, arms folded confident media day pose, authentic GT 2026 kit",
+    "display_name": "Mohammed Siraj",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 6,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/5944_320w.webp",
+        "webp_bytes": 20804,
+        "png": "/portraits/5944_320w.png",
+        "png_bytes": 116013
+      },
+      "480w": {
+        "width": 480,
+        "height": 480,
+        "webp": "/portraits/5944_480w.webp",
+        "webp_bytes": 40012,
+        "png": "/portraits/5944_480w.png",
+        "png_bytes": 253272
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/5944_640w.webp",
+        "webp_bytes": 69640,
+        "png": "/portraits/5944_640w.png",
+        "png_bytes": 452008
+      },
+      "800w": {
+        "width": 800,
+        "height": 800,
+        "webp": "/portraits/5944_800w.webp",
+        "webp_bytes": 107640,
+        "png": "/portraits/5944_800w.png",
+        "png_bytes": 714092
+      },
+      "1200w": {
+        "width": 1200,
+        "height": 1200,
+        "webp": "/portraits/5944_1200w.webp",
+        "webp_bytes": 227386,
+        "png": "/portraits/5944_1200w.png",
+        "png_bytes": 1571428
+      }
+    }
+  },
+  {
+    "player_id": 2633,
+    "name": "Jason Holder",
+    "role": "BOWLER",
+    "rank": 2,
+    "is_leader": false,
+    "squad_2026": "Gujarat Titans",
+    "cdn_asset": "player/8903/2879/12693.png",
+    "page_url": "https://www.iplt20.com/teams/gujarat-titans",
+    "publisher": "BCCI / IPL Official Digital Platform & Gujarat Titans",
+    "credit": "BCCI / IPL / Gujarat Titans",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Direct headshot, authentic GT 2026 kit, clean upper shoulders",
+    "display_name": "Jason Holder",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/2633_320w.webp",
+        "webp_bytes": 21862,
+        "png": "/portraits/2633_320w.png",
+        "png_bytes": 126983
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/2633_640w.webp",
+        "webp_bytes": 71848,
+        "png": "/portraits/2633_640w.png",
+        "png_bytes": 500332
+      }
+    }
+  },
+  {
+    "player_id": 8530,
+    "name": "Kartik Tyagi",
+    "role": "BOWLER",
+    "rank": 3,
+    "is_leader": false,
+    "squad_2026": "Kolkata Knight Riders",
+    "cdn_asset": "player/8903/1873/66831.png",
+    "page_url": "https://www.iplt20.com/teams/kolkata-knight-riders",
+    "publisher": "BCCI / IPL Official Digital Platform & Kolkata Knight Riders",
+    "credit": "BCCI / IPL / Kolkata Knight Riders",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Studio upper-torso portrait, authentic KKR 2026 purple kit",
+    "display_name": "Kartik Tyagi",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/8530_320w.webp",
+        "webp_bytes": 21960,
+        "png": "/portraits/8530_320w.png",
+        "png_bytes": 120721
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/8530_640w.webp",
+        "webp_bytes": 71888,
+        "png": "/portraits/8530_640w.png",
+        "png_bytes": 466891
+      }
+    }
+  },
+  {
+    "player_id": 4641,
+    "name": "Lungi Ngidi",
+    "role": "BOWLER",
+    "rank": 4,
+    "is_leader": false,
+    "squad_2026": "Delhi Capitals",
+    "cdn_asset": "player/8903/1396/28230.png",
+    "page_url": "https://www.iplt20.com/teams/delhi-capitals",
+    "publisher": "BCCI / IPL Official Digital Platform & Delhi Capitals",
+    "credit": "BCCI / IPL / Delhi Capitals",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Upper-torso studio shot, authentic DC 2026 kit, sharp facial focus",
+    "display_name": "Lungi Ngidi",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/4641_320w.webp",
+        "webp_bytes": 23540,
+        "png": "/portraits/4641_320w.png",
+        "png_bytes": 125347
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/4641_640w.webp",
+        "webp_bytes": 71228,
+        "png": "/portraits/4641_640w.png",
+        "png_bytes": 464088
+      }
+    }
+  },
+  {
+    "player_id": 4219,
+    "name": "Krunal Pandya",
+    "role": "BOWLER",
+    "rank": 5,
+    "is_leader": false,
+    "squad_2026": "Royal Challengers Bengaluru",
+    "cdn_asset": "player/8903/2138/20456.png",
+    "page_url": "https://www.iplt20.com/teams/royal-challengers-bengaluru",
+    "publisher": "BCCI / IPL Official Digital Platform & Royal Challengers Bengaluru",
+    "credit": "BCCI / IPL / Royal Challengers Bengaluru",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Studio upper-body portrait, authentic RCB 2026 kit",
+    "display_name": "Krunal Pandya",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/4219_320w.webp",
+        "webp_bytes": 22954,
+        "png": "/portraits/4219_320w.png",
+        "png_bytes": 119317
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/4219_640w.webp",
+        "webp_bytes": 65378,
+        "png": "/portraits/4219_640w.png",
+        "png_bytes": 434726
+      }
+    }
+  },
+  {
+    "player_id": 7327,
+    "name": "Rasikh Salam",
+    "role": "BOWLER",
+    "rank": 6,
+    "is_leader": false,
+    "squad_2026": "Royal Challengers Bengaluru",
+    "cdn_asset": "player/8903/2138/68859.png",
+    "page_url": "https://www.iplt20.com/teams/royal-challengers-bengaluru",
+    "publisher": "BCCI / IPL Official Digital Platform & Royal Challengers Bengaluru",
+    "credit": "BCCI / IPL / Royal Challengers Bengaluru",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Direct head-and-torso studio shot, authentic RCB 2026 kit",
+    "display_name": "Rasikh Salam",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/7327_320w.webp",
+        "webp_bytes": 20916,
+        "png": "/portraits/7327_320w.png",
+        "png_bytes": 112063
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/7327_640w.webp",
+        "webp_bytes": 59930,
+        "png": "/portraits/7327_640w.png",
+        "png_bytes": 410079
+      }
+    }
+  },
+  {
+    "player_id": 2320,
+    "name": "Trent Boult",
+    "role": "BOWLER",
+    "rank": 7,
+    "is_leader": false,
+    "squad_2026": "Mumbai Indians",
+    "cdn_asset": "player/8903/1854/14330.png",
+    "page_url": "https://www.iplt20.com/teams/mumbai-indians",
+    "publisher": "BCCI / IPL Official Digital Platform & Mumbai Indians",
+    "credit": "BCCI / IPL / Mumbai Indians",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Upper-torso studio portrait, authentic MI 2026 blue and gold kit",
+    "display_name": "Trent Boult",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/2320_320w.webp",
+        "webp_bytes": 21062,
+        "png": "/portraits/2320_320w.png",
+        "png_bytes": 110568
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/2320_640w.webp",
+        "webp_bytes": 64156,
+        "png": "/portraits/2320_640w.png",
+        "png_bytes": 418977
+      }
+    }
+  },
+  {
+    "player_id": 1566,
+    "name": "Mohammed Shami",
+    "role": "BOWLER",
+    "rank": 8,
+    "is_leader": false,
+    "squad_2026": "Lucknow Super Giants",
+    "cdn_asset": "player/8903/2880/11458.png",
+    "page_url": "https://www.iplt20.com/teams/lucknow-super-giants",
+    "publisher": "BCCI / IPL Official Digital Platform & Lucknow Super Giants",
+    "credit": "BCCI / IPL / Lucknow Super Giants",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Direct studio headshot, authentic LSG 2026 kit, unobstructed view",
+    "display_name": "Mohammed Shami",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/1566_320w.webp",
+        "webp_bytes": 22032,
+        "png": "/portraits/1566_320w.png",
+        "png_bytes": 110966
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/1566_640w.webp",
+        "webp_bytes": 63446,
+        "png": "/portraits/1566_640w.png",
+        "png_bytes": 410965
+      }
+    }
+  },
+  {
+    "player_id": 27964,
+    "name": "Anshul Kamboj",
+    "role": "BOWLER",
+    "rank": 9,
+    "is_leader": false,
+    "squad_2026": "Chennai Super Kings",
+    "cdn_asset": "player/8903/1622/70442.png",
+    "page_url": "https://www.iplt20.com/teams/chennai-super-kings",
+    "publisher": "BCCI / IPL Official Digital Platform & Chennai Super Kings",
+    "credit": "BCCI / IPL / Chennai Super Kings",
+    "photo_context": "2026 IPL Official Media Day Studio Portrait",
+    "access_date": "2026-11-15",
+    "rights_basis": "Official Tournament Media Pack (Editorial & Competition Evaluation Review)",
+    "intended_audience": "Evaluator Review Dashboard (SupeRR Selector Season 2, Round 1)",
+    "crop_notes": "Upper-torso studio portrait, authentic CSK 2026 yellow kit",
+    "display_name": "Anshul Kamboj",
+    "master_dimensions": [
+      1024,
+      1024
+    ],
+    "eye_line_pct": 32.5,
+    "silhouette_stroke_token": "#FFF8ED",
+    "silhouette_stroke_css_px": 3.5,
+    "paper_shadow": "offset 5-8px down-right rgba(32, 23, 47, 0.22)",
+    "review_status": "VERIFIED_OFFICIAL_MEDIA",
+    "variants": {
+      "320w": {
+        "width": 320,
+        "height": 320,
+        "webp": "/portraits/27964_320w.webp",
+        "webp_bytes": 20676,
+        "png": "/portraits/27964_320w.png",
+        "png_bytes": 109407
+      },
+      "640w": {
+        "width": 640,
+        "height": 640,
+        "webp": "/portraits/27964_640w.webp",
+        "webp_bytes": 64492,
+        "png": "/portraits/27964_640w.png",
+        "png_bytes": 412529
+      }
+    }
+  }
+]

@@ -1,0 +1,26 @@
+# Stage 01 prompt — Reproduce and lock the baseline
+
+You are the ML engineer working on SupeRR Selector Season 2 Round 1. Run this stage in C:/SHARAN PROJECTS/rr. The entrant will paste the next stage after reviewing your result. Work through the exit checks and stop at this stage's checkpoint.
+
+## Objective
+
+Preserve a reproducible reference and demonstrate the concrete errors before changing any model. The end project delivers one ordered top ten for batting and one for bowling. The case asks for each player's pressure performance compared with usual performance, fair context and exposure, and a report that explains the same ranking. The public competition listing asks how the players can help RR in the 2027 auction.
+
+Read the local Round 1 case PDF in C:/SHARAN PROJECTS/rr/6af3166e7b922_data_pack and the audit in C:/SHARAN PROJECTS/rr/round1_rr_model_improvement/AUDIT.md. Use the case and the entrant's form evidence for the exact submission contract. Use the entrant's policy for this project. Eligible RR players can qualify, documented rival untouchables are screened out, and verified trades update current club and conditions for a bid. Keep the pack and its derived delivery records private. The entrant owns the recommendations and submission.
+
+## Execute
+
+1. Check the actual repo and active CLI entry points. Read `rr_pressure/cli.py`, `rankings.py`, `exports.py` and the relevant test fixtures. Treat C:/SHARAN PROJECTS/rr/6af3166e7b922_data_pack as read-only. Verify the seven input hashes against the manifest. Recognize the extra generated availability CSV in that directory as a prior artifact. Use only the supplied files as raw inputs. Preserve the existing output folders.
+2. Use C:/SHARAN PROJECTS/rr/artifacts_auction_recommendations_20261113 and snapshot RR_SUPE_RR_S2_2f7151e896bbf5622a2d as the reference. Verify its output hashes, both ordered tens, role flags, actual fold dates and selected models. Use seed 2027 for comparison. Create one fresh run directory for this iteration and record its absolute path in a single checkpoint file that later stages can read. Link the fresh run to verified ancestor files by hashes. Use working copies or verified immutable caches.
+3. Reproduce the saved ranking and export through the normal entry points from the frozen inputs. Confirm scores and ranks on canonical IDs, role, and order. Save a compact reference table with raw model rank, shortlist rank, Q25, predictive mean, eligible workload, direct IPL support, current market reason and the current stability measure. Compare alternate historical files only as controls. Record when a test reads an archived snapshot and check the current files separately.
+4. Create small reproducible failing examples for the confirmed defects. Use match 20181, second innings, delivery 120 to trace a non-wicket wide from raw values to both residuals. Construct chase states for scores level with no wickets remaining, scores level with no legal balls remaining, a terminal loss, and a winning extra. Reproduce 2025 batting coverage for 1–5 balls versus at least six balls on common IDs. Point to the older promotion screen and the current selection rule in the code. Compare actual fixture and reliability populations, and reproduce the inaccurate Brier improvement sentence from the saved numbers.
+5. Record the evaluation contract to use in Stages 02–05. Define the forecast unit, legal-ball denominator, observation date, role and IPL target population. Record the original 2024, 2025 and 2026 chronological replay controls. Mark 2025 and 2026 as previously inspected outcomes. Reserve early training-only folds for new tuning, define how to match assessment rows, and record the shortlist proxy and coverage measures. Use the existing calibration and shortlist guardrails as a legacy control. Agree practical decision margins before looking at new contender results, especially if a corrected target changes the units or distribution.
+6. Save the baseline evidence, source paths, commands, environment, seed, test results and the defect-to-stage map in the fresh run. Include exactly which datasets and stage caches will be invalidated when scoring changes. Record open source or form checks with the narrow evidence needed to resolve them.
+
+## Loop
+
+For every mismatch, reproduce it on the smallest command or case, classify the difference as a source, configuration, label, forecast, selector or export issue, and record the evidence. Repair reproduction plumbing only where it blocks this stage. Rerun the affected check and record the new result. Keep any confirmed defect in the ledger for its assigned stage. When repetition yields the same missing external fact, record the boundary and continue with the checks that can be verified.
+
+## Exit and redirect
+
+The reference input and output hashes are verified or a reproducible discrepancy is identified. Both rankings and their model choices are accounted for. The wide, tie, short-stint, cohort and rule-parity examples have evidence. The fresh run location and evaluation protocol are recorded. Return the first model-impacting fix and the next prompt, **02_repair_scoring_and_pressure.md**. Stop and wait for the entrant to paste it.

@@ -1,0 +1,31 @@
+{
+  "stage": "07_reproduce_and_handoff",
+  "stage_status": "COMPLETED",
+  "backend_review_status": "READY_FOR_BACKEND_REVIEW",
+  "timestamp": "2026-11-13T19:10:00+05:30",
+  "baseline_snapshot_id": "RR_SUPE_RR_S2_2f7151e896bbf5622a2d",
+  "fresh_run_dir": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113",
+  "seed": 2027,
+  "frozen_models": {
+    "batting": "Challenger D (Workload-Aware Distributional)",
+    "bowling": "Ablation B-0 (No Player Pressure Lift)"
+  },
+  "stage07_artifacts": {
+    "evaluator_handoff_bundle": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\EVALUATOR_HANDOFF_EVIDENCE_BUNDLE.json",
+    "backend_review": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\BACKEND_REVIEW.md",
+    "top10_batters": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\top10_batters_under_pressure.csv",
+    "top10_bowlers": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\top10_bowlers_under_pressure.csv",
+    "rr_shortlist": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\rr_shortlist.csv",
+    "rr_auction_notes": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\rr_auction_notes.csv",
+    "rr_recruitment_sheet": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\rr_recruitment_sheet.csv",
+    "rr_lineup_scenarios": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\rr_lineup_scenarios.csv",
+    "unstop_rank_order": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\unstop_rank_order.csv",
+    "unstop_submission_checklist": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\unstop_submission_checklist.csv",
+    "rankings_audit": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\rankings_audit.json",
+    "model_validation": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\model_validation.json",
+    "robustness_report": "C:\\SHARAN PROJECTS\\rr\\artifacts_model_improvement_20261113\\robustness_report.json"
+  },
+  "stage07_verified": true,
+  "next_stage": "BACKEND_REVIEW",
+  "next_prompt": null
+}

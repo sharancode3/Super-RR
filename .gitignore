@@ -1,0 +1,45 @@
+# Node dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# Python caches and test output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Local temporary and scratch directories
+tmp/
+scratch/
+output/
+state_diagram_work_*/
+latest_user_request.txt
+
+# Root-level development screenshot dumps
+/*.png
+/*.jpg
+/*.jpeg
+
+# Heavy raw datasets and ledger CSVs (>100MB)
+*.csv
+*.zip
+6af3166e7b922_data_pack/
+6af458274c1e8_data_pack/
+artifacts/
+artifacts_*/
+test_artifacts/
+test_artifacts_*/
+
+# Preserve all dashboard assets and public portraits
+!dashboard/public/**
+!dashboard/src/assets/**
+
+# Environment and OS
+.env
+.env.local
+.DS_Store
+Thumbs.db

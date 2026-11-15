@@ -1,0 +1,21 @@
+# A04 · Stress test the ranks and evaluate RR's options
+
+**End goal** Distinguish reliable IPL candidates, incumbents used as benchmarks, and conditional scouting options. Base every decision on measured context and dated constraints.
+
+```text
+Read the A03 frozen decision and round1_prompts/rules_contract.md. Build three separate outputs: model performance order, verified or provisional form mapping, and an RR decision table. Use the latest dated official RR/IPL evidence for roster and auction facts. Mark unverified inputs unknown.
+
+Loop: reproduce rank -> rerun each stress test -> compare a player with a real alternative -> apply only sourced constraints -> verify output independence.
+
+1. The unperturbed baseline must reproduce the selected production fit, scores, cohort and rank order. Rerun that family for whole-match bootstrap and leave-one-match-out. Record whether upstream label fits are fixed or refit. Show eligibility loss separately from movement within a fixed pool. Report near-cutoff rank intervals, probability of top-ten inclusion under resampling, and the biggest fixture dependency. Test the effect of recent form and pressure definitions one at a time without retuning on 2026.
+2. Verify IPL transfer using the selected estimator in IPL-only, pooled, and supported partial-pooling variants on matched IPL assessment keys. Distinguish no IPL evidence, limited direct IPL evidence and strong direct support. Show whether a prospect's evidence comes mostly from emerging-team or international cricket. Include a transfer-risk card for a candidate such as Muqeem or Hendricks and a direct IPL comparison under matched roles. Let the evidence determine the interpretation.
+3. Build an as-of-date ledger for verified RR roster, official 2027 pool/availability, actual remaining purse, roster slots, overseas and playing limits, relevant rule exceptions, and credible participation limitations. Each value needs source, effective date, applicable season and scope. Keep prior auction prices historical. Distinguish the league salary cap from RR's spendable auction balance. Keep draft scenarios explicit. Without a complete official input, avoid claiming a player is buyable or a bid is affordable.
+4. Build a measured role comparison for each pick and near-cutoff alternate. Use matched IPL phases and workload against a verified incumbent or plausible eligible alternative. Calculate expected marginal impact versus that comparator and show uncertainty when the paired evidence supports it. Give the recommended role, evidence, downside and the trigger that would change the action. Correct case-sensitive role branching and remove generic fallback claims from published notes. Classify actions as incumbent benchmark, watchlist if available or verified auction option. A top ranking or dropdown entry never sets auction availability.
+5. Show how recommendations change under credible conditional cases, such as whether an overseas slot is available, an incumbent returns, or a rival bid pushes the candidate above a stated threshold. A fully specified auction scenario may compare feasible bundles against the available purse and slots with transparent integer constraints. Otherwise provide an ordered list of conditional alternatives and identify which input would determine the choice. Preserve the independent statistical ranks. Verify changing auction assumptions only changes auction decisions. Form mapping may filter only by verified organizer evidence, preserving relative model order and logging each skipped player.
+
+Gate: production rank parity, same-family transfer and sensitivity, independently sourced rules, measured incumbent comparisons, traceable match evidence, and an explicit status for every uncertainty that can change a bid.
+
+PASS -> round1_decision_validation/05_review.md
+FAIL -> repeat A04 for scenario, stability or evidence. Route fit/evaluation failures to round1_decision_validation/03_train_for_decisions.md or cricket/target issues to round1_decision_validation/02_data_and_target.md.
+BLOCKED -> STOP_PROVISIONAL only if scientific or source evidence needed for the core result cannot be reproduced. Resume at round1_decision_validation/04_stress_and_auction.md. Unknown official slots, prices, pool or form options can proceed as conditional/provisional.
+```

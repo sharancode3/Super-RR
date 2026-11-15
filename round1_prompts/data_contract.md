@@ -1,0 +1,19 @@
+# Round 1 input data contract
+
+Workspace root is C:\SHARAN PROJECTS\rr. The supplied pack is C:\SHARAN PROJECTS\rr\6af3166e7b922_data_pack. Use the six local CSVs and the Round 1 brief. Keep the raw folder unchanged.
+
+| Input | Grain and use | Known issue or control |
+| --- | --- | --- |
+| `ball_by_ball.csv` | 200,999 rows. Delivery key `match_id, innings, innings_ball_num`. Sort numerically by that key. | 867 fixtures with events. `extras1_runs` is a category code. `extras_2_runs` is nonzero on 36 rows. Delivery timestamps repeat. `bowl_speed` is zero on 77,861 rows. |
+| `matches.csv` | 883 unique fixtures. Match date, competition, teams, winner, result and revision metadata. | 371 IPL fixtures with 367 observed, 482 T20Is with 470 observed, 30 emerging-team fixtures with 30 observed. Preserve missing-delivery fixtures in the audit. |
+| `competitions.csv` | 141 unique competition IDs. Use names and format to separate IPL, T20I and emerging-team tournaments. | `T20` alone conflates IPL with emerging events. Preserve season strings as metadata. |
+| `playing_eleven.csv` | 28,381 rows. Participation, captain, keeper, batting order and Impact Player evidence. | 40 excess rows over the compound key across 35 groups. All 35 groups conflict on batting order. Retain conflict records and use historical observed batting order or a separately verified source. |
+| `competition_team_player_mapping.csv` | 6,413 rows. Player and team identity across competition entries. | Use `player_id` as identity and names as aliases. A mapping entry alone does not prove a player participated. |
+| `teams.csv` | 353 unique competition–team pairs. Normalize team names and IDs. | Keep competition context when matching team aliases. |
+| Round 1 problem statement PDF | Required lists, methodology, reproducibility and reliability evidence. | The live dropdown pool still needs verification. Track evidence of any capped-player restriction separately. |
+
+Of 390 checked win-by-runs fixtures with two innings and no revision fields, adding one run per extra plus the second extras field reproduced only 124 recorded margins. In RR vs RCB on 10 April 2026, RCB's raw batter runs sum to 188. The official team total was 201/8. Treat `runs` as off-bat evidence subject to reconciliation. The 13 wicket/ID discrepancies include 12 non-wicket events with a populated dismissed ID and one retired-out event without an ID. Preserve team wicket count and individual attribution as separate facts. [Official RR vs RCB report](https://www.iplt20.com/news/article/tata-ipl-2026-match-16-rr-vs-rcb-match-report)
+
+Cricsheet publishes public extras and delivery totals, and it withholds some Afghanistan matches. The RR pack has 61 fixtures with deliveries and an Afghanistan-labelled side, including differently named squads. Verify coverage by identity and competition. The number 61 describes the pack, with public overlap still unmeasured. Public archives can be supplied locally if retrieval is unavailable. [Cricsheet downloads and coverage](https://cricsheet.org/downloads/) · [JSON format](https://cricsheet.org/format/json/) · [Player register](https://cricsheet.org/register/) · [Data licence](https://cricsheet.org/licensing/)
+
+The raw file records 25 stumpings on wides, 15 run-outs on wides, and five run-outs on rows labelled `Overstep`. A legal-ball filter would lose these team events if applied before building the ledger. The provisional legal-ball rule treating `wide`, `Overstep`, `other`, and `Penalty` as non-consuming still leaves five nonfinal regulation overs with a count other than six out of 30,626. Verify whether these are scoring exceptions or data issues. The match table has 34 fixtures with a populated revision field. A separate result-text screen for unusual results flagged 37 fixtures without revision fields or additional innings, so blank revision fields alone are insufficient for cohort selection.

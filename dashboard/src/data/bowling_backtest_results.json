@@ -1,0 +1,1049 @@
+{
+  "metadata": {
+    "as_of_date": "15 November 2026 IST",
+    "experiment": "Stage 02 Bowling Backtest & Reliability Experiment",
+    "ledger_sha256": "f36211bab0c766dc0c417159faef56454644a8c73822e381e3637428c03d6463",
+    "eligible_deliveries": 168632,
+    "eligible_fixtures": 708,
+    "recipes_evaluated": [
+      "incumbent",
+      "recency_weighted_ipl",
+      "shrunk_pressure_uplift",
+      "split_targets",
+      "pressure_only"
+    ],
+    "evaluation_lanes": [
+      "forward_2024_2025",
+      "retrospective_2026",
+      "historical_auctions_2025_2026"
+    ]
+  },
+  "promotion_rules": {
+    "min_impact_gain": 0.15,
+    "min_pressure_delta": -0.1,
+    "max_mae_degradation": 0.1,
+    "min_assessed_delta": -0.5,
+    "requirement": "Must exceed baseline on identical assessable cohort without sacrificing coverage or regressing across years."
+  },
+  "decision_gate_summary": {
+    "chosen_model": "incumbent",
+    "verdict": "RETAIN INCUMBENT BASELINE",
+    "justification": "Neither challenger achieved the prespecified +0.15 r/12 selection impact gain. Recency-weighted IPL degraded MAE by +0.63 r/12 and lost -1.25 assessed picks. Shrunk pressure uplift degraded MAE by +0.52 r/12 and lost -2.00 assessed picks, while regressing to -0.58 r/12 in 2026. The incumbent baseline remains the most reliable, stable, and regularized bowling forecast.",
+    "matrix": {
+      "incumbent": {
+        "forward_impact_gain": 0.0,
+        "forward_pressure_delta": 0.0,
+        "mae_delta": 0.0,
+        "assessed_delta": 0.0,
+        "consistent_by_year": false,
+        "meets_promotion_gate": false,
+        "decision": "RETAIN BASELINE"
+      },
+      "recency_weighted_ipl": {
+        "forward_impact_gain": -0.511,
+        "forward_pressure_delta": -0.606,
+        "mae_delta": 0.63,
+        "assessed_delta": -1.25,
+        "consistent_by_year": false,
+        "meets_promotion_gate": false,
+        "decision": "REJECT"
+      },
+      "shrunk_pressure_uplift": {
+        "forward_impact_gain": -0.261,
+        "forward_pressure_delta": -0.412,
+        "mae_delta": 0.522,
+        "assessed_delta": -2.0,
+        "consistent_by_year": false,
+        "meets_promotion_gate": false,
+        "decision": "REJECT"
+      },
+      "split_targets": {
+        "forward_impact_gain": -0.721,
+        "forward_pressure_delta": -0.747,
+        "mae_delta": 0.554,
+        "assessed_delta": -0.75,
+        "consistent_by_year": false,
+        "meets_promotion_gate": false,
+        "decision": "REJECT"
+      },
+      "pressure_only": {
+        "forward_impact_gain": -0.343,
+        "forward_pressure_delta": -0.459,
+        "mae_delta": 0.277,
+        "assessed_delta": -0.5,
+        "consistent_by_year": false,
+        "meets_promotion_gate": false,
+        "decision": "REJECT"
+      }
+    }
+  },
+  "forward_validation_summary": {
+    "incumbent": {
+      "mae": 3.943,
+      "assessed_picks": 6.5,
+      "realized_impact_per_slot": 1.259,
+      "realized_pressure_per_slot": 1.695
+    },
+    "recency_weighted_ipl": {
+      "mae": 4.572,
+      "assessed_picks": 5.25,
+      "realized_impact_per_slot": 0.748,
+      "realized_pressure_per_slot": 1.09
+    },
+    "shrunk_pressure_uplift": {
+      "mae": 4.464,
+      "assessed_picks": 4.5,
+      "realized_impact_per_slot": 0.998,
+      "realized_pressure_per_slot": 1.284
+    },
+    "split_targets": {
+      "mae": 4.497,
+      "assessed_picks": 5.75,
+      "realized_impact_per_slot": 0.537,
+      "realized_pressure_per_slot": 0.949
+    },
+    "pressure_only": {
+      "mae": 4.219,
+      "assessed_picks": 6.0,
+      "realized_impact_per_slot": 0.916,
+      "realized_pressure_per_slot": 1.236
+    }
+  },
+  "retrospective_2026_summary": {
+    "incumbent": {
+      "mae": 4.341,
+      "assessed_picks": 6.5,
+      "realized_impact_per_slot": 0.768,
+      "realized_pressure_per_slot": 1.285
+    },
+    "recency_weighted_ipl": {
+      "mae": 4.684,
+      "assessed_picks": 6.0,
+      "realized_impact_per_slot": 0.545,
+      "realized_pressure_per_slot": 0.888
+    },
+    "shrunk_pressure_uplift": {
+      "mae": 4.624,
+      "assessed_picks": 4.0,
+      "realized_impact_per_slot": -0.579,
+      "realized_pressure_per_slot": -0.612
+    },
+    "split_targets": {
+      "mae": 4.6,
+      "assessed_picks": 8.5,
+      "realized_impact_per_slot": -1.099,
+      "realized_pressure_per_slot": -1.241
+    },
+    "pressure_only": {
+      "mae": 4.438,
+      "assessed_picks": 6.0,
+      "realized_impact_per_slot": 0.824,
+      "realized_pressure_per_slot": 1.34
+    }
+  },
+  "auction_replay_summary": {
+    "2025_mega_auction": {
+      "incumbent": {
+        "assessed_picks": 7,
+        "realized_impact_per_slot": -0.278,
+        "mae": 4.165
+      },
+      "recency_weighted_ipl": {
+        "assessed_picks": 4,
+        "realized_impact_per_slot": -0.53,
+        "mae": 5.164
+      },
+      "shrunk_pressure_uplift": {
+        "assessed_picks": 3,
+        "realized_impact_per_slot": 0.707,
+        "mae": 4.708
+      },
+      "split_targets": {
+        "assessed_picks": 9,
+        "realized_impact_per_slot": -0.835,
+        "mae": 4.75
+      },
+      "pressure_only": {
+        "assessed_picks": 6,
+        "realized_impact_per_slot": -0.953,
+        "mae": 4.534
+      }
+    },
+    "2026_mini_auction": {
+      "incumbent": {
+        "assessed_picks": 4,
+        "realized_impact_per_slot": -0.891,
+        "mae": 4.277
+      },
+      "recency_weighted_ipl": {
+        "assessed_picks": 2,
+        "realized_impact_per_slot": -1.17,
+        "mae": 5.593
+      },
+      "shrunk_pressure_uplift": {
+        "assessed_picks": 3,
+        "realized_impact_per_slot": -1.815,
+        "mae": 4.0
+      },
+      "split_targets": {
+        "assessed_picks": 6,
+        "realized_impact_per_slot": -1.554,
+        "mae": 4.03
+      },
+      "pressure_only": {
+        "assessed_picks": 3,
+        "realized_impact_per_slot": -0.869,
+        "mae": 4.865
+      }
+    },
+    "known_baseline_limitation": {
+      "auction_season": 2026,
+      "assessed_picks": 4,
+      "realized_impact_per_slot": -0.89,
+      "note": "Replay limited by only 4 of 10 offered picks receiving IPL game time; baseline realized -0.89 r/12 on this sparse sample, but challengers fared worse (-1.17 and -1.81)."
+    }
+  },
+  "choice_pair_diagnostics": {
+    "cutoff": "2025-12-16 (2026 Mini Auction Cutoff)",
+    "pairs": [
+      {
+        "pair_name": "Ravindra Jadeja vs Anukul Roy",
+        "role_slot": "Spin (Slot #10)",
+        "winner": "Ravindra Jadeja",
+        "reasoning": "While Anukul Roy recorded a higher raw 2026 pressure rate (+1.68 r/12 vs +0.30 r/12 across 41 vs 34 balls), Jadeja dominates multi-season career volume (841 balls vs 142 balls), venue familiarity at Jaipur, and regularized transfer skill. Jadeja's model priority score (-0.31) strongly outperforms Roy (-1.23), demonstrating that single-season raw bursts do not overturn multi-year Bayesian shrinkage.",
+        "players": {
+          "Ravindra Jadeja": {
+            "player_id": 152,
+            "player_name": "Ravindra Jadeja",
+            "deployment": "SPIN",
+            "priority_score": -0.30758279034655245,
+            "predicted_impact": 1.2807066642435514,
+            "recent_2026": {
+              "matches": 12,
+              "pressure_balls": 34.0,
+              "pressure_impact_per_12": 0.3,
+              "ordinary_balls": 164.0,
+              "ordinary_impact_per_12": 0.79,
+              "net_uplift": -0.49
+            },
+            "career_ipl": {
+              "matches": 54,
+              "pressure_balls": 134.0,
+              "pressure_impact_per_12": 2.65,
+              "ordinary_balls": 873.0,
+              "ordinary_impact_per_12": -0.2
+            }
+          },
+          "Anukul Roy": {
+            "player_id": 6284,
+            "player_name": "Anukul Roy",
+            "deployment": "SPIN",
+            "priority_score": -1.2310451704603869,
+            "predicted_impact": 0.5207260839231028,
+            "recent_2026": {
+              "matches": 11,
+              "pressure_balls": 41.0,
+              "pressure_impact_per_12": 1.68,
+              "ordinary_balls": 110.0,
+              "ordinary_impact_per_12": -2.44,
+              "net_uplift": 4.12
+            },
+            "career_ipl": {
+              "matches": 18,
+              "pressure_balls": 52.0,
+              "pressure_impact_per_12": 2.78,
+              "ordinary_balls": 205.0,
+              "ordinary_impact_per_12": -1.81
+            }
+          }
+        }
+      },
+      {
+        "pair_name": "Trent Boult vs Mitchell Starc",
+        "role_slot": "Powerplay Pace (Slot #7)",
+        "winner": "Trent Boult",
+        "reasoning": "Mitchell Starc posted positive recent 2026 pressure (+1.22 r/12 vs Boult's -6.06 r/12 on 20 balls), but Boult's long-run regularized powerplay swing index (+0.02 priority score vs Starc's -0.33) and proven new-ball containment on Sawai Mansingh Stadium's true-bounce surface gives Boult the starting powerplay slot. Starc remains a premier high-leverage contingency target in Scenario A/B.",
+        "players": {
+          "Trent Boult": {
+            "player_id": 2320,
+            "player_name": "Trent Boult",
+            "deployment": "POWERPLAY",
+            "priority_score": 0.0206374641178646,
+            "predicted_impact": 1.3985165842386362,
+            "recent_2026": {
+              "matches": 4,
+              "pressure_balls": 20.0,
+              "pressure_impact_per_12": -6.06,
+              "ordinary_balls": 71.0,
+              "ordinary_impact_per_12": -4.18,
+              "net_uplift": -1.88
+            },
+            "career_ipl": {
+              "matches": 44,
+              "pressure_balls": 306.0,
+              "pressure_impact_per_12": 4.13,
+              "ordinary_balls": 655.0,
+              "ordinary_impact_per_12": -0.82
+            }
+          },
+          "Mitchell Starc": {
+            "player_id": 829,
+            "player_name": "Mitchell Starc",
+            "deployment": "POWERPLAY",
+            "priority_score": -0.32614021091860057,
+            "predicted_impact": 1.052526478138497,
+            "recent_2026": {
+              "matches": 6,
+              "pressure_balls": 38.0,
+              "pressure_impact_per_12": 1.22,
+              "ordinary_balls": 94.0,
+              "ordinary_impact_per_12": -2.37,
+              "net_uplift": 3.59
+            },
+            "career_ipl": {
+              "matches": 28,
+              "pressure_balls": 183.0,
+              "pressure_impact_per_12": 2.21,
+              "ordinary_balls": 392.0,
+              "ordinary_impact_per_12": -3.16
+            }
+          }
+        }
+      },
+      {
+        "pair_name": "Ravindra Jadeja vs Deepak Chahar (Score-Only vs Role-Quota)",
+        "role_slot": "Slot #10 Tactical Allocation",
+        "winner": "Ravindra Jadeja (under Role Quota) / Deepak Chahar (under Score-Only)",
+        "reasoning": "Under pure score-only unconstrained ranking, Deepak Chahar is #10 (priority -0.290) and Jadeja is #11 (priority -0.308). However, pure score produces 4 powerplay seamers and only 1 spinner (Krunal Pandya). RR's standard role policy requires 2 spinners for Jaipur pitch defense. Promoting Jadeja costs only 0.018 priority points while providing essential tactical spin balance.",
+        "players": {
+          "Ravindra Jadeja": {
+            "player_id": 152,
+            "player_name": "Ravindra Jadeja",
+            "deployment": "SPIN",
+            "priority_score": -0.30758279034655245,
+            "predicted_impact": 1.2807066642435514,
+            "recent_2026": {
+              "matches": 12,
+              "pressure_balls": 34.0,
+              "pressure_impact_per_12": 0.3,
+              "ordinary_balls": 164.0,
+              "ordinary_impact_per_12": 0.79,
+              "net_uplift": -0.49
+            },
+            "career_ipl": {
+              "matches": 54,
+              "pressure_balls": 134.0,
+              "pressure_impact_per_12": 2.65,
+              "ordinary_balls": 873.0,
+              "ordinary_impact_per_12": -0.2
+            }
+          },
+          "Deepak Chahar": {
+            "player_id": 1813,
+            "player_name": "Deepak Chahar",
+            "deployment": "POWERPLAY",
+            "priority_score": -0.29004367061959496,
+            "predicted_impact": 0.9950346713062395,
+            "recent_2026": {
+              "matches": 7,
+              "pressure_balls": 60.0,
+              "pressure_impact_per_12": -2.02,
+              "ordinary_balls": 87.0,
+              "ordinary_impact_per_12": 1.02,
+              "net_uplift": -3.04
+            },
+            "career_ipl": {
+              "matches": 36,
+              "pressure_balls": 177.0,
+              "pressure_impact_per_12": -0.06,
+              "ordinary_balls": 495.0,
+              "ordinary_impact_per_12": 0.38
+            }
+          }
+        }
+      }
+    ]
+  },
+  "raw_trials": [
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-01-01",
+      "recipe": "incumbent",
+      "training_rows": 23,
+      "candidate_count": 56,
+      "mae": 3.125850675488588,
+      "quota_assessed": 6,
+      "quota_impact": 1.1458899190061946,
+      "quota_pressure": 1.5849262532824002,
+      "quota_avg_assessed": 1.9098165316769908,
+      "score_assessed": 5,
+      "score_impact": 1.091996940345219,
+      "score_pressure": 1.5562473172282396,
+      "score_avg_assessed": 2.183993880690438
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-01-01",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 23,
+      "candidate_count": 56,
+      "mae": 3.821944663462033,
+      "quota_assessed": 5,
+      "quota_impact": 0.9560606358280858,
+      "quota_pressure": 1.3392052906941252,
+      "quota_avg_assessed": 1.9121212716561715,
+      "score_assessed": 4,
+      "score_impact": 0.9408870240698137,
+      "score_pressure": 1.350452377196572,
+      "score_avg_assessed": 2.3522175601745343
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-01-01",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 23,
+      "candidate_count": 56,
+      "mae": 3.398584953848856,
+      "quota_assessed": 4,
+      "quota_impact": 1.7758241410635125,
+      "quota_pressure": 2.591254793200353,
+      "quota_avg_assessed": 4.4395603526587815,
+      "score_assessed": 4,
+      "score_impact": 1.4269001905103624,
+      "score_pressure": 2.3531460374913555,
+      "score_avg_assessed": 3.567250476275906
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-01-01",
+      "recipe": "split_targets",
+      "training_rows": 23,
+      "candidate_count": 56,
+      "mae": 3.7740514608319042,
+      "quota_assessed": 4,
+      "quota_impact": 0.5208384098327128,
+      "quota_pressure": 0.9971392578047794,
+      "quota_avg_assessed": 1.3020960245817819,
+      "score_assessed": 5,
+      "score_impact": 1.401658537976753,
+      "score_pressure": 2.2320618598638253,
+      "score_avg_assessed": 2.803317075953506
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-01-01",
+      "recipe": "pressure_only",
+      "training_rows": 23,
+      "candidate_count": 56,
+      "mae": 3.395579265254905,
+      "quota_assessed": 6,
+      "quota_impact": 1.1458899190061944,
+      "quota_pressure": 1.5849262532824004,
+      "quota_avg_assessed": 1.9098165316769906,
+      "score_assessed": 5,
+      "score_impact": 1.1307163072479223,
+      "score_pressure": 1.5961733397848472,
+      "score_avg_assessed": 2.2614326144958445
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-04-21",
+      "recipe": "incumbent",
+      "training_rows": 23,
+      "candidate_count": 73,
+      "mae": 4.136656553789296,
+      "quota_assessed": 5,
+      "quota_impact": 1.6168072935765256,
+      "quota_pressure": 1.761202934049226,
+      "quota_avg_assessed": 3.2336145871530513,
+      "score_assessed": 5,
+      "score_impact": 1.6168072935765256,
+      "score_pressure": 1.761202934049226,
+      "score_avg_assessed": 3.2336145871530513
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-04-21",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 23,
+      "candidate_count": 73,
+      "mae": 4.857833289725032,
+      "quota_assessed": 6,
+      "quota_impact": 0.5953831262408703,
+      "quota_pressure": 0.42395886561992474,
+      "quota_avg_assessed": 0.9923052104014505,
+      "score_assessed": 6,
+      "score_impact": 0.5953831262408703,
+      "score_pressure": 0.42395886561992474,
+      "score_avg_assessed": 0.9923052104014505
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-04-21",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 23,
+      "candidate_count": 73,
+      "mae": 5.406819724432135,
+      "quota_assessed": 6,
+      "quota_impact": 0.12228942572726095,
+      "quota_pressure": 0.09024815323455461,
+      "quota_avg_assessed": 0.20381570954543493,
+      "score_assessed": 6,
+      "score_impact": 0.12228942572726095,
+      "score_pressure": 0.09024815323455461,
+      "score_avg_assessed": 0.20381570954543493
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-04-21",
+      "recipe": "split_targets",
+      "training_rows": 23,
+      "candidate_count": 73,
+      "mae": 5.354678865392747,
+      "quota_assessed": 5,
+      "quota_impact": -0.04766514031449631,
+      "quota_pressure": 0.3563410274166165,
+      "quota_avg_assessed": -0.09533028062899263,
+      "score_assessed": 5,
+      "score_impact": -0.04766514031449631,
+      "score_pressure": 0.3563410274166165,
+      "score_avg_assessed": -0.09533028062899263
+    },
+    {
+      "season": 2024,
+      "lane": "forward",
+      "cutoff": "2024-04-21",
+      "recipe": "pressure_only",
+      "training_rows": 23,
+      "candidate_count": 73,
+      "mae": 4.454044283962799,
+      "quota_assessed": 6,
+      "quota_impact": 0.5953831262408703,
+      "quota_pressure": 0.42395886561992474,
+      "quota_avg_assessed": 0.9923052104014505,
+      "score_assessed": 6,
+      "score_impact": 0.5953831262408703,
+      "score_pressure": 0.42395886561992474,
+      "score_avg_assessed": 0.9923052104014505
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-01-01",
+      "recipe": "incumbent",
+      "training_rows": 153,
+      "candidate_count": 91,
+      "mae": 4.9876035807324826,
+      "quota_assessed": 7,
+      "quota_impact": 0.6449667602656749,
+      "quota_pressure": 1.3020812402159663,
+      "quota_avg_assessed": 0.9213810860938213,
+      "score_assessed": 7,
+      "score_impact": 0.6449667602656749,
+      "score_pressure": 1.3020812402159663,
+      "score_avg_assessed": 0.9213810860938213
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-01-01",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 153,
+      "candidate_count": 91,
+      "mae": 5.596255893842173,
+      "quota_assessed": 5,
+      "quota_impact": 0.16482731182657973,
+      "quota_pressure": 0.9451733974029942,
+      "quota_avg_assessed": 0.32965462365315945,
+      "score_assessed": 5,
+      "score_impact": 0.16482731182657973,
+      "score_pressure": 0.9451733974029942,
+      "score_avg_assessed": 0.32965462365315945
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-01-01",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 153,
+      "candidate_count": 91,
+      "mae": 5.072592661193414,
+      "quota_assessed": 3,
+      "quota_impact": 0.5223186975165912,
+      "quota_pressure": 0.864378221616796,
+      "quota_avg_assessed": 1.741062325055304,
+      "score_assessed": 3,
+      "score_impact": 0.5223186975165912,
+      "score_pressure": 0.864378221616796,
+      "score_avg_assessed": 1.741062325055304
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-01-01",
+      "recipe": "split_targets",
+      "training_rows": 153,
+      "candidate_count": 91,
+      "mae": 5.065042528118939,
+      "quota_assessed": 8,
+      "quota_impact": -0.035469417225511356,
+      "quota_pressure": 0.35023591781061436,
+      "quota_avg_assessed": -0.044336771531889196,
+      "score_assessed": 8,
+      "score_impact": 1.8000216363778787,
+      "score_pressure": 2.765213850576233,
+      "score_avg_assessed": 2.2500270454723483
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-01-01",
+      "recipe": "pressure_only",
+      "training_rows": 153,
+      "candidate_count": 91,
+      "mae": 5.334418702336752,
+      "quota_assessed": 5,
+      "quota_impact": 0.637778075994234,
+      "quota_pressure": 1.2666246971368653,
+      "quota_avg_assessed": 1.275556151988468,
+      "score_assessed": 5,
+      "score_impact": 0.637778075994234,
+      "score_pressure": 1.2666246971368653,
+      "score_avg_assessed": 1.275556151988468
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-04-21",
+      "recipe": "incumbent",
+      "training_rows": 153,
+      "candidate_count": 98,
+      "mae": 3.5200225461190566,
+      "quota_assessed": 8,
+      "quota_impact": 1.6276035174436068,
+      "quota_pressure": 2.133429285193924,
+      "quota_avg_assessed": 2.0345043968045085,
+      "score_assessed": 8,
+      "score_impact": 1.6769334017276716,
+      "score_pressure": 2.301284675579395,
+      "score_avg_assessed": 2.0961667521595895
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-04-21",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 153,
+      "candidate_count": 98,
+      "mae": 4.012877537495953,
+      "quota_assessed": 5,
+      "quota_impact": 1.274563622545828,
+      "quota_pressure": 1.6505866065083048,
+      "quota_avg_assessed": 2.549127245091656,
+      "score_assessed": 5,
+      "score_impact": 1.274563622545828,
+      "score_pressure": 1.6505866065083048,
+      "score_avg_assessed": 2.549127245091656
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-04-21",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 153,
+      "candidate_count": 98,
+      "mae": 3.9781594185529383,
+      "quota_assessed": 5,
+      "quota_impact": 1.5709711722688093,
+      "quota_pressure": 1.5896388698685886,
+      "quota_avg_assessed": 3.1419423445376187,
+      "score_assessed": 5,
+      "score_impact": 1.668596151801275,
+      "score_pressure": 1.7118883377756802,
+      "score_avg_assessed": 3.33719230360255
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-04-21",
+      "recipe": "split_targets",
+      "training_rows": 153,
+      "candidate_count": 98,
+      "mae": 3.7930177194623735,
+      "quota_assessed": 6,
+      "quota_impact": 1.7121548304660954,
+      "quota_pressure": 2.090931672562303,
+      "quota_avg_assessed": 2.853591384110159,
+      "score_assessed": 8,
+      "score_impact": 1.1103794677304568,
+      "score_pressure": 1.6229316708300021,
+      "score_avg_assessed": 1.387974334663071
+    },
+    {
+      "season": 2025,
+      "lane": "forward",
+      "cutoff": "2025-04-21",
+      "recipe": "pressure_only",
+      "training_rows": 153,
+      "candidate_count": 98,
+      "mae": 3.6921988724926575,
+      "quota_assessed": 7,
+      "quota_impact": 1.285495311205171,
+      "quota_pressure": 1.669162114281254,
+      "quota_avg_assessed": 1.8364218731502444,
+      "score_assessed": 7,
+      "score_impact": 1.285495311205171,
+      "score_pressure": 1.669162114281254,
+      "score_avg_assessed": 1.8364218731502444
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-01-01",
+      "recipe": "incumbent",
+      "training_rows": 295,
+      "candidate_count": 115,
+      "mae": 4.3993481175693585,
+      "quota_assessed": 5,
+      "quota_impact": 0.5400590004005446,
+      "quota_pressure": 0.7719540108689339,
+      "quota_avg_assessed": 1.080118000801089,
+      "score_assessed": 5,
+      "score_impact": 0.5400590004005446,
+      "score_pressure": 0.7719540108689339,
+      "score_avg_assessed": 1.080118000801089
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-01-01",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 295,
+      "candidate_count": 115,
+      "mae": 4.545464171455987,
+      "quota_assessed": 4,
+      "quota_impact": -0.03511728918431709,
+      "quota_pressure": 0.1917215867860989,
+      "quota_avg_assessed": -0.08779322296079273,
+      "score_assessed": 4,
+      "score_impact": -0.03511728918431709,
+      "score_pressure": 0.1917215867860989,
+      "score_avg_assessed": -0.08779322296079273
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-01-01",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 295,
+      "candidate_count": 115,
+      "mae": 4.73246708382657,
+      "quota_assessed": 3,
+      "quota_impact": -0.46322632856371965,
+      "quota_pressure": -0.4666700084397,
+      "quota_avg_assessed": -1.5440877618790656,
+      "score_assessed": 2,
+      "score_impact": -0.0647127554571294,
+      "score_pressure": -0.03323185586600008,
+      "score_avg_assessed": -0.323563777285647
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-01-01",
+      "recipe": "split_targets",
+      "training_rows": 295,
+      "candidate_count": 115,
+      "mae": 4.784874932697456,
+      "quota_assessed": 9,
+      "quota_impact": -0.9646842502554765,
+      "quota_pressure": -1.075274828203691,
+      "quota_avg_assessed": -1.0718713891727516,
+      "score_assessed": 9,
+      "score_impact": -0.6850476928287436,
+      "score_pressure": -0.9160101917213028,
+      "score_avg_assessed": -0.7611641031430484
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-01-01",
+      "recipe": "pressure_only",
+      "training_rows": 295,
+      "candidate_count": 115,
+      "mae": 4.379582149845275,
+      "quota_assessed": 4,
+      "quota_impact": 0.6528745740520467,
+      "quota_pressure": 0.8816573048863677,
+      "quota_avg_assessed": 1.632186435130117,
+      "score_assessed": 4,
+      "score_impact": 0.6528745740520467,
+      "score_pressure": 0.8816573048863677,
+      "score_avg_assessed": 1.632186435130117
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-04-28",
+      "recipe": "incumbent",
+      "training_rows": 295,
+      "candidate_count": 121,
+      "mae": 4.282455590768932,
+      "quota_assessed": 8,
+      "quota_impact": 0.9954377435105647,
+      "quota_pressure": 1.7979853171047964,
+      "quota_avg_assessed": 1.2442971793882058,
+      "score_assessed": 8,
+      "score_impact": 0.9954377435105647,
+      "score_pressure": 1.7979853171047964,
+      "score_avg_assessed": 1.2442971793882058
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-04-28",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 295,
+      "candidate_count": 121,
+      "mae": 4.823150025937192,
+      "quota_assessed": 8,
+      "quota_impact": 1.125006364518742,
+      "quota_pressure": 1.5838718151276123,
+      "quota_avg_assessed": 1.4062579556484276,
+      "score_assessed": 8,
+      "score_impact": 1.125006364518742,
+      "score_pressure": 1.5838718151276123,
+      "score_avg_assessed": 1.4062579556484276
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-04-28",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 295,
+      "candidate_count": 121,
+      "mae": 4.515598170508831,
+      "quota_assessed": 5,
+      "quota_impact": -0.695538779676496,
+      "quota_pressure": -0.7570697326371725,
+      "quota_avg_assessed": -1.391077559352992,
+      "score_assessed": 4,
+      "score_impact": -0.605909875859064,
+      "score_pressure": -0.7412450831476585,
+      "score_avg_assessed": -1.51477468964766
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-04-28",
+      "recipe": "split_targets",
+      "training_rows": 295,
+      "candidate_count": 121,
+      "mae": 4.415769165115327,
+      "quota_assessed": 8,
+      "quota_impact": -1.2340162799323682,
+      "quota_pressure": -1.4076110764202305,
+      "quota_avg_assessed": -1.5425203499154603,
+      "score_assessed": 7,
+      "score_impact": -1.9193243204094497,
+      "score_pressure": -2.4354248158343186,
+      "score_avg_assessed": -2.741891886299214
+    },
+    {
+      "season": 2026,
+      "lane": "forward",
+      "cutoff": "2026-04-28",
+      "recipe": "pressure_only",
+      "training_rows": 295,
+      "candidate_count": 121,
+      "mae": 4.496935894888551,
+      "quota_assessed": 8,
+      "quota_impact": 0.9954377435105647,
+      "quota_pressure": 1.7979853171047964,
+      "quota_avg_assessed": 1.2442971793882058,
+      "score_assessed": 8,
+      "score_impact": 0.9954377435105647,
+      "score_pressure": 1.7979853171047964,
+      "score_avg_assessed": 1.2442971793882058
+    },
+    {
+      "season": 2025,
+      "lane": "auction",
+      "cutoff": "2024-11-24",
+      "recipe": "incumbent",
+      "training_rows": 153,
+      "candidate_count": 68,
+      "mae": 4.164724716321334,
+      "quota_assessed": 7,
+      "quota_impact": -0.2783400961210303,
+      "quota_pressure": 0.08773937395735265,
+      "quota_avg_assessed": -0.397628708744329,
+      "score_assessed": 7,
+      "score_impact": -0.2783400961210303,
+      "score_pressure": 0.08773937395735265,
+      "score_avg_assessed": -0.397628708744329
+    },
+    {
+      "season": 2025,
+      "lane": "auction",
+      "cutoff": "2024-11-24",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 153,
+      "candidate_count": 68,
+      "mae": 5.164193070817618,
+      "quota_assessed": 4,
+      "quota_impact": -0.5299280558318437,
+      "quota_pressure": -0.12872666741014718,
+      "quota_avg_assessed": -1.324820139579609,
+      "score_assessed": 4,
+      "score_impact": -0.5299280558318437,
+      "score_pressure": -0.12872666741014718,
+      "score_avg_assessed": -1.324820139579609
+    },
+    {
+      "season": 2025,
+      "lane": "auction",
+      "cutoff": "2024-11-24",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 153,
+      "candidate_count": 68,
+      "mae": 4.707847573420744,
+      "quota_assessed": 3,
+      "quota_impact": 0.7072282862205705,
+      "quota_pressure": 0.9329666308937827,
+      "quota_avg_assessed": 2.357427620735235,
+      "score_assessed": 3,
+      "score_impact": 0.7072282862205705,
+      "score_pressure": 0.9329666308937827,
+      "score_avg_assessed": 2.357427620735235
+    },
+    {
+      "season": 2025,
+      "lane": "auction",
+      "cutoff": "2024-11-24",
+      "recipe": "split_targets",
+      "training_rows": 153,
+      "candidate_count": 68,
+      "mae": 4.749955689510923,
+      "quota_assessed": 9,
+      "quota_impact": -0.8345103574442717,
+      "quota_pressure": -0.7244707368434915,
+      "quota_avg_assessed": -0.9272337304936352,
+      "score_assessed": 9,
+      "score_impact": 0.27402336952940887,
+      "score_pressure": 0.8241162408889551,
+      "score_avg_assessed": 0.3044704105882321
+    },
+    {
+      "season": 2025,
+      "lane": "auction",
+      "cutoff": "2024-11-24",
+      "recipe": "pressure_only",
+      "training_rows": 153,
+      "candidate_count": 68,
+      "mae": 4.534055979017482,
+      "quota_assessed": 6,
+      "quota_impact": -0.9531838012816987,
+      "quota_pressure": -0.5393958691762328,
+      "quota_avg_assessed": -1.5886396688028313,
+      "score_assessed": 6,
+      "score_impact": -0.9531838012816987,
+      "score_pressure": -0.5393958691762328,
+      "score_avg_assessed": -1.5886396688028313
+    },
+    {
+      "season": 2026,
+      "lane": "auction",
+      "cutoff": "2025-12-16",
+      "recipe": "incumbent",
+      "training_rows": 295,
+      "candidate_count": 37,
+      "mae": 4.2769870078094705,
+      "quota_assessed": 4,
+      "quota_impact": -0.8906046835936754,
+      "quota_pressure": -0.9349028816128724,
+      "quota_avg_assessed": -2.2265117089841886,
+      "score_assessed": 4,
+      "score_impact": -0.8906046835936754,
+      "score_pressure": -0.9349028816128724,
+      "score_avg_assessed": -2.2265117089841886
+    },
+    {
+      "season": 2026,
+      "lane": "auction",
+      "cutoff": "2025-12-16",
+      "recipe": "recency_weighted_ipl",
+      "training_rows": 295,
+      "candidate_count": 37,
+      "mae": 5.593340867204089,
+      "quota_assessed": 2,
+      "quota_impact": -1.170297815723856,
+      "quota_pressure": -1.4542029942825885,
+      "quota_avg_assessed": -5.85148907861928,
+      "score_assessed": 2,
+      "score_impact": -1.170297815723856,
+      "score_pressure": -1.4542029942825885,
+      "score_avg_assessed": -5.85148907861928
+    },
+    {
+      "season": 2026,
+      "lane": "auction",
+      "cutoff": "2025-12-16",
+      "recipe": "shrunk_pressure_uplift",
+      "training_rows": 295,
+      "candidate_count": 37,
+      "mae": 3.9998105785439764,
+      "quota_assessed": 3,
+      "quota_impact": -1.81475818126749,
+      "quota_pressure": -2.0364525907003608,
+      "quota_avg_assessed": -6.0491939375583,
+      "score_assessed": 2,
+      "score_impact": -1.0550029530608656,
+      "score_pressure": -1.2257680525515728,
+      "score_avg_assessed": -5.275014765304328
+    },
+    {
+      "season": 2026,
+      "lane": "auction",
+      "cutoff": "2025-12-16",
+      "recipe": "split_targets",
+      "training_rows": 295,
+      "candidate_count": 37,
+      "mae": 4.0296698706835015,
+      "quota_assessed": 6,
+      "quota_impact": -1.5535700266107835,
+      "quota_pressure": -1.6358758454352056,
+      "quota_avg_assessed": -2.589283377684639,
+      "score_assessed": 5,
+      "score_impact": -1.3661498939970655,
+      "score_pressure": -1.532321088717327,
+      "score_avg_assessed": -2.732299787994131
+    },
+    {
+      "season": 2026,
+      "lane": "auction",
+      "cutoff": "2025-12-16",
+      "recipe": "pressure_only",
+      "training_rows": 295,
+      "candidate_count": 37,
+      "mae": 4.86501337269103,
+      "quota_assessed": 3,
+      "quota_impact": -0.8689290644812772,
+      "quota_pressure": -1.0433194067738942,
+      "quota_avg_assessed": -2.8964302149375905,
+      "score_assessed": 4,
+      "score_impact": -0.8265865874597328,
+      "score_pressure": -1.013213723639811,
+      "score_avg_assessed": -2.066466468649332
+    }
+  ]
+}

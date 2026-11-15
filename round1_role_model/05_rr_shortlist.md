@@ -1,0 +1,21 @@
+# Stage 05 · Build the current RR auction shortlist
+
+Use the Stage 04 model decision, current refit, and the same shortlist function used in replay. The brief asks for pressure reliability and a reason each player could strengthen RR. The shortlist's acquisition policy is a scouting choice that the report must state clearly.
+
+## Verify the cricket role and market evidence
+
+1. Start from the full role-qualified pool. Use canonical IDs, current role evidence, and a documented as-of date. Keep the all-player performance ranks traceable. Decide which jobs RR could need based on the dated RR roster and actual usage. Compare a proposed finisher, new-ball seamer, middle-overs spinner, or death bowler against a relevant incumbent or replacement level in that same assignment. Consider ordinary and pressure effectiveness, expected workload, repeatability, and Indian or overseas slot implications. Keeping is its own requirement where RR needs a keeper. Apply the cross-role comparison rule frozen in Stage 01.
+2. Verify recent IPL affiliations and newer official trades, releases, retirement notices, and auction information. Track event date, source date, evidence source, and the exact condition for each route. Keep 2026 pack affiliation distinct from current contract or 2027 auction status. For a replacement signing, check the confirmed term before requiring a release. Distinguish registration, final auction pool inclusion, fitness and NOC, and a possible trade. Apply a policy exclusion only with evidence for that policy. Unknown records stay unknown. Use the official 2027 purse and squad limits when published, with explicit scenarios for unavailable facts.
+3. Apply the declared eligibility and RR fit rule to the full pool. Treat rival stars with no credible acquisition path as benchmarks in the acquisition scenario. Handle RR incumbents as retention or role comparisons unless the competition guidance calls for a different treatment. Keep conditional prospects where the role and condition are specific. Assess T20I-only players using transfer uncertainty and credible acquisition evidence. An evidence-count diagnostic is useful context. Any rule that changes membership must be recorded and replayed to the extent supported by Stage 04.
+
+## Generate the twenty and their evidence
+
+- Derive the same 10 batters and 10 bowlers in the terminal and Unstop-ready exports, in ordered positions 1–10, with unique IDs within each discipline. Keep performance rank and submission rank separate and provide the exact policy reason for movement. If a model and a later selection rule produce different ranks, label each rank and use the correct corresponding score. A player can have evidence for both disciplines. Check each role independently.
+- For every pick include role and phase, usual impact, pressure impact and change, downside, recent IPL and transferred samples by match and ball, comparison to the RR alternative, and acquisition status. Provide a role-matched reserve with its own status and any slot difference. A batting-only alternative may be useful, and should be labelled as such when the need includes keeping. If evidence for a position is thin, show the uncertainty and the best supported conditional option for entrant review.
+- Record Unstop spellings only from actual form evidence. Prior screenshots verify that Abishek Porel and Kartik Tyagi appeared in searches. For the new twenty list the exact names still needing live verification. Prepare report-ready data and a change log. Account entry and submission remain with the entrant.
+
+## Loop and exit
+
+Rank → verify roles and sources → compare alternatives → regenerate the affected outputs. If a current fact changes, update the dated evidence and rerun selection and export. If a new rule changes order, return to Stage 04 to replay the rule before describing it as validated. Document unavailable official sources as conditions and advance with a reviewable scenario.
+
+**Pass when** the twenty have traceable rankings, an RR role and acquisition explanation, and matching IDs and order across exports. The reasons and remaining conditions must be explicit. **Next → [Stage 06](06_verify_and_handoff.md).**
