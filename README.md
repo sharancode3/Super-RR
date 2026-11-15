@@ -131,37 +131,86 @@ To ensure recommendations are not artifacts of a single outlier match, we perfor
 
 The application is engineered as a high-performance, accessible Single-Page Application (SPA):
 
+```mermaid
+flowchart TD
+    subgraph S1 ["01. Raw Data Ingestion & Auditing"]
+        D1["806 Regulation T20 Fixtures"]
+        D2["200,999 Ball-by-Ball Records"]
+        D1 --> D2
+    end
+
+    subgraph S2 ["02. Pre-Ball Leverage Modeling"]
+        L1["Match State Features<br/>Runs Required, Balls Remaining, Wickets"]
+        L2["Logistic Win Probability<br/>Logit W_t"]
+        L3["Pre-Ball Leverage Calculation<br/>L_t = sum p_o |q_o - q_bar|"]
+        L4["Contextual Historical Cutoff<br/>High Pressure = L_t ≥ Q_80"]
+        L1 --> L2 --> L3 --> L4
+    end
+
+    subgraph S3 ["03. Statistical Scoring & Shrinkage"]
+        B1["Pressure vs Ordinary Splits<br/>Signed Uplift Accounting"]
+        B2["Empirical Bayesian Shrinkage<br/>Sample-Size Regularization"]
+        B3["Composite Priority Forecast<br/>75% Pressure + 25% Baseline"]
+        B1 --> B2 --> B3
+    end
+
+    subgraph S4 ["04. Strategic Recruitment Funnel"]
+        F1["Broad Cricket Population<br/>118 Batters, 130 Bowlers"]
+        F2["Franchise Retention Screen<br/>RR Squad Decision vs Auction Target"]
+        F3["Tactical Squad Construction<br/>Powerplay, Death Pace, Spin Balance"]
+        F4["1,000-Draw Cluster Bootstrap<br/>Selection Stability Confidence"]
+        F1 --> F2 --> F3 --> F4
+    end
+
+    subgraph S5 ["05. Single-Page Application Delivery"]
+        UI1["Interactive Shortlist Boards<br/>10 Batters and 10 Bowlers"]
+        UI2["248-Player Model Rankings<br/>Balanced Columns and 0-Overflow"]
+        UI3["In-App Media Section<br/>19 Official Cards and 4-Tone Canvas"]
+        UI4["Player Preview Lightbox<br/>12 Verified IPL Stats and Speedometer"]
+        UI1 --- UI2 --- UI3 --- UI4
+    end
+
+    D2 --> L1
+    L4 --> B1
+    B3 --> F1
+    F4 --> S5
 ```
-+---------------------------------------------------------------------------------+
-|                                 Site Header                                     |
-|  [Official RR Crest]  SupeRR Selector S2    [Batters] [Bowlers] [Model] [Media] |
-+---------------------------------------------------------------------------------+
-|                                                                                 |
-|  +--------------------+   +--------------------------------------------------+  |
-|  |  Floating Sidebar  |   |                  Hero Section                    |  |
-|  |                    |   |  Audited 2027 Rajasthan Royals Decision Engine   |  |
-|  |  [RR Official]     |   +--------------------------------------------------+  |
-|  |  [Batters Icon]    |                                                         |
-|  |  [Bowlers Icon]    |   +--------------------------------------------------+  |
-|  |  [Sliders Icon]    |   |     Ranked Boards: 10 Batters & 10 Bowlers       |  |
-|  |  [Methodology Icon]|   |  High-Res Portraits, Uplift Strips, LOO Bounds   |  |
-|  |  [Photo Studio]    |   +--------------------------------------------------+  |
-|  |                    |                                                         |
-|  |  (Dynamic Spacing  |   +--------------------------------------------------+  |
-|  |   & Auto-Clearing) |   |    Model Rankings: 248-Player Baseline Table     |  |
-|  |                    |   |  Balanced Columns, 0-Overflow, Player Thumbnails |  |
-|  +--------------------+   +--------------------------------------------------+  |
-|                                                                                 |
-|                           +--------------------------------------------------+  |
-|                           |      Methodology & Formula Verification (KaTeX)  |  |
-|                           |  Match 54 Case Study, Stability, Backtests       |  |
-|                           +--------------------------------------------------+  |
-|                                                                                 |
-|                           +--------------------------------------------------+  |
-|                           |   Media Section: 19 Official Cards & IPL Stats   |  |
-|                           |  4-Tone Studio Canvas Swatches & Modal Lightbox  |  |
-|                           +--------------------------------------------------+  |
-+---------------------------------------------------------------------------------+
+
+### Application Component Architecture
+
+```mermaid
+flowchart LR
+    App["App Root Orchestrator"]
+    
+    subgraph Navigation ["Persistent Navigation"]
+        Header["Site Header<br/>Anchor Nav & Official RR Crest"]
+        Sidebar["Floating Sidebar<br/>Auto-Positioning & Quick-Jump SVGs"]
+    end
+
+    subgraph Views ["SPA Core Sections"]
+        Hero["Hero Section<br/>Scouting Board Scope"]
+        Boards["Ranked Boards<br/>10 Batters & 10 Bowlers Cards"]
+        Rankings["Model Rankings<br/>Top 15 Tables & Scored Pool"]
+        Methods["Methodology Audit<br/>KaTeX Formulations & Match 54 Case"]
+        Media["Media Section<br/>19 Cards, 4-Tone Tiles, Verified Stats"]
+    end
+
+    subgraph Modals ["In-App Interactive Dialogs"]
+        Preview["Player Preview Modal<br/>12 Verified Metrics & Career Splits"]
+        Visualizer["Speedometer & Economy Gauges<br/>4-Tone Canvas Swatches"]
+    end
+
+    App --> Header
+    App --> Sidebar
+    App --> Hero
+    App --> Boards
+    App --> Rankings
+    App --> Methods
+    App --> Media
+
+    Boards -.->|Click Portrait| Preview
+    Media -.->|Preview Card| Preview
+    Preview --> Visualizer
 ```
 
 ### Key Architectural Highlights
