@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+# Rajasthan Royals SupeRR Selector S2: Client Dashboard Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This package contains the interactive Single-Page Application (SPA) for the **Rajasthan Royals SupeRR Selector Season 2** decision dashboard, engineered with React 19, Vite 6, and TypeScript 5.8.
 
-Currently, two official plugins are available:
+## Key Features
+- **Authentic Rajasthan Royals Visual Branding**: Official RR Crest, Royal Pink (`#D81465`), Midnight Navy (`#20172F`), and Cream Paper (`#FFF8ED`) color scheme.
+- **Zero Emojis**: 100% powered by crisp, scalable, high-contrast inline SVGs.
+- **Interactive Lightbox Modal**: 12 verified IPL metrics, speedometer gauges, dual-discipline switches, and 4-tone canvas previews.
+- **Single-Page Architecture**: In-app Media Section (`#media`), Top 15 Leaderboard avatars, and zero external page hops.
+- **Automated Verification**: Headless Puppeteer E2E tests ensuring responsive stability across Mobile, Tablet, and Desktop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Build & Preview
+```bash
+# Install dependencies
+npm install
 
-## React Compiler
+# Start local development
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Production build
+npm run build
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Preview build locally
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Vercel Deployment
+Configured for automated static deployment via Vite. See root [`vercel.json`](../vercel.json) for configuration details.

@@ -1,124 +1,287 @@
-# Super-RR Selector Season 2: Rajasthan Royals IPL 2027 Auction & Scouting Intelligence Dashboard
+# SupeRR Selector Season 2: Rajasthan Royals IPL 2027 Auction & Retention Strategy Dashboard
 
-[![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
-[![React 19](https://img.shields.io/badge/React-19.1.0-blue?style=flat&logo=react)](https://react.dev/)
-[![Vite 6](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
-[![TypeScript 5.8](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
-[![IPL 2027 Ready](https://img.shields.io/badge/IPL-2027_Ready-EC1C24?style=flat)](https://www.iplt20.com/)
+[![Vercel Deployment](https://img.shields.io/badge/Deployment-Live%20on%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://superrr-eight.vercel.app/)
+[![React 19](https://img.shields.io/badge/Frontend-React%2019%20%7C%20Vite%206-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/Language-TypeScript%205.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Python Analytics](https://img.shields.io/badge/Analytics-Python%20%7C%20Scikit--Learn-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Challenge](https://img.shields.io/badge/Challenge-Rajasthan%20Royals%20SupeRR%20Selector%20S2-D81465?style=for-the-badge)](https://unstop.com/)
 
-A high-performance scouting intelligence dashboard engineered for the **Rajasthan Royals (RR)** recruitment team ahead of the **IPL 2027 Auction**. Built on pre-ball win-probability leverage modeling ($L_t$), Bayesian shrinkage, forward-chaining backtests, and 1,000-resample cluster-bootstrap stability bounds.
+An enterprise-grade, data-hardened recruitment and auction intelligence dashboard engineered specifically for the **Rajasthan Royals (RR)** decision-making panel ahead of the **IPL 2027 Mega-Auction**. Built on chronological ball-by-ball delivery leverage modeling, Bayesian volume shrinkage, forward-chaining backtests across 806 regulation fixtures, and 1,000-resample cluster-bootstrap stability bounds.
 
----
-
-## 👑 Features & Architecture
-
-- **Official Rajasthan Royals Visual Identity**: Authentic RR Crest SVG with `#FFFFFF` crisp framing, RR Royal Pink (`#E0006C`), and Midnight Navy (`#0C2340`) aesthetics.
-- **Zero-Emoji Architecture**: Strictly zero emojis across the entire codebase; 100% powered by crisp, scalable, high-contrast inline SVGs.
-- **In-App Interactive Player Preview Modal**:
-  - Master high-resolution player portraits with dynamic 4-tone studio canvas background switcher (Pink `#FDE8EF`, Blue `#EBF2FF`, Paper `#FFFDF8`, Dark `#0C1829`).
-  - Verified 2022–2026 IPL career numbers, strike rate speedometer gauge, bowling economy efficiency gauge, and High-Pressure vs Career performance comparisons.
-  - Interactive discipline switcher for dual-role stars (e.g. Ravindra Jadeja `#152` toggles between Batting Rank #9 and Bowling Rank #10).
-- **Verified 20-Player Shortlist**:
-  - **10 Batters**: Vaibhav Sooryavanshi (#1), Josh Inglis (#2), Sameer Rizvi (#3), Oliver Davies Connolly (#4), Donovan Ferreira (#5), Abishek Porel (#6), Riyan Parag (#7), Shashank Singh (#8), Ravindra Jadeja (#9), Venkatesh Iyer (#10).
-  - **10 Bowlers**: Jasprit Bumrah (Benchmark Leader), Mohammed Siraj (#1), Noor Ahmad (#2), Josh Hazlewood (#3), Prasidh Krishna (#4), Matheesha Pathirana (#5), Gerald Coetzee (#6), Kuldeep Yadav (#7), Sandeep Sharma (#8), T Natarajan (#9), Ravindra Jadeja (#10).
-- **Rigorous Mathematical Methodology**:
-  - Live KaTeX rendered formulations for Pre-Ball Leverage $L_t = \sum_o p_o |q_o - \bar{q}|$, Bayesian Empirical Shrinkage, and Historical Cutoff ($L_t \ge 0.0254$ for Tier-1 IPL Chase).
-  - Reproducible case study: IPL 2026 Match 54 RCB vs MI (pre-ball leverage `0.335582`, cutoff `0.025364`).
-- **Device Screen Auto-Stabilization**:
-  - Responsive layouts calibrated for Mobile (390px), Tablet (768px), Laptop (1100px), and Desktop (1440px+).
-  - Body scroll-locking, escape key listeners, and accessibility standards (`role="dialog"`, `aria-modal="true"`).
+Developed by **Sharan S** ([@sharancode3](https://github.com/sharancode3)) for the **Rajasthan Royals SupeRR Selector Season 2 Challenge**.
 
 ---
 
-## 🚀 Instant Deployment on Vercel
+## Executive Summary & Tactical Overview
 
-This repository is pre-configured for **turnkey deployment on Vercel** with zero backend infrastructure required:
+The objective of this system is to identify, rank, and stress-test cricket talent capable of producing match-winning impact specifically under extreme match leverage—differentiating players who inflate stats in low-stakes situations from players who consistently move win probability in championship moments.
 
-### Option A: 1-Click Import via Vercel Dashboard
-1. Go to [Vercel](https://vercel.com/) and click **"Add New..." > "Project"**.
-2. Select and import the repository: `https://github.com/sharancode3/Super-RR.git`.
-3. Vercel automatically detects the root [`vercel.json`](./vercel.json):
-   - **Framework Preset**: Vite
+### Core Deliverables at a Glance
+
+1. **Two Ranked Top-10 Shortlists**: Exactly 10 Batters and 10 Bowlers customized to Rajasthan Royals' squad spine, powerplay execution, death-overs containment, and middle-overs balance.
+2. **Objective High-Pressure Definition ($L_t \ge Q_{80}$)**: Pre-ball leverage computed strictly on historical data prior to each delivery, validated against a reproducible IPL 2026 Match 54 final-ball case study.
+3. **Dual-Model Parity**: A single, reproducible analytical snapshot powering both broad machine rankings (118 Batters, 130 Bowlers) and actionable franchise recruitment decisions.
+4. **100% Single-Page Architecture**: High-speed, fluid client application with in-app player cards, verified 2022–2026 IPL career records, and responsive data visualizations.
+5. **Zero-Emoji Guarantee**: 100% accessible, publication-grade SVG iconography throughout the visual and code architecture.
+
+---
+
+## Verified Rajasthan Royals 2027 Recruitment Shortlist
+
+The final 20 selections were derived from a multi-stage filtering funnel: empirical leverage estimation -> Bayesian shrinkage -> franchise retention constraints -> tactical role balancing -> 1,000-iteration cluster bootstrap stability audits.
+
+### Discipline 01: Batting Shortlist (10 Targets)
+
+| RR Rank | Player | 2026 Reference | Role / Phase | Forecast Impact (r/12) | HP Observed (r/12) | Top-10 Stability | Franchise / Auction Status | Tactical Reason |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| **#1** | **Vaibhav Sooryavanshi** | Rajasthan Royals | Powerplay Opener | +4.94 | +11.02 (63b) | 95.8% | RR squad decision | Retained incumbent opener; led RR in high-pressure balls in 2026. |
+| **#2** | **Josh Inglis** | Lucknow Super Giants | Keeper-Batter | +4.70 | +13.49 (24b) | 87.5% | Conditional auction target | Dynamic powerplay wicketkeeper-batter; primary overseas target. |
+| **#3** | **Sameer Rizvi** | Delhi Capitals | Middle-Order | +3.84 | +18.81 (6b) | 63.0% | Conditional auction target | High-ceiling spin enforcer for middle overs (overs 7–15). |
+| **#4** | **Oliver Davies Connolly** | Rajasthan Royals | Pace-Hitter | +3.70 | +2.88 (48b) | 68.8% | RR squad decision | Retained middle-order stabilizer against 140kph+ seam bowling. |
+| **#5** | **Donovan Ferreira** | Delhi Capitals | Finisher / Keeper | +3.54 | +24.47 (6b) | 54.1% | Conditional auction target | Boundary-per-ball outlier at death (overs 16–20). |
+| **#6** | **Abishek Porel** | Delhi Capitals | Keeper-Batter | +3.48 | +4.03 (15b) | 67.2% | Conditional auction target | Left-hand powerplay counter-attacker; wicketkeeping cover. |
+| **#7** | **Riyan Parag** | Rajasthan Royals | Middle Spine | +3.41 | +7.13 (12b) | 42.5% | RR squad decision | Core domestic middle-order spine; tested across 1,000 resamples. |
+| **#8** | **Shashank Singh** | Punjab Kings | Finisher | +3.03 | +3.61 (41b) | 59.3% | Conditional auction target | Proven domestic death-over executor with verified calm under fire. |
+| **#9** | **Ravindra Jadeja** | Chennai Super Kings | Dual Finisher | +2.79 | +3.68 (18b) | 56.4% | Conditional auction target | Premier dual-role finisher; also ranked #10 in Bowlers. |
+| **#10** | **Venkatesh Iyer** | Kolkata Knight Riders | Pace-Allrounder | +2.61 | +1.74 (42b) | 58.7% | Conditional auction target | Tactical left-hand pace option with big-match playoff pedigree. |
+
+### Discipline 02: Bowling Shortlist (10 Targets)
+
+| RR Rank | Player | 2026 Reference | Role / Phase | Forecast Impact (r/12) | HP Observed (r/12) | Top-10 Stability | Franchise / Auction Status | Tactical Reason |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| **#1** | **Mohammed Siraj** | Gujarat Titans | New-Ball Seam | +3.21 | +11.39 (43b) | 78.4% | Conditional auction target | Leading pace target; elite powerplay swing and early wickets. |
+| **#2** | **Jason Holder** | Gujarat Titans | Pace All-Rounder | +2.95 | +12.33 (26b) | 72.8% | Conditional auction target | Versatile overseas pace-allrounder; provides death-over cover. |
+| **#3** | **Kartik Tyagi** | Kolkata Knight Riders | Indian Death Pace | +2.71 | +7.32 (51b) | 69.7% | Conditional auction target | Domestic high-pace specialist with 8 recorded pressure matches. |
+| **#4** | **Lungi Ngidi** | Delhi Capitals | Death Specialist | +2.31 | +4.21 (64b) | 76.0% | Conditional auction target | Proven overseas death option; heavy boundary suppression. |
+| **#5** | **Krunal Pandya** | Royal Challengers Bengaluru | Spin Container | +2.37 | +6.37 (18b) | 67.7% | Conditional auction target | Left-arm orthodox; controls middle overs with tight economy. |
+| **#6** | **Rasikh Salam** | Royal Challengers Bengaluru | Domestic Seamer | +2.05 | +9.24 (28b) | 59.8% | Conditional auction target | Domestic death-overs enforcer; demonstrated in Match 54 final ball. |
+| **#7** | **Trent Boult** | Mumbai Indians | Left-Arm Swing | +1.89 | +5.12 (35b) | 58.2% | Conditional auction target | Elite new-ball wicket-taker; established RR legacy fit. |
+| **#8** | **Mohammed Shami** | Sunrisers Hyderabad | Veteran Seam | +1.74 | +4.89 (30b) | 53.6% | Conditional auction target | Master seam presentation; controls run-rate across phases. |
+| **#9** | **Anshul Kamboj** | Chennai Super Kings | Emerging Domestic | +1.62 | +3.78 (22b) | 51.4% | Conditional auction target | High-upside domestic seamer with recorded death-over composure. |
+| **#10** | **Ravindra Jadeja** | Chennai Super Kings | Spin Container | +1.48 | +2.95 (45b) | 48.9% | Conditional auction target | Satisfies RR two-spinner rule; dual-discipline asset. |
+
+*Benchmark Note*: **Jasprit Bumrah** ranked #1 overall in the machine bowling model (+3.58 r/12 priority score). He is classified as *Outside Current Shortlist Assumptions* because franchise retention economics reliably prevent his availability at open auction.
+
+---
+
+## Quantitative Methodology & Mathematical Formulations
+
+The recruitment pipeline processes **200,999 raw legal deliveries** across **806 regulation fixtures (2022–2026)**. The modeling eliminates subjective bias through five rigorous mathematical stages.
+
+### 1. Pre-Ball Win-Probability Leverage ($L_t$)
+
+Leverage measures how much the match outcome hangs on a specific delivery before it is bowled. Rather than using post-hoc run values, we estimate win probability $W_t$ via logistic regression on match state:
+
+```math
+\text{Logit}(W_t) = \beta_0 + \beta_1 (\text{Runs Required}) + \beta_2 (\text{Balls Remaining}) + \beta_3 (\text{Wickets Lost}) + \beta_4 (\text{Innings})
+```
+
+For each possible delivery outcome $o \in \{0, 1, 2, 3, 4, 6, \text{Wicket}\}$, let $p_o$ be the transition probability and $q_o$ be the resulting win probability. Pre-ball leverage $L_t$ is defined as the outcome-probability weighted deviation from the expected post-ball win probability:
+
+```math
+\bar{q} = \sum_{o \in O} p_o q_o
+```
+
+```math
+L_t = \sum_{o \in O} p_o |q_o - \bar{q}|
+```
+
+### 2. Contextual Historical Cutoff ($Q_{80}$)
+
+A delivery is strictly classified as **High Pressure** if and only if its pre-ball leverage exceeds the historical 80th percentile for that match phase and competition tier, calibrated only on data preceding the fixture:
+
+```math
+\text{IsHighPressure}_t = \mathbf{1}\left(L_t \ge Q_{80}(\text{phase}_t, \text{tier}_t)\right)
+```
+
+- **Tier-1 IPL Run Chases (2nd Innings)**: $Q_{80} = 0.025364$ (displayed as **0.0254**).
+- **1st-Innings Setting Phases**: $Q_{80} \approx 0.0141 - 0.0144$ (20 overs dilute single-ball leverage).
+
+#### Verified Case Study: IPL 2026 Match 54 (RCB vs MI)
+- **Context**: RCB chasing 167 against MI; needed 2 runs from the final legal delivery.
+- **Pre-Ball Leverage ($L_t$)**: **`0.335582`** (33.56 percentage points of expected swing).
+- **Historical Cutoff ($Q_{80}$)**: **`0.025364`** (`0.0254`).
+- **Audit Verification**: $0.335582 \ge 0.025364$ ($\approx 13.2\times$ above threshold), establishing High Pressure purely from verified match records without synthetic interpolation.
+
+### 3. Bayesian Volume Shrinkage & Composite Score
+
+Small sample sizes distort raw strike rates and economies. We apply empirical Bayesian shrinkage toward the global competition prior:
+
+```math
+\hat{\theta}_i = \frac{n_i}{n_i + K} \bar{x}_i + \frac{K}{n_i + K} \mu_0
+```
+
+Where $n_i$ represents high-pressure deliveries faced/bowled, $\mu_0$ is the league-wide mean, and $K$ is the regularizing shrinkage parameter (calibrated via leave-one-out cross-validation). The final composite priority score blends:
+
+```math
+\text{Priority Score}_i = 0.75 \times \hat{\theta}_{\text{Pressure}, i} + 0.25 \times \hat{\theta}_{\text{Ordinary}, i} - \lambda \cdot \text{SE}(\hat{\theta}_i)
+```
+
+### 4. Cluster-Bootstrap Stability ($B = 1,000$)
+
+To ensure recommendations are not artifacts of a single outlier match, we perform 1,000 full-match cluster bootstrap resamples. For each resample, the entire ranking pipeline is re-run. Top-10 stability measures the exact frequency with which a player appeared in the top-10 across all draws:
+- **Vaibhav Sooryavanshi**: 95.8% (958 / 1,000 resamples)
+- **Josh Inglis**: 87.5% (875 / 1,000 resamples)
+- **Mohammed Siraj**: 78.4% (784 / 1,000 resamples)
+- **Riyan Parag**: 42.5% (425 / 1,000 resamples; measures selection stability under match-level noise)
+
+---
+
+## Technical & UX Architecture
+
+The application is engineered as a high-performance, accessible Single-Page Application (SPA):
+
+```
++---------------------------------------------------------------------------------+
+|                                 Site Header                                     |
+|  [Official RR Crest]  SupeRR Selector S2    [Batters] [Bowlers] [Model] [Media] |
++---------------------------------------------------------------------------------+
+|                                                                                 |
+|  +--------------------+   +--------------------------------------------------+  |
+|  |  Floating Sidebar  |   |                  Hero Section                    |  |
+|  |                    |   |  Audited 2027 Rajasthan Royals Decision Engine   |  |
+|  |  [RR Official]     |   +--------------------------------------------------+  |
+|  |  [Batters Icon]    |                                                         |
+|  |  [Bowlers Icon]    |   +--------------------------------------------------+  |
+|  |  [Sliders Icon]    |   |     Ranked Boards: 10 Batters & 10 Bowlers       |  |
+|  |  [Methodology Icon]|   |  High-Res Portraits, Uplift Strips, LOO Bounds   |  |
+|  |  [Photo Studio]    |   +--------------------------------------------------+  |
+|  |                    |                                                         |
+|  |  (Dynamic Spacing  |   +--------------------------------------------------+  |
+|  |   & Auto-Clearing) |   |    Model Rankings: 248-Player Baseline Table     |  |
+|  |                    |   |  Balanced Columns, 0-Overflow, Player Thumbnails |  |
+|  +--------------------+   +--------------------------------------------------+  |
+|                                                                                 |
+|                           +--------------------------------------------------+  |
+|                           |      Methodology & Formula Verification (KaTeX)  |  |
+|                           |  Match 54 Case Study, Stability, Backtests       |  |
+|                           +--------------------------------------------------+  |
+|                                                                                 |
+|                           +--------------------------------------------------+  |
+|                           |   Media Section: 19 Official Cards & IPL Stats   |  |
+|                           |  4-Tone Studio Canvas Swatches & Modal Lightbox  |  |
+|                           +--------------------------------------------------+  |
++---------------------------------------------------------------------------------+
+```
+
+### Key Architectural Highlights
+- **Unified Single-Page App**: The Media Studio (`#media`) is rendered directly in the React DOM. No external HTML pages, eliminating navigation disruption.
+- **Table Boundary Engineering**: Model Rankings tables use balanced width allocations (`Rank: 55px`, `Player: 175px`, `Score: 90px`, `Tactical Rationale: 253px+`) ensuring `scrollWidth <= clientWidth` on all desktop viewports with zero horizontal overflow.
+- **Interactive Lightbox Modal**: Clicking any player portrait opens a detailed studio view with 12 verified IPL metrics, speedometer gauges, and 4-tone canvas previews (Pink, Blue, Paper, Dark).
+- **Responsive Auto-Stabilization**: Validated on Mobile (390×844), Tablet (768×1024), and Desktop (1440×900) with zero clipping or text spillage.
+- **Strict Zero-Emoji Policy**: All visual indicators use scalable, high-contrast inline SVGs.
+
+---
+
+## Verification & Testing Suite
+
+Every claim, score, status, and UI behavior is backed by automated tests:
+
+| Test Suite | Purpose | Tests / Assertions | Status |
+| :--- | :--- | :---: | :---: |
+| `verify_complete_e2e.cjs` | Puppeteer end-to-end browser audit (SPA routing, modals, overflow, thumbnails, zero emojis) | 18 Checks | **PASSED** |
+| `diag_table_responsive.cjs` | Container boundary & table overflow verification across 4 viewports | 4 Viewports | **PASSED** |
+| `verify_evidence_corrections.cjs` | Verifies score parity, status strings, and Match 54 leverage numbers | 33 Assertions | **PASSED** |
+| `tests/test_stage_role_model.py` | Python pipeline regression across batting & bowling candidate pools | 160 Fits | **PASSED** |
+| `tests/test_stage_backtest.py` | Chronological forward-chaining backtest assertions (2022–2026) | 26 Assertions | **PASSED** |
+
+---
+
+## Deployment & Setup Guide
+
+The application is turnkey and deploys natively on **Vercel** with zero backend servers required.
+
+### 1-Click Deployment to Vercel
+1. Fork or push this repository to your GitHub account.
+2. Go to **[Vercel Dashboard](https://vercel.com/)** and click **Import Project**.
+3. Select `Super-RR`.
+4. Vercel automatically detects the root [`vercel.json`](./vercel.json):
+   - **Framework**: Vite
    - **Build Command**: `npm --prefix dashboard run build`
    - **Output Directory**: `dashboard/dist`
-4. Click **Deploy**. Your dashboard will be live within ~40 seconds!
+   - **Rewrites**: `/(.*) -> /index.html` (SPA client routing)
+5. Click **Deploy**. The dashboard will be live in under 45 seconds.
 
-### Option B: Deploy from Subdirectory
-If configuring Vercel with **Root Directory** set to `dashboard`:
-- Vercel uses [`dashboard/vercel.json`](./dashboard/vercel.json):
-  - **Build Command**: `npm run build`
-  - **Output Directory**: `dist`
+### Local Development Setup
 
----
+#### Prerequisites
+- Node.js 18.0.0 or higher
+- npm 9.0.0 or higher
+- Python 3.10+ (optional, for regenerating backtest models)
 
-## 💻 Local Development
-
-### Prerequisites
-- Node.js 18+ or 20+
-- npm 9+
-
-### Setup
+#### Steps
 ```bash
-# Clone the repository
+# 1. Clone repository
 git clone https://github.com/sharancode3/Super-RR.git
 cd Super-RR
 
-# Install dashboard dependencies
-npm --prefix dashboard install
+# 2. Install workspace dependencies
+npm install
 
-# Start local development server
+# 3. Start local development server
 npm run dev
+# The Vite server will start at http://localhost:5173/
 
-# Or run from dashboard directory directly
-cd dashboard
-npm run dev
-```
-
-### Build & Preview
-```bash
-# Production build
+# 4. Run automated production build
 npm run build
 
-# Preview production build locally
-npm run preview
-```
-
-### End-to-End Test Suite
-Run the automated verification suite (verifies zero emojis, in-app modal mechanics, multi-screen responsive bounds, KaTeX formulas, and score parity):
-```bash
-node dashboard/scripts/verify_in_app_modal_and_zero_emojis.cjs
-node dashboard/scripts/verify_evidence_corrections.cjs
-node dashboard/scripts/verify_timeline_media_floating.cjs
+# 5. Run end-to-end headless browser test suite
+node dashboard/scripts/verify_complete_e2e.cjs
 ```
 
 ---
 
-## 📁 Repository Structure
+## Project Directory Layout
 
 ```
-.
-├── dashboard/                  # React + Vite Frontend Application
-│   ├── public/                 # Static assets, fonts, official logos
-│   │   ├── portraits/          # 640w master portraits & contact sheet
-│   │   ├── rajasthan_royals_official_logo.svg  # Official RR Crest
-│   │   └── favicon.svg         # Official RR Crest Favicon
-│   ├── src/                    # Application source code
-│   │   ├── components/         # React components (Modal, Cards, Boards, Header)
-│   │   ├── data/               # Verified ranking records, metrics, manifests
-│   │   ├── App.tsx             # Root application orchestrator
-│   │   └── App.css             # High-contrast CSS & responsive rules
-│   ├── scripts/                # Verification test suites & data generators
-│   └── vercel.json             # Subdirectory Vercel deployment configuration
-├── rr_pressure/                # Python win-probability leverage & scoring models
-├── tests/                      # Python pytest regression suites
-├── package.json                # Root npm workspace configuration
-├── vercel.json                 # Root Vercel deployment configuration
-├── .gitignore                  # Optimized Git filter excluding >100MB datasets
-└── README.md                   # Project documentation
+Super-RR/
+├── dashboard/                              # React + Vite TypeScript Dashboard
+│   ├── public/                             # Public static assets
+│   │   ├── portraits/                      # 320w & 640w verified player portraits
+│   │   ├── rajasthan_royals_official_logo.svg  # Official franchise crest
+│   │   └── favicon.svg                     # High-contrast favicon
+│   ├── src/
+│   │   ├── components/                     # React UI Components
+│   │   │   ├── FloatingSidebar.tsx         # Auto-clearing quick-access navigation
+│   │   │   ├── Header.tsx                  # Persistent top brand bar
+│   │   │   ├── HeroSection.tsx             # Executive context and title
+│   │   │   ├── Icons.tsx                   # 100% SVG Icon set (zero emojis)
+│   │   │   ├── MathFormula.tsx             # KaTeX mathematical renderer
+│   │   │   ├── MediaSection.tsx            # In-app player studio & IPL career cards
+│   │   │   ├── MethodologySection.tsx      # Technical deep-dive & Match 54 audit
+│   │   │   ├── ModelRankingsSection.tsx    # 248-player comparison table
+│   │   │   ├── PlayerCard.tsx              # Pop-out 3D animated candidate cards
+│   │   │   ├── PlayerPreviewModal.tsx      # 12-metric in-app player lightbox
+│   │   │   ├── PlayerThumbnail.tsx         # Circular leaderboard headshots
+│   │   │   └── RankedBoards.tsx            # Shortlist boards orchestrator
+│   │   ├── data/                           # Verified data packages & manifests
+│   │   │   ├── evidence.json               # Final 20-player decision snapshot
+│   │   │   ├── model_rankings_data.json    # Broad scored population
+│   │   │   ├── player_ipl_stats.json       # 2022–2026 IPL career numbers
+│   │   │   └── portraits_manifest.json     # Player portrait metadata
+│   │   ├── App.css                         # Production stylesheets & responsive bounds
+│   │   └── App.tsx                         # Root single-page orchestrator
+│   └── scripts/                            # Puppeteer & Python verification test suites
+├── rr_pressure/                            # Python model engine & Bayesian shrinkage
+├── tests/                                  # Pytest regression suites
+├── package.json                            # Root npm workspaces configuration
+├── vercel.json                             # Turnkey Vercel SPA deployment config
+└── README.md                               # Project documentation
 ```
 
 ---
 
-## 🛡️ License & Trademarks
+## Author & Contact
 
-All Rajasthan Royals logos, team crests, and BCCI/IPL statistical references belong to their respective copyright holders. Developed for analytical evaluation and recruitment modeling.
+**Sharan S**
+- Systems & Applied AI Engineer
+- Computer Science & Engineering, BMS College of Engineering, Bengaluru
+- GitHub: [@sharancode3](https://github.com/sharancode3)
+- Email: [sharan18x@gmail.com](mailto:sharan18x@gmail.com)
+- Submission: **Rajasthan Royals SupeRR Selector Season 2**
+
+---
+
+## Governance & Legal Notice
+
+All Rajasthan Royals logos, team crests, and tournament trademarks belong to the **Rajasthan Royals franchise** and the **Board of Control for Cricket in India (BCCI)**. Player statistical data reflects official IPL match records (2022–2026). Developed strictly for recruitment evaluation and analytical decision modeling in the SupeRR Selector Season 2 competition.
